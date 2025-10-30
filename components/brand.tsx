@@ -1,17 +1,15 @@
 // components/brand.tsx
 import Link from "next/link";
 
-export function BrandMark({ className = "" }: { className?: string }) {
-    return (
-        <div className={`flex items-center gap-2 ${className}`}>
-            <span className="font-black tracking-widest text-[28px] leading-none text-[#0A51B7]">TWIN DIX</span>
-            {/* mini tagline (optional) */}
-            {/* <span className="text-[10px] uppercase tracking-wide text-[#0A51B7]/70">Global Inc.</span> */}
-        </div>
-    );
-}
+export const BrandMark = ({ className = "" }: { className?: string }) => (
+    <div className={`flex items-center gap-2 ${className}`}>
+        <span className="font-black tracking-widest text-[28px] leading-none text-[#0A51B7]">TWIN DIX</span>
+        {/* mini tagline (optional) */}
+        {/* <span className="text-[10px] uppercase tracking-wide text-[#0A51B7]/70">Global Inc.</span> */}
+    </div>
+);
 
-export function SocialRow({ className = "" }: { className?: string }) {
+export const SocialRow = ({ className = "" }: { className?: string }) => {
     // simple SVG icons so you don't need an icon lib
     const iconClass = "h-5 w-5";
     const linkClass = "inline-flex items-center justify-center rounded-full border border-[#0A51B7]/30 p-2 hover:bg-[#0A51B7]/5 transition";
@@ -71,4 +69,4 @@ export function SocialRow({ className = "" }: { className?: string }) {
             </Link>
         </div>
     );
-}
+};

@@ -37,3 +37,75 @@
 }
 
 html, body { height: 100%; }
+
+/* --- GLASSY NAV SHELL --- */
+@utility nav-glass {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 9999px;
+  border: 1px solid color-mix(in srgb, var(--color-blue-900) 12%, transparent);
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--color-blue-100) 60%, transparent) 0%,
+      color-mix(in srgb, white 85%, var(--color-blue-50) 15%) 100%
+    );
+  box-shadow:
+    0 1px 0 color-mix(in srgb, var(--color-blue-900) 8%, transparent) inset,
+    0 8px 20px color-mix(in srgb, var(--color-blue-900) 8%, transparent);
+}
+
+/* --- HERO: balanced sky-blue edges incl. top corners, bright center --- */
+@utility hero-surface {
+  background:
+    /* 1) white top-center wash (does NOT reach the corners) */
+    radial-gradient(
+      70% 50% at 50% -10%,
+      color-mix(in srgb, white 97%, var(--color-blue-50) 3%) 0%,
+      color-mix(in srgb, white 94%, var(--color-blue-50) 6%) 45%,
+      transparent 70%
+    ),
+
+    /* 2) top-left corner tint so it isn't white */
+    radial-gradient(
+      40% 60% at 0% 0%,
+      color-mix(in srgb, var(--color-blue-300) 26%, transparent) 0%,
+      transparent 70%
+    ),
+
+    /* 3) top-right corner tint */
+    radial-gradient(
+      40% 60% at 100% 0%,
+      color-mix(in srgb, var(--color-blue-300) 26%, transparent) 0%,
+      transparent 70%
+    ),
+
+    /* 4) left edge halo (balanced) */
+    radial-gradient(
+      72% 145% at -12% 60%,
+      color-mix(in srgb, var(--color-blue-400) 34%, transparent) 0%,
+      color-mix(in srgb, var(--color-blue-300) 26%, transparent) 30%,
+      transparent 62%
+    ),
+
+    /* 5) right edge halo (balanced) */
+    radial-gradient(
+      72% 145% at 112% 60%,
+      color-mix(in srgb, var(--color-blue-400) 34%, transparent) 0%,
+      color-mix(in srgb, var(--color-blue-300) 26%, transparent) 30%,
+      transparent 62%
+    ),
+
+    /* 6) bright center pill */
+    radial-gradient(
+      120% 100% at 50% 40%,
+      color-mix(in srgb, white 96%, var(--color-blue-50) 4%) 0%,
+      color-mix(in srgb, white 92%, var(--color-blue-50) 8%) 55%,
+      color-mix(in srgb, white 88%, var(--color-blue-50) 12%) 100%
+    );
+}
+
+
+
+
+

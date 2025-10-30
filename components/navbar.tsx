@@ -1,5 +1,3 @@
-// components/site-navbar.tsx
-
 "use client";
 
 import Link from "next/link";
@@ -33,29 +31,16 @@ const NAV_ITEMS: NavItem[] = [
     },
 ];
 
-const BLUE = "#0A51B7";
-
-export function SiteNavbar() {
+export const Navbar = () => {
     const [open, setOpen] = useState(false);
     const pathname = usePathname();
-
     const isActive = (href: string) => (href === "/" ? pathname === href : pathname?.startsWith(href));
 
     return (
-        <header
-            className="sticky top-0 z-50 border-b"
-            style={{
-
-                backdropFilter: "blur(8px)",
-                // soft bluish gradient like your screenshot
-                background:
-          "linear-gradient(180deg, rgba(214,232,250,0.55) 0%, rgba(255,255,255,0.85) 100%)",
-            }}
-        >
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                {/* top row */}
-                <div className="flex h-16 items-center justify-between gap-4">
-                    {/* logo */}
+    /* fixed so it floats; hero starts at the very top behind it */
+        <header className="fixed top-3 left-0 right-0 z-50">
+            <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
+                <div className="nav-glass h-14 md:h-16 px-3 sm:px-4 flex items-center justify-between gap-4">
                     <Link
                         className="flex-shrink-0"
                         href="/"
@@ -63,7 +48,6 @@ export function SiteNavbar() {
                         <BrandMark />
                     </Link>
 
-                    {/* center nav (desktop) */}
                     <nav className="hidden md:flex items-center gap-8">
                         {NAV_ITEMS.map((item) => (
                             <Link
@@ -71,8 +55,8 @@ export function SiteNavbar() {
                                 key={item.href}
                                 className={`text-sm transition ${
                                     isActive(item.href)
-                                        ? "text-gray-900 font-medium"
-                                        : "text-gray-700 hover:text-gray-900"
+                                        ? "text-foreground font-medium"
+                                        : "text-blue-900/80 hover:text-blue-900"
                                 }`}
                             >
                                 {item.label}
@@ -80,33 +64,26 @@ export function SiteNavbar() {
                         ))}
                     </nav>
 
-                    {/* right actions */}
                     <div className="hidden md:flex items-center gap-3">
                         <Link
-                            className="rounded-full border px-4 py-2 text-sm font-medium"
+                            className="rounded-full border px-4 py-2 text-sm font-medium border-primary text-primary hover:bg-blue-50"
                             href="/contact"
-                            style={{
-                                borderColor: BLUE,
-                                color: BLUE,
-                            }}
                         >
                             Contact Us
                         </Link>
                         <Link
-                            className="rounded-full px-4 py-2 text-sm font-medium text-white"
+                            className="rounded-full px-4 py-2 text-sm font-medium text-white bg-primary hover:bg-blue-700"
                             href="/login"
-                            style={{ backgroundColor: BLUE }}
                         >
                             Log in
                         </Link>
                     </div>
 
-                    {/* hamburger (mobile) */}
+                    {/* mobile menu button */}
                     <button
                         aria-expanded={open}
                         aria-label="Toggle menu"
-                        className="md:hidden inline-flex items-center justify-center rounded-lg border p-2"
-                        style={{ borderColor: "rgba(0,0,0,0.1)" }}
+                        className="md:hidden inline-flex items-center justify-center rounded-lg border p-2 border-blue-100 text-blue-900"
                         onClick={() => setOpen((v) => !v)}
                     >
                         <svg
@@ -134,19 +111,15 @@ export function SiteNavbar() {
                     </button>
                 </div>
 
-                {/* bottom row (mobile drawer) */}
-                <div
-                    className={`md:hidden border-t transition-[max-height] duration-200 overflow-hidden ${
-                        open ? "max-h-96" : "max-h-0"
-                    }`}
-                >
+                {/* mobile drawer */}
+                <div className={`md:hidden transition-[max-height] duration-200 overflow-hidden ${open ? "max-h-96" : "max-h-0"}`}>
                     <nav className="py-3 flex flex-col gap-2">
                         {NAV_ITEMS.map((item) => (
                             <Link
                                 href={item.href}
                                 key={item.href}
-                                className={`rounded px-2 py-2 text-sm transition hover:bg-gray-50 ${
-                                    isActive(item.href) ? "bg-gray-100 font-medium text-gray-900" : "text-gray-800"
+                                className={`rounded px-2 py-2 text-sm transition hover:bg-blue-50 ${
+                                    isActive(item.href) ? "bg-blue-100 font-medium text-blue-900" : "text-blue-900/90"
                                 }`}
                                 onClick={() => setOpen(false)}
                             >
@@ -156,20 +129,15 @@ export function SiteNavbar() {
 
                         <div className="mt-2 flex items-center gap-2">
                             <Link
-                                className="flex-1 text-center rounded-full border px-4 py-2 text-sm font-medium"
+                                className="flex-1 text-center rounded-full border px-4 py-2 text-sm font-medium border-primary text-primary"
                                 href="/contact"
-                                style={{
-                                    borderColor: BLUE,
-                                    color: BLUE,
-                                }}
                                 onClick={() => setOpen(false)}
                             >
                                 Contact Us
                             </Link>
                             <Link
-                                className="flex-1 text-center rounded-full px-4 py-2 text-sm font-medium text-white"
+                                className="flex-1 text-center rounded-full px-4 py-2 text-sm font-medium text-white bg-primary"
                                 href="/login"
-                                style={{ backgroundColor: BLUE }}
                                 onClick={() => setOpen(false)}
                             >
                                 Log in
@@ -180,4 +148,4 @@ export function SiteNavbar() {
             </div>
         </header>
     );
-}
+};
