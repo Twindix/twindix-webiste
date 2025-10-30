@@ -1,33 +1,28 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto } from "next/font/google";
 import { ReactNode } from "react";
 
-import { Footer } from "@/components/footer";
-import { Navbar } from "@/components/navbar";
+import { Footer, Navbar } from "@/components";
+import { constantsData } from "@/data";
 
-const geistSans = Geist({
+const robotoFont = Roboto({
+    display: "swap",
     subsets: ["latin"],
-    variable: "--font-geist-sans",
-});
-
-const geistMono = Geist_Mono({
-    subsets: ["latin"],
-    variable: "--font-geist-mono",
+    variable: "--font-roboto",
+    weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
-    description: "Twindix website",
-    title: "Twindix",
+    description: constantsData.metadataDescription,
+    title: constantsData.twindix,
 };
 
 export default function RootLayout({ children } : Readonly<{ children: ReactNode }>) {
     return (
         <html lang="en">
-            <body
-                className={`min-h-screen flex flex-col bg-background text-foreground ${geistSans.variable} ${geistMono.variable} antialiased`}
-            >
+            <body className={`min-h-screen flex flex-col bg-background text-foreground ${robotoFont.className} antialiased`}>
                 <Navbar />
                 <main className="flex-1">{children}</main>
                 <Footer />

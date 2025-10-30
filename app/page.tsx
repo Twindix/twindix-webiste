@@ -1,5 +1,11 @@
-import { Hero } from "@/components/hero";
+import { HomeHero } from "@/components";
 
 export default function Home() {
-    return <Hero />;
+    return (
+        <div>
+            <HomeHero />
+            <div className="h-72 after-hero">Heell second section</div>
+        </div>
+
+    );
 }
