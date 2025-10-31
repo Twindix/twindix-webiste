@@ -1,106 +1,102 @@
+import Image from "next/image";
 import Link from "next/link";
 
-import { BrandMark, SocialRow } from "@/components";
+import footerLogo from "@/app/assets/footer-logo.webp";
+import { Social } from "@/components";
+import { constantsData, footerItemsData, routeUrlsData } from "@/data";
 
 export const Footer = () => (
     <footer className="bg-blue-50">
-        <div className="mx-auto container sm:px-0 px-4 py-10">
+        <div className="mx-auto container py-5 md:py-10">
             <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-                <div>
-                    <BrandMark className="mb-4" />
-                    <SocialRow className="mt-2" />
+                <div className="flex flex-col gap-2 md:gap-4">
+                    <Image
+                        alt="footer_logo"
+                        className="w-[150px] h-10"
+                        placeholder="blur"
+                        src={footerLogo}
+                    />
+                    <Social />
                 </div>
                 <div>
-                    <h3 className="text-sm font-semibold text-gray-900">About</h3>
-                    <ul className="mt-3 space-y-2 text-sm">
-                        <li>
-                            <Link
-                                className="hover:underline text-foreground"
-                                href="/about"
-                            >
-                                About Us
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                className="hover:underline text-foreground"
-                                href="/prize"
-                            >
-                                The Prize
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                className="hover:underline text-foreground"
-                                href="/why-twindix"
-                            >
-                                Why&nbsp;Twindix&nbsp;?
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                className="hover:underline text-foreground"
-                                href="/representatives"
-                            >
-                                Representatives &amp; franchises
-                            </Link>
-                        </li>
+                    <h3 className="text-base md:text-xl font-semibold text-foreground">{footerItemsData.col1.title}</h3>
+                    <ul className="mt-3 space-y-2">
+                        {footerItemsData.col1.urls.map(({
+                            href,
+                            label,
+                        }) => (
+                            <li className="font-medium text-xs md:text-sm">
+                                <Link
+                                    aria-label={label}
+                                    className="hover:underline text-blue-700"
+                                    href={href}
+                                >
+                                    {label}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div>
-                    <h3 className="text-sm font-semibold text-gray-900">Assessments</h3>
-                    <ul className="mt-3 space-y-2 text-sm">
-                        <li>
-                            <Link
-                                className="hover:underline text-foreground"
-                                href="/assessments/executives"
-                            >
-                                Twindix Executives
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                className="hover:underline text-foreground"
-                                href="/assessments/job-bar"
-                            >
-                                Job Bar Assessments
-                            </Link>
-                        </li>
+                    <h3 className="text-base md:text-xl font-semibold text-foreground">{footerItemsData.col2.title}</h3>
+                    <ul className="mt-3 space-y-2">
+                        {footerItemsData.col2.urls.map(({
+                            href,
+                            label,
+                        }) => (
+                            <li className="font-medium text-xs md:text-sm">
+                                <Link
+                                    aria-label={label}
+                                    className="hover:underline text-blue-700"
+                                    href={href}
+                                >
+                                    {label}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
                 <div>
-                    <h3 className="text-sm font-semibold text-gray-900">Do It Now</h3>
-                    <ul className="mt-3 space-y-2 text-sm">
-                        <li>
-                            <Link
-                                className="hover:underline text-foreground"
-                                href="/get-the-assessment"
-                            >
-                                Get The Assessment
-                            </Link>
-                        </li>
+                    <h3 className="text-base md:text-xl font-semibold text-foreground">{footerItemsData.col3.title}</h3>
+                    <ul className="mt-3 space-y-2">
+                        {footerItemsData.col3.urls.map(({
+                            href,
+                            label,
+                        }) => (
+                            <li className="font-medium text-xs md:text-sm">
+                                <Link
+                                    aria-label={label}
+                                    className="hover:underline text-blue-700"
+                                    href={href}
+                                >
+                                    {label}
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                 </div>
             </div>
-            <div className="mt-10 flex flex-col-reverse items-center justify-between gap-4 border-t pt-6 sm:flex-row">
-                <p className="text-xs text-gray-600">
+            <div className="mt-5 md:mt-10 flex flex-col-reverse items-center justify-between gap-4 border-t border-gray-600 pt-3 md:pt-6 sm:flex-row">
+                <p className="text-xs md:text-sm text-gray-600">
                     ©
                     {new Date().getFullYear()}
                     {" "}
-                    Twindix. All rights reserved.
+                    {constantsData.allReserved}
                 </p>
-                <div className="flex items-center gap-4 text-sm">
+                <div className="flex items-center gap-4 text-xs md:text-sm">
                     <Link
-                        className="text-gray-600 hover:text-gray-900"
-                        href="/privacy"
+                        aria-label={constantsData.urls.privacy}
+                        className="text-gray-600 hover:text-blue-700"
+                        href={routeUrlsData.privacy}
                     >
-                        Privacy
+                        {constantsData.urls.privacy}
                     </Link>
                     <Link
-                        className="text-gray-600 hover:text-gray-900"
-                        href="/terms"
+                        aria-label={constantsData.urls.terms}
+                        className="text-gray-600 hover:text-blue-700"
+                        href={routeUrlsData.terms}
                     >
-                        Terms
+                        {constantsData.urls.terms}
                     </Link>
                 </div>
             </div>

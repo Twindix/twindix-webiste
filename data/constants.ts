@@ -1,13 +1,23 @@
 export const constantsData = {
+    about: "About",
+    allReserved: "Twindix. All rights reserved.",
+    assessments: "Assessments",
+    doItNow: "Do It Now",
     metadataDescription: "We evaluate leadership intelligence and unlock smarter decisions. At Twindix, we go beyond assessments. We are your strategic partner in building smarter organizations, aligned teams, and self-aware leaders. Using AI-powered behavioral analytics, we help you see the full picture—how your people think, lead, and perform—and offer a clear roadmap for meaningful development.",
     twindix: "Twindix",
     urls: {
         about: "About Us",
         assessment: "Assessment",
         contact: "Contact Us",
+        getTheAssessment: "Get The Assessment",
         howAssessmentWorks: "How Assessment Works",
+        jobBarAssessments: "Job Bar Assessments",
         login: "Log in",
+        privacy: "Privacy",
         prize: "The Prize",
+        representativesAndFranchises: "Representatives & Franchises",
+        terms: "Terms",
+        twindixExecutives: "Twindix Executives",
         whyTwindix: "Why Twindix ?",
     },
 };

@@ -18,7 +18,6 @@
     --color-blue-600: #176ADA;
     --color-blue-700: #1356BC;
     --color-blue-800: #0F439E;
-    --color-blue-900: #0A3380;
 
     --color-gray-50:  #F4F6F8;
     --color-gray-100: #E5E9EE;
@@ -72,7 +71,10 @@ html, body { height: 100%; }
     z-index: 1;
 }
 
-
-
+@media (max-width: 768px) {
+    .container {
+        padding-inline: 16px;
+    }
+}
 
 

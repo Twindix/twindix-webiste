@@ -19,9 +19,10 @@ export const Navbar = () => {
 
     return (
         <header className="fixed top-3 left-0 right-0 z-50">
-            <div className="mx-auto container sm:px-0 px-4">
+            <div className="mx-auto container">
                 <div className="nav-glass h-14 lg:h-20 px-3 sm:px-4 flex items-center justify-between gap-4">
                     <Link
+                        aria-label="Logo"
                         className="shrink-0"
                         href={routeUrlsData.home}
                     >
@@ -39,6 +40,7 @@ export const Navbar = () => {
                             label,
                         }) => (
                             <Link
+                                aria-label={label}
                                 href={href}
                                 key={href}
                                 className={generateValidClassNameHandler(
@@ -51,14 +53,21 @@ export const Navbar = () => {
                         ))}
                     </nav>
                     <div className="hidden lg:flex items-center gap-3">
-                        <Button variant="outlined">
+                        <Button
+                            ariaLabel={constantsData.urls.contact}
+                            variant="outlined"
+                        >
                             <Link href={routeUrlsData.contact}>{constantsData.urls.contact}</Link>
                         </Button>
-                        <Button variant="contained">
+                        <Button
+                            ariaLabel={constantsData.urls.login}
+                            variant="contained"
+                        >
                             <Link href={routeUrlsData.login}>{constantsData.urls.login}</Link>
                         </Button>
                     </div>
                     <Button
+                        ariaLabel="Burger Menu"
                         className="lg:hidden"
                         variant="outlined"
                         onClick={() => setOpen((prevOpen) => !prevOpen)}
@@ -94,6 +103,7 @@ export const Navbar = () => {
                             label,
                         }) => (
                             <Link
+                                aria-label={label}
                                 href={href}
                                 key={href}
                                 className={generateValidClassNameHandler(
@@ -107,12 +117,14 @@ export const Navbar = () => {
                         ))}
                         <div className="mt-2 flex items-center gap-3">
                             <Button
+                                ariaLabel={constantsData.urls.contact}
                                 className="flex-1"
                                 variant="outlined"
                             >
                                 <Link href={routeUrlsData.contact}>{constantsData.urls.contact}</Link>
                             </Button>
                             <Button
+                                ariaLabel={constantsData.urls.login}
                                 className="flex-1"
                                 variant="contained"
                             >

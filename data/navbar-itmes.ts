@@ -15,7 +15,7 @@ export const navbarItemsData = [
         label: constantsData.urls.prize,
     },
     {
-        href: routeUrlsData.whatsTwindix,
+        href: routeUrlsData.whyTwindix,
         label: constantsData.urls.whyTwindix,
     },
     {

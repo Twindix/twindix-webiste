@@ -1,14 +1,13 @@
 import { HomeHero } from "./home/hero";
-import { BrandMark, SocialRow } from "./shared/brand";
 import { Footer } from "./shared/footer";
 import { Hero } from "./shared/hero";
 import { Navbar } from "./shared/navbar";
+import { Social } from "./shared/social";
 
 export {
-    BrandMark,
     Footer,
     Hero,
     HomeHero,
     Navbar,
-    SocialRow,
+    Social,
 };
