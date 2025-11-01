@@ -1,7 +1,9 @@
 export const constantsData = {
     descriptions: {
         metadata: "We evaluate leadership intelligence and unlock smarter decisions. At Twindix, we go beyond assessments. We are your strategic partner in building smarter organizations, aligned teams, and self-aware leaders. Using AI-powered behavioral analytics, we help you see the full picture—how your people think, lead, and perform—and offer a clear roadmap for meaningful development.",
+        readyToExplore: "Are you ready to explore your potential?",
         readyToTransform: "Ready to transform your leadership and unlock your organization’s full potential?",
+        twindixRightChoice: "Whether you are an executive seeking deeper understanding, a founder looking to expand, or an ambitious leader wanting to build a more effective team—Twindex is here to accompany you on your journey. We believe that every leader has their own unique path to success… and Twindex is your trusted guide on this journey.",
         whatMakesTwindixDifferent: "Twindix isn’t just a survey—it’s built on insights from 1,500 studies and 230 business models. It maps your strengths, highlights growth areas, and delivers practical strategies to enhance leadership and empower your team.",
     },
     labels: {
@@ -24,6 +26,7 @@ export const constantsData = {
         intuitiveClarityForComplexVisions: "Intuitive Clarity for Complex Visions",
         realImpactDrivesToGrow: "Real Impact that drives your to grow",
         twindixDifferent: "Twindix Different?",
+        twindixRightChoice: "TWINDIX the right choice for you?",
         whatMakes: "What makes",
         whatMakesTwindixDifferent: "What makes Twindix Different?",
         whyTwindix: "Why Twindix",

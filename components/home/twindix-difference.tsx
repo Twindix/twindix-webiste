@@ -31,7 +31,7 @@ export const TwindixDifference = () => (
                         6,
                     )}
                 </h2>
-                <p className="mt-2 lg:mt-4 font-medium text-sm lg:text-lg text-black/35">Twindix isn’t just a survey—it’s built on insights from 1,500 studies and 230 business models. It maps your strengths, highlights growth areas, and delivers practical strategies to enhance leadership and empower your team.</p>
+                <p className="mt-2 lg:mt-4 font-medium text-sm lg:text-lg text-black/35">{constantsData.descriptions.whatMakesTwindixDifferent}</p>
             </div>
             <div className="col-span-1 lg:col-span-5 flex justify-between gap-8 sm:gap-1 flex-col sm:flex-row">
                 <div className="flex flex-col items-center gap-1">

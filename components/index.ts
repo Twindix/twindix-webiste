@@ -1,5 +1,6 @@
 import { HomeHero } from "./home/hero";
 import { TwindixDifference } from "./home/twindix-difference";
+import { TwnindixRightChoice } from "./home/twindix-right-choice";
 import { WhyTwindixAssessments } from "./home/why-twindix-assessments";
 import { Footer } from "./shared/footer";
 import { Hero } from "./shared/hero";
@@ -13,5 +14,6 @@ export {
     Navbar,
     Social,
     TwindixDifference,
+    TwnindixRightChoice,
     WhyTwindixAssessments,
 };

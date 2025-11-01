@@ -20,9 +20,9 @@ export const WhyTwindixAssessments = () => (
         <div className="grid gap-3 lg:gap-6 grid-cols-1 lg:grid-cols-12 items-stretch mt-5 lg:mt-10">
             {whyTwindixAssessmentsData.map(({
                 colSpan,
+                hasOpacity,
                 img,
                 imgAlt,
-                imgOpacity,
                 title,
             }, index) => (
                 <Fragment key={index}> {/* eslint-disable-line */}
@@ -41,7 +41,7 @@ export const WhyTwindixAssessments = () => (
                             src={img}
                             className={generateValidClassNameHandler(
                                 "w-[195px] h-[220px]",
-                                imgOpacity && `opacity-${imgOpacity}`,
+                                hasOpacity && "opacity-60",
                             )}
                         />
                     </Card>
