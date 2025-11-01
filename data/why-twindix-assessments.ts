@@ -25,6 +25,7 @@ export const whyTwindixAssessmentsData = [
         colSpan: 7,
         img: diagram,
         imgAlt: "diagram",
+        imgOpacity: 60,
         title: constantsData.titles.realImpactDrivesToGrow,
     },
     {
@@ -43,12 +44,14 @@ export const whyTwindixAssessmentsData = [
         colSpan: 7,
         img: eye,
         imgAlt: "eye",
+        imgOpacity: 50,
         title: constantsData.titles.intuitiveClarityForComplexVisions,
     },
     {
         colSpan: 7,
         img: rocket,
         imgAlt: "rocket",
+        imgOpacity: 60,
         title: constantsData.titles.contemporaryInnovationPrecedes,
     },
 ];
