@@ -12,5 +12,5 @@ export const routeUrlsData = {
     representativesAndFranchises: "/representatives-and-franchises",
     terms: "/terms",
     twindixExecutives: "/twindix-executives",
-    whyTwindix: "/why-twindix",
+    whatsTwindix: "/whats-twindix",
 };

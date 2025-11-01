@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-import logo from "@/app/assets/logo.webp";
+import logo from "@/app/assets/images/logo.webp";
 import { Button } from "@/atoms";
 import { constantsData, navbarItemsData, routeUrlsData } from "@/data";
 import { generateValidClassNameHandler } from "@/lib/utils";
@@ -13,12 +13,47 @@ import { generateValidClassNameHandler } from "@/lib/utils";
 export const Navbar = () => {
     const [open, setOpen] = useState(false);
 
+    const [isFixed, setIsFixed] = useState(true);
+
     const pathname = usePathname();
 
     const isActive = (href: string) => (href === routeUrlsData.home ? pathname === href : pathname?.startsWith(href));
 
+    useEffect(
+        () => {
+            const onScroll = () => {
+                setIsFixed(window.scrollY <= 200);
+            };
+
+            onScroll();
+
+            window.addEventListener(
+                "scroll",
+                onScroll,
+                { passive: true },
+            );
+
+            return () => window.removeEventListener(
+                "scroll",
+                onScroll,
+            );
+        },
+        [],
+    );
+
+    useEffect(
+        () => {
+            if (open) setOpen(false); // eslint-disable-line
+        },
+        [pathname], // eslint-disable-line
+    );
+
     return (
-        <header className="fixed top-3 left-0 right-0 z-50">
+        <header className={generateValidClassNameHandler(
+            "z-50",
+            isFixed ? "fixed top-3 left-0 right-0" : "relative",
+        )}
+        >
             <div className="mx-auto container">
                 <div className="nav-glass h-14 lg:h-20 px-3 sm:px-4 flex items-center justify-between gap-4">
                     <Link

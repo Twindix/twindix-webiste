@@ -15,8 +15,8 @@ const robotoFont = Roboto({
 });
 
 export const metadata: Metadata = {
-    description: constantsData.metadataDescription,
-    title: constantsData.twindix,
+    description: constantsData.descriptions.metadata,
+    title: constantsData.labels.twindix,
 };
 
 export default function RootLayout({ children } : Readonly<{ children: ReactNode }>) {

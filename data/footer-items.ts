@@ -3,7 +3,7 @@ import { routeUrlsData } from "./route-urls";
 
 export const footerItemsData = {
     col1: {
-        title: constantsData.about,
+        title: constantsData.labels.about,
         urls: [
             {
                 href: routeUrlsData.about,
@@ -14,8 +14,8 @@ export const footerItemsData = {
                 label: constantsData.urls.prize,
             },
             {
-                href: routeUrlsData.whyTwindix,
-                label: constantsData.urls.whyTwindix,
+                href: routeUrlsData.whatsTwindix,
+                label: constantsData.urls.whatsTwindix,
             },
             {
                 href: routeUrlsData.representativesAndFranchises,
@@ -24,7 +24,7 @@ export const footerItemsData = {
         ],
     },
     col2: {
-        title: constantsData.assessments,
+        title: constantsData.labels.assessments,
         urls: [
             {
                 href: routeUrlsData.twindixExecutives,
@@ -37,7 +37,7 @@ export const footerItemsData = {
         ],
     },
     col3: {
-        title: constantsData.doItNow,
+        title: constantsData.labels.doItNow,
         urls: [
             {
                 href: routeUrlsData.getTheAssessment,

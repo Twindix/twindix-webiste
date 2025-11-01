@@ -1,4 +1,5 @@
 import { HomeHero } from "./home/hero";
+import { TwindixDifference } from "./home/twindix-difference";
 import { Footer } from "./shared/footer";
 import { Hero } from "./shared/hero";
 import { Navbar } from "./shared/navbar";
@@ -10,4 +11,5 @@ export {
     HomeHero,
     Navbar,
     Social,
+    TwindixDifference,
 };

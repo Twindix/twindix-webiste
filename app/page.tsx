@@ -1,10 +1,12 @@
-import { HomeHero } from "@/components";
+import { HomeHero, TwindixDifference } from "@/components";
 
 export default function Home() {
     return (
         <div>
             <HomeHero />
-            <div className="h-72 after-hero">Heell second section</div>
+            <div className="container m-auto relative bottom-[75px] z-10">
+                <TwindixDifference />
+            </div>
         </div>
 
     );

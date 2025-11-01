@@ -1,10 +1,21 @@
 export const constantsData = {
-    about: "About",
-    allReserved: "Twindix. All rights reserved.",
-    assessments: "Assessments",
-    doItNow: "Do It Now",
-    metadataDescription: "We evaluate leadership intelligence and unlock smarter decisions. At Twindix, we go beyond assessments. We are your strategic partner in building smarter organizations, aligned teams, and self-aware leaders. Using AI-powered behavioral analytics, we help you see the full picture—how your people think, lead, and perform—and offer a clear roadmap for meaningful development.",
-    twindix: "Twindix",
+    descriptions: {
+        metadata: "We evaluate leadership intelligence and unlock smarter decisions. At Twindix, we go beyond assessments. We are your strategic partner in building smarter organizations, aligned teams, and self-aware leaders. Using AI-powered behavioral analytics, we help you see the full picture—how your people think, lead, and perform—and offer a clear roadmap for meaningful development.",
+        whatMakesTwindixDifferent: "Twindix isn’t just a survey—it’s built on insights from 1,500 studies and 230 business models. It maps your strengths, highlights growth areas, and delivers practical strategies to enhance leadership and empower your team.",
+    },
+    labels: {
+        about: "About",
+        allReserved: "Twindix. All rights reserved.",
+        assessments: "Assessments",
+        businessModels: "Business Models",
+        doItNow: "Do It Now",
+        ofYearSearch: "Of Year Search",
+        studies: "Studies",
+        twindix: "Twindix",
+    },
+    titles: {
+        whatMakesTwindixDifferent: "What makes TWINDIX Different?",
+    },
     urls: {
         about: "About Us",
         assessment: "Assessment",
@@ -18,6 +29,6 @@ export const constantsData = {
         representativesAndFranchises: "Representatives & Franchises",
         terms: "Terms",
         twindixExecutives: "Twindix Executives",
-        whyTwindix: "Why Twindix ?",
+        whatsTwindix: "What's Twindix ?",
     },
 };
