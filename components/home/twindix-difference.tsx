@@ -5,19 +5,30 @@ import cooperation from "@/app/assets/icons/cooperation.svg";
 import search from "@/app/assets/icons/search.svg";
 import { Card } from "@/atoms";
 import { constantsData } from "@/data";
-import { generateGradientTextHandler, insertLineBreakAfterCharsHandler } from "@/lib/utils";
+import { generateGradientTextHandler } from "@/lib/utils";
 
 export const TwindixDifference = () => (
     <section>
         <Card className="grid gap-6 sm:gap-2 grid-cols-1 lg:grid-cols-12 items-center">
             <div className="col-span-1 lg:col-span-7">
-                <h2 className="font-semibold text-3xl lg:text-5xl">
-                    {insertLineBreakAfterCharsHandler(
-                        generateGradientTextHandler(
-                            constantsData.titles.whatMakesTwindixDifferent,
+                <h2 className="font-semibold lg:text-5xl lg:flex lg:flex-col hidden">
+                    <span className="font-medium">
+                        {generateGradientTextHandler(
+                            constantsData.titles.whatMakes,
                             6,
-                        ),
-                        10,
+                        )}
+                    </span>
+                    <span>
+                        {generateGradientTextHandler(
+                            constantsData.titles.twindixDifferent,
+                            0,
+                        )}
+                    </span>
+                </h2>
+                <h2 className="font-semibold text-3xl lg:hidden">
+                    {generateGradientTextHandler(
+                        constantsData.titles.whatMakesTwindixDifferent,
+                        6,
                     )}
                 </h2>
                 <p className="mt-2 lg:mt-4 font-medium text-sm lg:text-lg text-black/35">Twindix isn’t just a survey—it’s built on insights from 1,500 studies and 230 business models. It maps your strengths, highlights growth areas, and delivers practical strategies to enhance leadership and empower your team.</p>
@@ -30,13 +41,13 @@ export const TwindixDifference = () => (
                         priority
                     />
                     <div className="flex flex-col items-center">
-                        <span>
+                        <span className="font-bold text-xl lg:text-3xl">
                             {generateGradientTextHandler(
                                 "230",
                                 1,
                             )}
                         </span>
-                        <span>
+                        <span className="font-medium text-sm lg:text-lg">
                             {generateGradientTextHandler(
                                 constantsData.labels.businessModels,
                                 6,
@@ -51,13 +62,13 @@ export const TwindixDifference = () => (
                         priority
                     />
                     <div className="flex flex-col items-center">
-                        <span>
+                        <span className="font-bold text-xl lg:text-3xl">
                             {generateGradientTextHandler(
                                 "1500",
                                 2,
                             )}
                         </span>
-                        <span>
+                        <span className="font-medium text-sm lg:text-lg">
                             {generateGradientTextHandler(
                                 constantsData.labels.studies,
                                 2,
@@ -72,13 +83,13 @@ export const TwindixDifference = () => (
                         priority
                     />
                     <div className="flex flex-col items-center">
-                        <span>
+                        <span className="font-bold text-xl lg:text-3xl">
                             {generateGradientTextHandler(
                                 "110",
                                 1,
                             )}
                         </span>
-                        <span>
+                        <span className="font-medium text-sm lg:text-lg">
                             {generateGradientTextHandler(
                                 constantsData.labels.ofYearSearch,
                                 5,

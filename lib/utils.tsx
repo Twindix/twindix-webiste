@@ -1,5 +1,5 @@
 import clsx, { ClassValue } from "clsx";
-import React, { JSX } from "react";
+import React from "react";
 import { twMerge } from "tailwind-merge";
 
 export const generateValidClassNameHandler = (...inputs: ClassValue[]) => {
@@ -90,49 +90,4 @@ export const generateGradientTextHandler = (
     }
 
     return output;
-};
-
-export const insertLineBreakAfterCharsHandler = (
-    chars: React.ReactNode[],
-    breakAfter: number,
-): JSX.Element => {
-    const nodes = chars.filter(Boolean);
-
-    const nodesLength = nodes.length;
-
-    const idx = Math.min(
-        Math.max(
-            breakAfter,
-            1,
-        ),
-        Math.max(
-            nodesLength - 1,
-            1,
-        ),
-    );
-
-    const firstNode = nodes.slice(
-        0,
-        idx,
-    );
-
-    const secondNode = nodes.slice(idx);
-
-    const firstOfSecond = secondNode[0];
-
-    const isReactEl = (n: React.ReactNode): n is React.ReactElement => !!n && typeof n === "object" && "props" in (n as any); // eslint-disable-line
-
-    if (isReactEl(firstOfSecond)) {
-        const child = (firstOfSecond as any).props?.children; // eslint-disable-line
-
-        if (child === " ") firstNode.push(secondNode.shift() as React.ReactNode);
-    }
-
-    return (
-        <span style={{ whiteSpace: "pre-wrap" }}>
-            {firstNode}
-            <br />
-            {secondNode}
-        </span>
-    );
 };

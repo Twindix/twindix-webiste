@@ -11,14 +11,13 @@
 
     --color-blue-50:  #E3F0FE;
     --color-blue-100: #BBDDFD;
-    --color-blue-200: #BBDDFD;
-    --color-blue-300: #61B5FB;
-    --color-blue-400: #3DA5FA;
-    --color-blue-500: #1D7EF8;
-    --color-blue-600: #176ADA;
-    --color-blue-700: #1356BC;
-    --color-blue-800: #0F439E;
-    --color-blue-900: #0065FF;
+    --color-blue-200: #61B5FB;
+    --color-blue-300: #3DA5FA;
+    --color-blue-400: #1D7EF8;
+    --color-blue-500: #176ADA;
+    --color-blue-600: #1356BC;
+    --color-blue-700: #0F439E;
+    --color-blue-800: #0065FF;
 
     --color-gray-50:  #F4F6F8;
     --color-gray-100: #E5E9EE;
@@ -39,10 +38,10 @@ html, body { height: 100%; }
     -webkit-backdrop-filter: blur(10px);
     border-radius: 9999px;
     background:
-        radial-gradient(75% 190% at 0% 100%, color-mix(in srgb, var(--color-blue-200) 75%, var(--color-gray-500) 25%) 0%, transparent 72%),
-        radial-gradient(75% 165% at 0% 0%, color-mix(in srgb, var(--color-blue-200) 70%, var(--color-gray-500) 30%) 0%, transparent 68%),
+        radial-gradient(75% 190% at 0% 100%, color-mix(in srgb, var(--color-blue-100) 75%, var(--color-gray-500) 25%) 0%, transparent 72%),
+        radial-gradient(75% 165% at 0% 0%, color-mix(in srgb, var(--color-blue-100) 70%, var(--color-gray-500) 30%) 0%, transparent 68%),
         linear-gradient(90deg, color-mix(in srgb, var(--color-gray-200) 85%, transparent) 0%, color-mix(in srgb, var(--color-gray-100) 90%, transparent) 40%, color-mix(in srgb, var(--color-gray-200) 85%, transparent) 75%, color-mix(in srgb, var(--color-gray-300) 75%, transparent) 100%),
-        color-mix(in srgb, var(--color-blue-200) 100%, transparent);
+        color-mix(in srgb, var(--color-blue-100) 100%, transparent);
     border: 1px solid color-mix(in srgb, var(--color-gray-50) 80%, var(--color-gray-200) 20%);
     box-shadow: 0 12px 28px color-mix(in srgb, var(--color-gray-900) 7%, transparent), inset 0 1px 0 color-mix(in srgb, var(--color-gray-50) 80%, transparent), inset 34px 0 58px color-mix(in srgb, var(--color-gray-50) 65%, transparent), inset 0 -2px 16px color-mix(in srgb, var(--color-gray-50) 55%, transparent);
 }
@@ -51,10 +50,10 @@ html, body { height: 100%; }
     position: relative;
     background:
         radial-gradient(70% 50% at 50% -10%, color-mix(in srgb, white 97%, var(--color-blue-50) 3%) 0%, color-mix(in srgb, white 94%, var(--color-blue-50) 6%) 45%, transparent 70%),
-        radial-gradient(40% 60% at 0% 0%, color-mix(in srgb, var(--color-blue-700) 26%, transparent) 0%, transparent 70%),
-        radial-gradient(40% 60% at 100% 0%, color-mix(in srgb, var(--color-blue-700) 26%, transparent) 0%, transparent 70%),
-        radial-gradient(72% 145% at -12% 60%, color-mix(in srgb, var(--color-blue-400) 34%, transparent) 0%, color-mix(in srgb, var(--color-blue-700) 26%, transparent) 30%, transparent 62%),
-        radial-gradient(72% 145% at 112% 60%, color-mix(in srgb, var(--color-blue-400) 34%, transparent) 0%, color-mix(in srgb, var(--color-blue-700) 26%, transparent) 30%, transparent 62%),
+        radial-gradient(40% 60% at 0% 0%, color-mix(in srgb, var(--color-blue-600) 26%, transparent) 0%, transparent 70%),
+        radial-gradient(40% 60% at 100% 0%, color-mix(in srgb, var(--color-blue-600) 26%, transparent) 0%, transparent 70%),
+        radial-gradient(72% 145% at -12% 60%, color-mix(in srgb, var(--color-blue-300) 34%, transparent) 0%, color-mix(in srgb, var(--color-blue-600) 26%, transparent) 30%, transparent 62%),
+        radial-gradient(72% 145% at 112% 60%, color-mix(in srgb, var(--color-blue-300) 34%, transparent) 0%, color-mix(in srgb, var(--color-blue-600) 26%, transparent) 30%, transparent 62%),
         radial-gradient(120% 100% at 50% 40%, color-mix(in srgb, white 96%, var(--color-blue-50) 4%) 0%, color-mix(in srgb, white 92%, var(--color-blue-50) 8%) 55%, color-mix(in srgb, white 88%, var(--color-blue-50) 12%) 100%);
 }
 

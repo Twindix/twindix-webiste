@@ -31,7 +31,7 @@ export const Footer = () => (
                             >
                                 <Link
                                     aria-label={label}
-                                    className="hover:underline text-blue-700"
+                                    className="hover:underline text-blue-600"
                                     href={href}
                                 >
                                     {label}
@@ -53,7 +53,7 @@ export const Footer = () => (
                             >
                                 <Link
                                     aria-label={label}
-                                    className="hover:underline text-blue-700"
+                                    className="hover:underline text-blue-600"
                                     href={href}
                                 >
                                     {label}
@@ -75,7 +75,7 @@ export const Footer = () => (
                             >
                                 <Link
                                     aria-label={label}
-                                    className="hover:underline text-blue-700"
+                                    className="hover:underline text-blue-600"
                                     href={href}
                                 >
                                     {label}
@@ -95,14 +95,14 @@ export const Footer = () => (
                 <div className="flex items-center gap-4 text-xs lg:text-sm">
                     <Link
                         aria-label={constantsData.urls.privacy}
-                        className="text-gray-600 hover:text-blue-700"
+                        className="text-gray-600 hover:text-blue-600"
                         href={routeUrlsData.privacy}
                     >
                         {constantsData.urls.privacy}
                     </Link>
                     <Link
                         aria-label={constantsData.urls.terms}
-                        className="text-gray-600 hover:text-blue-700"
+                        className="text-gray-600 hover:text-blue-600"
                         href={routeUrlsData.terms}
                     >
                         {constantsData.urls.terms}
