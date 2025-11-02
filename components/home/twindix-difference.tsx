@@ -9,7 +9,7 @@ export const HomeTwindixDifference = () => (
     <section>
         <Card className="grid gap-6 sm:gap-2 grid-cols-1 lg:grid-cols-12 items-center">
             <div className="col-span-1 lg:col-span-7">
-                <h2 className="font-semibold lg:text-5xl text-gradient1">
+                <h2 className="font-semibold text-3xl lg:text-5xl text-gradient1">
                     What makes
                     <br className="hidden lg:block" />
                     Twindix Different?

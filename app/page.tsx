@@ -1,4 +1,5 @@
 import {
+    ContactUs,
     HomeAssessment,
     HomeHero,
     HomeTwindixDifference,
@@ -15,6 +16,7 @@ export default function Home() {
                 <HomeWhyTwindixAssessments />
                 <HomeTwnindixRightChoice />
                 <HomeAssessment />
+                <ContactUs />
             </div>
         </div>
 

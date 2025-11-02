@@ -2,10 +2,10 @@
 import Link from "next/link";
 
 export const Social = () => (
-    <div className="flex items-center gap-2">
+    <div className="flex items-center gap-1">
         <Link
             aria-label="LinkedIn"
-            className="inline-flex items-center justify-center rounded-full border-5 border-foreground p-2 hover:bg-foreground hover:text-white transition"
+            className="inline-flex items-center justify-center rounded-full border-5 border-foreground p-1 hover:bg-foreground hover:text-white transition"
             href="https://linkedin.com"
         >
             <svg
@@ -18,7 +18,7 @@ export const Social = () => (
         </Link>
         <Link
             aria-label="X"
-            className="inline-flex items-center justify-center rounded-full border-5 border-foreground p-2 hover:bg-foreground hover:text-white transition"
+            className="inline-flex items-center justify-center rounded-full border-5 border-foreground p-1 hover:bg-foreground hover:text-white transition"
             href="https://x.com"
         >
             <svg
@@ -31,7 +31,7 @@ export const Social = () => (
         </Link>
         <Link
             aria-label="Instagram"
-            className="inline-flex items-center justify-center rounded-full border-5 border-foreground p-2 hover:bg-foreground hover:text-white transition"
+            className="inline-flex items-center justify-center rounded-full border-5 border-foreground p-1 hover:bg-foreground hover:text-white transition"
             href="https://instagram.com"
         >
             <svg
@@ -44,7 +44,7 @@ export const Social = () => (
         </Link>
         <Link
             aria-label="Facebook"
-            className="inline-flex items-center justify-center rounded-full border-5 border-foreground p-2 hover:bg-foreground hover:text-white transition"
+            className="inline-flex items-center justify-center rounded-full border-5 border-foreground p-1 hover:bg-foreground hover:text-white transition"
             href="https://facebook.com"
         >
             <svg
