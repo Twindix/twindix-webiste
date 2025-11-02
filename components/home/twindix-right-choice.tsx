@@ -42,9 +42,9 @@ export const TwnindixRightChoice = () => (
                     </Button>
                 </div>
             </div>
-            <div className="col-span-1 lg:col-span-5 mt-4 lg:mt-0 relative xl:left-[70px] xl:overflow-hidden">
+            <div className="col-span-1 lg:col-span-5 mt-4 lg:mt-0">
                 <div className="relative aspect-[1.5]">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <div className="absolute top-1/2 left-1/2 xl:left-2/3 -translate-x-1/2 -translate-y-1/2">
                         <Image
                             alt="logo"
                             className="w-[134px] h-12 lg:h-[74px]"
@@ -65,7 +65,7 @@ export const TwnindixRightChoice = () => (
                         <div
                             key={index} // eslint-disable-line
                             className={generateValidClassNameHandler(
-                                "absolute top-1/2 left-1/2 origin-center grid place-items-center transform-[translate(-50%,-50%)_rotate(var(--a))_translate(var(--r))_rotate(calc(-1*var(--a)))]",
+                                "absolute top-1/2 left-1/2 xl:left-2/3 origin-center grid place-items-center transform-[translate(-50%,-50%)_rotate(var(--a))_translate(var(--r))_rotate(calc(-1*var(--a)))]",
                                 index === 3 ? "w-16 h-16" : "w-12 h-12",
                             )}
                             style={{

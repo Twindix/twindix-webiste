@@ -28,7 +28,7 @@ export const WhyTwindixAssessments = () => (
                 <Fragment key={index}> {/* eslint-disable-line */}
                     <Card className={`col-span-1 lg:col-span-${colSpan} flex items-center justify-between`}>
                         <div className="flex flex-col h-full justify-between">
-                            <span className="font-bold text-3xl lg:text-6xl text-blue-100">{index + 1}</span>
+                            <span className="font-bold text-4xl lg:text-6xl text-blue-100">{index + 1}</span>
                             <h6 className="font-semibold text-xl lg:text-3xl">
                                 {generateGradientTextHandler(
                                     title,
