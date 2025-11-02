@@ -12,30 +12,30 @@ export const HomeHero = () => (
             <h1 className="text-primary font-extrabold leading-none tracking-[0.06em] text-4xl lg:text-6xl drop-shadow">
                 TWINDIX
             </h1>
-            <div className="text-gradient2 font-bold text-center text-6xl lg:text-8xl">
+            <h2 className="text-gradient2 font-bold text-center text-6xl lg:text-8xl">
                 Uncover the core
                 {" "}
                 <br />
                 {" "}
                 drivers
-                <p className="text-primary text-xl lg:text-3xl font-medium my-2 lg:my-4">of your leadership style—and see how you measure up against</p>
-                <p className="text-3xl lg:text-5xl text-gradient3">World class executives</p>
-            </div>
+                <span className="text-primary text-xl lg:text-3xl font-medium mt-2 lg:mt-4 block">of your leadership style—and see how you measure up against</span>
+                <span className="text-3xl lg:text-5xl text-gradient3 relative bottom-4">World class executives</span>
+            </h2>
             <Image
                 alt="curved_line"
                 src={curvedLine}
             />
             <div>
                 <Image
-                    alt="assessments_docs_1"
+                    alt="assessments_docs"
                     className="absolute left-0 top-[45%] hidden lg:block"
                     height={180}
                     src={assessmentsDocs1}
                     width={180}
                 />
                 <Image
-                    alt="assessments_docs_2"
-                    className="absolute right-0 top-[40%] hidden lg:block"
+                    alt="assessments_docs"
+                    className="absolute right-0 top-[45%] hidden lg:block"
                     height={180}
                     src={assessmentsDocs2}
                     width={180}

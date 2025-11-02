@@ -1,8 +1,8 @@
 import clsx, { ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 
-export const generateValidClassNameHandler = (...inputs: ClassValue[]) => {
-    const merged = twMerge(clsx(inputs));
+export const generateValidClassNameHandler = (...classes: ClassValue[]) => {
+    const mergedClasses = twMerge(clsx(classes));
 
-    return merged === "" ? undefined : merged;
+    return mergedClasses === "" ? undefined : mergedClasses;
 };

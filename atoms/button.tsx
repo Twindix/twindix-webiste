@@ -22,7 +22,7 @@ export const Button = ({
     <button
         aria-label={ariaLabel || ""}
         className={generateValidClassNameHandler(
-            "rounded-full border px-2 lg:px-4 xl:px-8 py-2 text-xs xl:text-sm font-medium cursor-pointer relative",
+            "rounded-full border px-2 lg:px-4 xl:px-8 py-2 text-xs xl:text-sm font-semibold cursor-pointer relative",
             variant === "contained" && "border-blue-700 bg-blue-700 text-white",
             variant === "outlined" && "border-blue-700 text-blue-700 hover:bg-blue-50",
             className,
@@ -33,7 +33,7 @@ export const Button = ({
         {withArrowsIcon && (
             <Image
                 alt="multiple_arrows"
-                className="h-4 absolute right-2 lg:right-4 xl:right-8 top-1/2 -translate-y-1/2"
+                className="h-4 absolute right-2 lg:right-4 top-1/2 -translate-y-1/2"
                 src={multipleArrows}
             />
         )}

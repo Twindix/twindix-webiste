@@ -6,7 +6,7 @@ import { Button, Card } from "@/atoms";
 import { routeUrlsData, whyTwindixAssessmentsData } from "@/data";
 import { generateValidClassNameHandler } from "@/lib/utils";
 
-export const WhyTwindixAssessments = () => (
+export const HomeWhyTwindixAssessments = () => (
     <section className="pt-[50px] lg:pt-[100px] pb-[41px] lg:pb-[82px]">
         <div className="grid place-content-center">
             <h2 className="font-semibold text-3xl lg:text-5xl text-gradient1">

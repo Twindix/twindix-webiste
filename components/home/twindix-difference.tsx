@@ -5,7 +5,7 @@ import cooperation from "@/app/assets/icons/cooperation.svg";
 import search from "@/app/assets/icons/search.svg";
 import { Card } from "@/atoms";
 
-export const TwindixDifference = () => (
+export const HomeTwindixDifference = () => (
     <section>
         <Card className="grid gap-6 sm:gap-2 grid-cols-1 lg:grid-cols-12 items-center">
             <div className="col-span-1 lg:col-span-7">

@@ -15,7 +15,7 @@ import { Button, Card } from "@/atoms";
 import { routeUrlsData } from "@/data";
 import { generateValidClassNameHandler } from "@/lib/utils";
 
-export const TwnindixRightChoice = () => (
+export const HomeTwnindixRightChoice = () => (
     <section>
         <Card className="grid gap-3 lg:gap-6 grid-cols-1 lg:grid-cols-12 justify-between items-center">
             <div className="col-span-1 lg:col-span-7 flex flex-col gap-4 lg:gap-8">
