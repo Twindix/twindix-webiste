@@ -1,47 +1,46 @@
-import { constantsData } from "./constants";
 import { routeUrlsData } from "./route-urls";
 
 export const footerItemsData = {
     col1: {
-        title: constantsData.labels.about,
+        title: "About",
         urls: [
             {
                 href: routeUrlsData.about,
-                label: constantsData.urls.about,
+                label: "About Us",
             },
             {
                 href: routeUrlsData.prize,
-                label: constantsData.urls.prize,
+                label: "The Prize",
             },
             {
                 href: routeUrlsData.whatsTwindix,
-                label: constantsData.urls.whatsTwindix,
+                label: "What's Twindix ?",
             },
             {
                 href: routeUrlsData.representativesAndFranchises,
-                label: constantsData.urls.representativesAndFranchises,
+                label: "Representatives & Franchises",
             },
         ],
     },
     col2: {
-        title: constantsData.labels.assessments,
+        title: "Assessments",
         urls: [
             {
                 href: routeUrlsData.twindixExecutives,
-                label: constantsData.urls.twindixExecutives,
+                label: "Twindix Executives",
             },
             {
                 href: routeUrlsData.jobBarAssessments,
-                label: constantsData.urls.jobBarAssessments,
+                label: "Job Bar Assessments",
             },
         ],
     },
     col3: {
-        title: constantsData.labels.doItNow,
+        title: "Do It Now",
         urls: [
             {
                 href: routeUrlsData.getTheAssessment,
-                label: constantsData.urls.getTheAssessment,
+                label: "Get The Assessment",
             },
         ],
     },

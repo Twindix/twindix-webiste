@@ -78,4 +78,26 @@ html, body { height: 100%; }
     }
 }
 
+.text-gradient1 {
+    background-image: linear-gradient(to right, #000000, var(--color-blue-800));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
 
+.text-gradient2 {
+    background-image: linear-gradient(to right, var(--color-blue-900), var(--color-blue-920));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.text-gradient3 {
+    background-image: linear-gradient(to right, var(--color-blue-910), var(--color-blue-800));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+}

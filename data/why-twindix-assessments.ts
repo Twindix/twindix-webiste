@@ -6,52 +6,50 @@ import handWithGem from "@/app/assets/icons/hand_with_gem.svg";
 import rocket from "@/app/assets/icons/rocket.svg";
 import zoomAnalytics from "@/app/assets/icons/zoom_analytics.svg";
 
-import { constantsData } from "./constants";
-
 export const whyTwindixAssessmentsData = [
     {
         colSpan: 5,
         img: circlesWithCheck,
         imgAlt: "circles_with_check",
-        title: constantsData.titles.credible,
+        title: "Credible",
     },
     {
         colSpan: 7,
         img: zoomAnalytics,
         imgAlt: "zoom_analytics",
-        title: constantsData.titles.analysisBeyondSurface,
+        title: "Analysis that goes beyond the Surface",
     },
     {
         colSpan: 7,
         hasOpacity: true,
         img: diagram,
         imgAlt: "diagram",
-        title: constantsData.titles.realImpactDrivesToGrow,
+        title: "Real Impact that drives your to grow",
     },
     {
         colSpan: 5,
         img: handWithGem,
         imgAlt: "hand_with_gem",
-        title: constantsData.titles.designedFitUniqueReality,
+        title: "Designed to fit your Unique Reality",
     },
     {
         colSpan: 5,
         img: cursor,
         imgAlt: "cursor",
-        title: constantsData.titles.actionable,
+        title: "Actionable",
     },
     {
         colSpan: 7,
         hasOpacity: true,
         img: eye,
         imgAlt: "eye",
-        title: constantsData.titles.intuitiveClarityForComplexVisions,
+        title: "Intuitive Clarity for Complex Visions",
     },
     {
         colSpan: 7,
         hasOpacity: true,
         img: rocket,
         imgAlt: "rocket",
-        title: constantsData.titles.contemporaryInnovationPrecedes,
+        title: "Contemporary Innovation that precedes",
     },
 ];

@@ -1,21 +1,20 @@
-import { constantsData } from "./constants";
 import { routeUrlsData } from "./route-urls";
 
 export const navbarItemsData = [
     {
         href: routeUrlsData.about,
-        label: constantsData.urls.about,
+        label: "About Us",
     },
     {
         href: routeUrlsData.prize,
-        label: constantsData.urls.prize,
+        label: "The Prize",
     },
     {
         href: routeUrlsData.whatsTwindix,
-        label: constantsData.urls.whatsTwindix,
+        label: "What's Twindix ?",
     },
     {
         href: routeUrlsData.howAssessmentWorks,
-        label: constantsData.urls.howAssessmentWorks,
+        label: "How Assessment Works",
     },
 ];

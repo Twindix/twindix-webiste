@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import footerLogo from "@/app/assets/images/footer-logo.webp";
 import { Social } from "@/components";
-import { constantsData, footerItemsData, routeUrlsData } from "@/data";
+import { footerItemsData, routeUrlsData } from "@/data";
 
 export const Footer = () => (
     <footer className="bg-blue-50">
@@ -90,22 +90,22 @@ export const Footer = () => (
                     ©
                     {new Date().getFullYear()}
                     {" "}
-                    {constantsData.labels.allReserved}
+                    Twindix. All rights reserved.
                 </p>
                 <div className="flex items-center gap-4 text-xs lg:text-sm">
                     <Link
-                        aria-label={constantsData.urls.privacy}
+                        aria-label="Privacy"
                         className="text-gray-600 hover:text-blue-600"
                         href={routeUrlsData.privacy}
                     >
-                        {constantsData.urls.privacy}
+                        Privacy
                     </Link>
                     <Link
-                        aria-label={constantsData.urls.terms}
+                        aria-label="Terms"
                         className="text-gray-600 hover:text-blue-600"
                         href={routeUrlsData.terms}
                     >
-                        {constantsData.urls.terms}
+                        Terms
                     </Link>
                 </div>
             </div>

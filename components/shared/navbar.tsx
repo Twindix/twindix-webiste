@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 import logo from "@/app/assets/images/logo.webp";
 import { Button } from "@/atoms";
-import { constantsData, navbarItemsData, routeUrlsData } from "@/data";
+import { navbarItemsData, routeUrlsData } from "@/data";
 import { generateValidClassNameHandler } from "@/lib/utils";
 
 export const Navbar = () => {
@@ -89,16 +89,16 @@ export const Navbar = () => {
                     </nav>
                     <div className="hidden lg:flex items-center gap-3">
                         <Button
-                            ariaLabel={constantsData.urls.contact}
+                            ariaLabel="Contact"
                             variant="outlined"
                         >
-                            <Link href={routeUrlsData.contact}>{constantsData.urls.contact}</Link>
+                            <Link href={routeUrlsData.contact}>Contact</Link>
                         </Button>
                         <Button
-                            ariaLabel={constantsData.urls.login}
+                            ariaLabel="Login"
                             variant="contained"
                         >
-                            <Link href={routeUrlsData.login}>{constantsData.urls.login}</Link>
+                            <Link href={routeUrlsData.login}>Login</Link>
                         </Button>
                     </div>
                     <Button
@@ -152,18 +152,18 @@ export const Navbar = () => {
                         ))}
                         <div className="mt-2 flex items-center gap-3">
                             <Button
-                                ariaLabel={constantsData.urls.contact}
+                                ariaLabel="Contact"
                                 className="flex-1"
                                 variant="outlined"
                             >
-                                <Link href={routeUrlsData.contact}>{constantsData.urls.contact}</Link>
+                                <Link href={routeUrlsData.contact}>Contact</Link>
                             </Button>
                             <Button
-                                ariaLabel={constantsData.urls.login}
+                                ariaLabel="Login"
                                 className="flex-1"
                                 variant="contained"
                             >
-                                <Link href={routeUrlsData.login}>{constantsData.urls.login}</Link>
+                                <Link href={routeUrlsData.login}>Login</Link>
                             </Button>
                         </div>
                     </nav>

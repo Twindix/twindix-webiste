@@ -12,33 +12,26 @@ import winner from "@/app/assets/icons/winner.svg";
 import winners from "@/app/assets/icons/winners.svg";
 import logo from "@/app/assets/images/logo.webp";
 import { Button, Card } from "@/atoms";
-import { constantsData, routeUrlsData } from "@/data";
-import { generateGradientTextHandler, generateValidClassNameHandler } from "@/lib/utils";
+import { routeUrlsData } from "@/data";
+import { generateValidClassNameHandler } from "@/lib/utils";
 
 export const TwnindixRightChoice = () => (
     <section>
         <Card className="grid gap-3 lg:gap-6 grid-cols-1 lg:grid-cols-12 justify-between items-center">
             <div className="col-span-1 lg:col-span-7 flex flex-col gap-4 lg:gap-8">
                 <div>
-                    <h2 className="font-semibold text-3xl lg:text-5xl">
-                        {generateGradientTextHandler(
-                            constantsData.titles.twindixRightChoice,
-                            2,
-                        )}
-                    </h2>
-                    <p className="mt-2 lg:mt-4 font-medium text-sm lg:text-lg text-black/35">{constantsData.descriptions.twindixRightChoice}</p>
+                    <h2 className="font-semibold lg:text-5xl text-gradient1">TWINDIX the right choice for you?</h2>
+                    <p className="mt-2 lg:mt-4 font-medium text-sm lg:text-lg text-black/35">Whether you are an executive seeking deeper understanding, a founder looking to expand, or an ambitious leader wanting to build a more effective team—Twindex is here to accompany you on your journey. We believe that every leader has their own unique path to success… and Twindex is your trusted guide on this journey.</p>
                 </div>
                 <div className="flex flex-col gap-2 lg:gap-4">
-                    <p className="font-bold text-xl lg:text-3xl text-blue-700">{constantsData.descriptions.readyToExplore}</p>
+                    <p className="font-bold text-xl lg:text-3xl text-blue-700">Are you ready to explore your potential?</p>
                     <Button
-                        ariaLabel={constantsData.urls.getTheAssessment}
+                        ariaLabel="Get The Assessment"
                         className="w-full lg:w-1/2"
                         variant="outlined"
                         withArrowsIcon
                     >
-                        <Link href={routeUrlsData.getTheAssessment}>
-                            {constantsData.urls.getTheAssessment}
-                        </Link>
+                        <Link href={routeUrlsData.getTheAssessment}>Get The Assessment</Link>
                     </Button>
                 </div>
             </div>

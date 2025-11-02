@@ -5,7 +5,6 @@ import { Roboto } from "next/font/google";
 import { ReactNode } from "react";
 
 import { Footer, Navbar } from "@/components";
-import { constantsData } from "@/data";
 
 const robotoFont = Roboto({
     display: "swap",
@@ -15,8 +14,8 @@ const robotoFont = Roboto({
 });
 
 export const metadata: Metadata = {
-    description: constantsData.descriptions.metadata,
-    title: constantsData.labels.twindix,
+    description: "We evaluate leadership intelligence and unlock smarter decisions. At Twindix, we go beyond assessments. We are your strategic partner in building smarter organizations, aligned teams, and self-aware leaders. Using AI-powered behavioral analytics, we help you see the full picture—how your people think, lead, and perform—and offer a clear roadmap for meaningful development.",
+    title: "Twindix",
 };
 
 export default function RootLayout({ children } : Readonly<{ children: ReactNode }>) {

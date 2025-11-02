@@ -12,15 +12,15 @@ export const HomeHero = () => (
             <h1 className="text-primary font-extrabold leading-none tracking-[0.06em] text-4xl lg:text-6xl drop-shadow">
                 TWINDIX
             </h1>
-            <p className="bg-linear-to-r from-blue-900 to-blue-920 bg-clip-text text-transparent font-bold text-center text-6xl lg:text-8xl">
+            <div className="text-gradient2 font-bold text-center text-6xl lg:text-8xl">
                 Uncover the core
                 {" "}
                 <br />
                 {" "}
                 drivers
                 <p className="text-primary text-xl lg:text-3xl font-medium my-2 lg:my-4">of your leadership style—and see how you measure up against</p>
-                <p className="text-3xl lg:text-5xl from-blue-910 to-blue-800">World class executives</p>
-            </p>
+                <p className="text-3xl lg:text-5xl text-gradient3">World class executives</p>
+            </div>
             <Image
                 alt="curved_line"
                 src={curvedLine}
