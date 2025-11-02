@@ -39,9 +39,10 @@ export const HomeAssessment = () => (
                     </Link>
                 </Button>
             </div>
-            <div className="col-span-1 lg:col-span-5 m-auto">
+            <div className="col-span-1 lg:col-span-5 relative">
                 <Image
                     alt="assessments_docs"
+                    className="m-auto lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2"
                     height={354}
                     placeholder="blur"
                     src={assessmentsDocs3}
@@ -76,9 +77,10 @@ export const HomeAssessment = () => (
                     </Link>
                 </Button>
             </div>
-            <div className="col-span-1 lg:col-span-5 m-auto">
+            <div className="col-span-1 lg:col-span-5 relative">
                 <Image
                     alt="assessments_docs"
+                    className="m-auto lg:absolute lg:right-0 lg:top-1/2 lg:-translate-y-1/2"
                     height={286}
                     placeholder="blur"
                     src={assessmentsDocs4}

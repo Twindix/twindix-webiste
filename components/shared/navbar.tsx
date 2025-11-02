@@ -80,7 +80,7 @@ export const Navbar = () => {
                                 key={href}
                                 className={generateValidClassNameHandler(
                                     "text-sm transition text-black hover:text-foreground xl:text-lg font-medium",
-                                    isActive(href) && "text-foreground font-medium",
+                                    isActive(href) && "text-blue-700 font-medium",
                                 )}
                             >
                                 {label}
@@ -143,7 +143,7 @@ export const Navbar = () => {
                                 key={href}
                                 className={generateValidClassNameHandler(
                                     "text-xs transition text-black hover:text-foreground p-2 font-medium",
-                                    isActive(href) && "text-foreground font-medium",
+                                    isActive(href) && "text-blue-700 font-medium",
                                 )}
                                 onClick={() => setOpen(false)}
                             >

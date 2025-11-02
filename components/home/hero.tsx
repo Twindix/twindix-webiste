@@ -7,7 +7,7 @@ import assessmentsDocs2 from "@/app/assets/images/assessments_docs_2.webp";
 import { Hero } from "@/components";
 
 export const HomeHero = () => (
-    <Hero>
+    <Hero hasGlassBg>
         <div className="container text-center relative">
             <h1 className="text-primary font-extrabold leading-none tracking-[0.06em] text-4xl lg:text-6xl drop-shadow">
                 TWINDIX
