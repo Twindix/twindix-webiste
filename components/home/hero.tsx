@@ -12,7 +12,7 @@ export const HomeHero = () => (
             <h1 className="text-primary font-extrabold leading-none tracking-[0.06em] text-4xl lg:text-6xl drop-shadow">
                 TWINDIX
             </h1>
-            <h2 className="text-gradient2 font-bold text-center text-6xl lg:text-8xl">
+            <p className="text-gradient2 font-bold text-center text-6xl lg:text-8xl">
                 Uncover the core
                 {" "}
                 <br />
@@ -20,7 +20,7 @@ export const HomeHero = () => (
                 drivers
                 <span className="text-primary text-xl lg:text-3xl font-medium mt-2 lg:mt-4 block">of your leadership style—and see how you measure up against</span>
                 <span className="text-3xl lg:text-5xl text-gradient3 relative bottom-4">World class executives</span>
-            </h2>
+            </p>
             <Image
                 alt="curved_line"
                 src={curvedLine}

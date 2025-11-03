@@ -1,16 +1,17 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Roboto_Flex } from "next/font/google";
 import { ReactNode } from "react";
 
 import { Footer, Navbar } from "@/components";
 
-const robotoFont = Roboto({
+const robotoFont = Roboto_Flex({
+    axes: ["opsz"],
     display: "swap",
+    preload: true,
     subsets: ["latin"],
     variable: "--font-roboto",
-    weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -20,8 +21,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children } : Readonly<{ children: ReactNode }>) {
     return (
-        <html lang="en">
-            <body className={`min-h-screen flex flex-col bg-background text-foreground ${robotoFont.className} antialiased`}>
+        <html
+            className={`${robotoFont.variable} font-sans`}
+            lang="en"
+        >
+            <body
+                className={`min-h-screen flex flex-col bg-background text-foreground ${robotoFont.className} antialiased`}
+                suppressHydrationWarning
+            >
                 <Navbar />
                 <main className="flex-1">{children}</main>
                 <Footer />

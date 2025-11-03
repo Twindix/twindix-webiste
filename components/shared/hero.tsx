@@ -4,8 +4,10 @@ import { generateValidClassNameHandler } from "@/lib/utils";
 
 export const Hero = ({
     children,
+    className,
     hasGlassBg,
 } : {
+    className?: string,
     children: ReactNode,
     hasGlassBg?: boolean,
 }) => (
@@ -13,6 +15,7 @@ export const Hero = ({
         className={generateValidClassNameHandler(
             "relative min-h-[600px] lg:min-h-[848px]",
             hasGlassBg && "hero-glass",
+            className,
         )}
     >
         <div className=" flex flex-col items-center justify-center pt-25 lg:pt-40">
