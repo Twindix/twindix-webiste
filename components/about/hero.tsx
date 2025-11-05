@@ -4,17 +4,22 @@ import { Button } from "@/atoms";
 import { Hero } from "@/components";
 import { portalLink } from "@/data";
 
-export const WhatsTwindixHero = () => (
+export const AboutHero = () => (
     <Hero>
         <div className="container flex flex-col gap-4 lg:gap-8">
             <div className="grid place-items-center">
-                <h1 className="text-gradient3">What&apos;s Twindix ?</h1>
+                <h1 className="text-gradient3">About Us</h1>
                 <p>
-                    TWINDIX builds on
+                    <span className="text-blue-500">TWINDIX Empowers</span>
                     {" "}
-                    <span className="text-blue-500">Hugo Münsterberg’s</span>
+                    leaders through
                     {" "}
-                    legacy, blending Psychology with global management science to decode leadership.
+                    <span className="text-blue-500">Psychological</span>
+                    {" "}
+                    insight and Management science to unlock personal and team
+                    {" "}
+                    <span className="text-blue-500">potential</span>
+                    .
                 </p>
             </div>
             <Link

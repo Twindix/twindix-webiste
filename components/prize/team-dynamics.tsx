@@ -2,7 +2,7 @@ export const TeamDynamics = () => (
     <section className="pt-2 lg:pt-4 pb-5 lg:pb-10">
         <h2 className="text-gradient1">
             How Understanding Team Dynamics
-            <br />
+            <br className="hidden lg:block" />
             {" "}
             Through TWINDIX Transforms Leadership
         </h2>

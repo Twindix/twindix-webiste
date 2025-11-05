@@ -1,6 +1,7 @@
 import { expandedBenefitsData } from "./expanded-benefits";
 import { footerItemsData } from "./footer-items";
 import { howAssessmentWorksStepsData } from "./how-assessment-works-steps";
+import { keyComponentsData } from "./key-components";
 import { navbarItemsData } from "./navbar-itmes";
 import { researchDrivenConfidenceData } from "./research-driven-confidence";
 import { routeUrlsData } from "./route-urls";
@@ -13,6 +14,7 @@ export {
     expandedBenefitsData,
     footerItemsData,
     howAssessmentWorksStepsData,
+    keyComponentsData,
     navbarItemsData,
     portalLink,
     researchDrivenConfidenceData,

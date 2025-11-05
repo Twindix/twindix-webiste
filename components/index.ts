@@ -1,3 +1,6 @@
+import { AboutHero } from "./about/hero";
+import { AboutKeyComponents } from "./about/key-components";
+import { AboutMissionAndVision } from "./about/mission-and-vision";
 import { HomeAssessment } from "./home/assessment";
 import { HomeHero } from "./home/hero";
 import { HomeTwindixDifference } from "./home/twindix-difference";
@@ -15,10 +18,13 @@ import { Hero } from "./shared/hero";
 import { Navbar } from "./shared/navbar";
 import { Social } from "./shared/social";
 import { WhatsTwindixHero } from "./whats-twindix/hero";
-import { WhatsTwindixOriginsInspiration } from "./whats-twindix/origins-inspiration";
+import { WhatsTwindixOriginsAndInspiration } from "./whats-twindix/origins-and-inspiration";
 import { WhatsTwindixUnderstandingManagement } from "./whats-twindix/understanding-management";
 
 export {
+    AboutHero,
+    AboutKeyComponents,
+    AboutMissionAndVision,
     ContactUs,
     Footer,
     Hero,
@@ -36,6 +42,6 @@ export {
     Social,
     TeamDynamics,
     WhatsTwindixHero,
-    WhatsTwindixOriginsInspiration,
+    WhatsTwindixOriginsAndInspiration,
     WhatsTwindixUnderstandingManagement,
 };

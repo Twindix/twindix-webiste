@@ -5,7 +5,7 @@ import undrawIdeation from "@/app/assets/images/undraw_ideation.webp";
 import { Button } from "@/atoms";
 import { portalLink } from "@/data";
 
-export const WhatsTwindixOriginsInspiration = () => (
+export const WhatsTwindixOriginsAndInspiration = () => (
     <section className="pb-10 lg:pb-10 pt-10 lg:pt-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6">
             <div className="col-span-1 lg:col-span-6 flex flex-col gap-4 lg:gap-8">
