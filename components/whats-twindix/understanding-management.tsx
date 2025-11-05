@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-import { howAssessmentWorksStepsData } from "@/data";
+import { understandingManagementData } from "@/data";
 
-export const HowAssessmentWorksSteps = () => (
-    <section className="pb-10 lg:pb-20 pt-[90px] lg:pt-[180px]">
+export const WhatsTwindixUnderstandingManagement = () => (
+    <section className="pb-10 lg:pb-20 pt-5 lg:pt-10">
         <div className="flex flex-col gap-[60px] lg:gap-[120px]">
-            {howAssessmentWorksStepsData.map(({
+            {understandingManagementData.map(({
                 img,
                 imgAlt,
                 imgHeight,
@@ -18,11 +18,6 @@ export const HowAssessmentWorksSteps = () => (
                     key={index} // eslint-disable-line
                 >
                     <div className={`col-span-1 lg:col-span-6 flex flex-col ${index % 2 === 0 ? "lg:order-1" : "lg:order-2"}`}>
-                        <span className="text-foreground font-semibold text-sm lg:text-lg">
-                            Step
-                            {" "}
-                            {index + 1}
-                        </span>
                         <h2 className="text-gradient1">{title}</h2>
                         <p>{text}</p>
                     </div>

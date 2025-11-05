@@ -35,7 +35,7 @@ export const howAssessmentWorksStepsData = [
         imgAlt: "read_chart",
         imgHeight: 423,
         imgWidth: 532,
-        text: "Once completed, TWINDIX generates a personalized report that breaks down your strengths, areas for growth, and the unique combination of your key indicators. This report provides an in-depth analysis of your management style and how it impacts team dynamics.",
+        text: "The report includes visual charts and comprehensive explanations, making it easy to understand your leadership profile. Each indicator is broken down to show how it affects your decision-making, communication, and management approach. TWINDIX offers actionable insights on how to improve in each area and leverage your strengths for better leadership.",
         title: "Interpret Your Results",
     },
     {

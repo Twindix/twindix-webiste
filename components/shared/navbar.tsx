@@ -109,7 +109,10 @@ export const Navbar = () => {
                             ariaLabel="Contact"
                             variant="outlined"
                             isMini
-                            onClick={() => scrollToHomeTargetHandler("contact_us")}
+                            onClick={() => scrollToHomeTargetHandler(
+                                "contact_us",
+                                router,
+                            )}
                         >
                             Contact
                         </Button>
@@ -198,7 +201,10 @@ export const Navbar = () => {
                                 className="flex-1"
                                 variant="outlined"
                                 isMini
-                                onClick={() => scrollToHomeTargetHandler("contact_us")}
+                                onClick={() => scrollToHomeTargetHandler(
+                                    "contact_us",
+                                    router,
+                                )}
                             >
                                 Contact
                             </Button>

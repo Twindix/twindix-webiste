@@ -8,7 +8,7 @@ import { Hero } from "@/components";
 
 export const HomeHero = () => (
     <Hero hasGlassBg>
-        <div className="container text-center relative">
+        <div className="container grid place-items-center relative">
             <h1 className="text-primary">TWINDIX</h1>
             <p className="text-gradient2 font-bold! text-6xl! lg:text-8xl!">
                 Uncover the core

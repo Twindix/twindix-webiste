@@ -21,6 +21,7 @@ export const PrizeHero = () => (
         <Image
             alt="business"
             src={business}
+            priority
         />
     </Hero>
 );

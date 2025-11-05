@@ -15,6 +15,8 @@ import { Hero } from "./shared/hero";
 import { Navbar } from "./shared/navbar";
 import { Social } from "./shared/social";
 import { WhatsTwindixHero } from "./whats-twindix/hero";
+import { WhatsTwindixOriginsInspiration } from "./whats-twindix/origins-inspiration";
+import { WhatsTwindixUnderstandingManagement } from "./whats-twindix/understanding-management";
 
 export {
     ContactUs,
@@ -34,4 +36,6 @@ export {
     Social,
     TeamDynamics,
     WhatsTwindixHero,
+    WhatsTwindixOriginsInspiration,
+    WhatsTwindixUnderstandingManagement,
 };
