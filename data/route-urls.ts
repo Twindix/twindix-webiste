@@ -1,16 +1,8 @@
 export const routeUrlsData = {
     about: "/about",
-    assessment: "/assessment",
-    contact: "/contact",
-    getTheAssessment: "/get-the-assessment",
     home: "/",
     howAssessmentWorks: "/how-assessment-works",
-    jobBarAssessments: "/job-bar-assessments",
-    login: "/login",
-    privacy: "/privacy",
     prize: "/prize",
     representativesAndFranchises: "/representatives-and-franchises",
-    terms: "/terms",
-    twindixExecutives: "/twindix-executives",
     whatsTwindix: "/whats-twindix",
 };

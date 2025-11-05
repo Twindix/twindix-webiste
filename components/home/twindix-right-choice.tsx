@@ -12,31 +12,36 @@ import winner from "@/app/assets/icons/winner.svg";
 import winners from "@/app/assets/icons/winners.svg";
 import logo from "@/app/assets/images/logo.webp";
 import { Button, Card } from "@/atoms";
-import { routeUrlsData } from "@/data";
+import { portalLink } from "@/data";
 import { generateValidClassNameHandler } from "@/lib/utils";
 
-export const HomeTwnindixRightChoice = () => (
-    <section>
+export const HomeTwindixRightChoice = () => (
+    <section className="py-5 lg:py-10">
         <Card className="grid gap-3 lg:gap-6 grid-cols-1 lg:grid-cols-12 justify-between items-center">
             <div className="col-span-1 lg:col-span-7 flex flex-col gap-4 lg:gap-8">
                 <div>
-                    <h2 className="font-semibold text-3xl lg:text-5xl text-gradient1">TWINDIX the right choice for you?</h2>
-                    <p className="mt-2 lg:mt-4 font-medium text-sm lg:text-lg text-black/35">Whether you are an executive seeking deeper understanding, a founder looking to expand, or an ambitious leader wanting to build a more effective team—Twindex is here to accompany you on your journey. We believe that every leader has their own unique path to success… and Twindex is your trusted guide on this journey.</p>
+                    <h2 className="text-gradient1">TWINDIX the right choice for you?</h2>
+                    <p>Whether you are an executive seeking deeper understanding, a founder looking to expand, or an ambitious leader wanting to build a more effective team—Twindex is here to accompany you on your journey. We believe that every leader has their own unique path to success… and Twindex is your trusted guide on this journey.</p>
                 </div>
                 <div className="flex flex-col gap-2 lg:gap-4">
-                    <p className="font-bold text-xl lg:text-3xl text-blue-700">Are you ready to explore your potential?</p>
-                    <Button
-                        ariaLabel="Get The Assessment"
-                        className="w-full lg:w-1/2"
-                        variant="outlined"
-                        withArrowsIcon
+                    <h4>Are you ready to explore your potential?</h4>
+                    <Link
+                        href={portalLink}
+                        rel="noopener noreferrer"
+                        target="_blank"
                     >
-                        <Link href={routeUrlsData.getTheAssessment}>Get The Assessment</Link>
-                    </Button>
+                        <Button
+                            ariaLabel="Get The Assessment"
+                            variant="outlined"
+                            withArrowsIcon
+                        >
+                            Get The Assessment
+                        </Button>
+                    </Link>
                 </div>
             </div>
-            <div className="col-span-1 lg:col-span-5 mt-4 lg:mt-0">
-                <div className="relative aspect-[1.5]">
+            <div className="col-span-1 lg:col-span-5 block md:grid place-items-center lg:block">
+                <div className="relative aspect-[1.5] h-60 md:h-80 lg:h-initial">
                     <div className="absolute top-1/2 left-1/2 xl:left-2/3 -translate-x-1/2 -translate-y-1/2">
                         <Image
                             alt="logo"

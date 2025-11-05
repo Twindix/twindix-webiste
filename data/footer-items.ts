@@ -26,12 +26,12 @@ export const footerItemsData = {
         title: "Assessments",
         urls: [
             {
-                href: routeUrlsData.twindixExecutives,
                 label: "Twindix Executives",
+                targetId: "executives_assessment",
             },
             {
-                href: routeUrlsData.jobBarAssessments,
                 label: "Job Bar Assessments",
+                targetId: "job_bar_assessment",
             },
         ],
     },
@@ -39,8 +39,9 @@ export const footerItemsData = {
         title: "Do It Now",
         urls: [
             {
-                href: routeUrlsData.getTheAssessment,
+                isExternal: true,
                 label: "Get The Assessment",
+                targetId: "https://assessment.twindix.com",
             },
         ],
     },

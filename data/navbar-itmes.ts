@@ -6,6 +6,10 @@ export const navbarItemsData = [
         label: "About Us",
     },
     {
+        label: "Assessment",
+        targetId: "assessment",
+    },
+    {
         href: routeUrlsData.prize,
         label: "The Prize",
     },

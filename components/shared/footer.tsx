@@ -1,114 +1,113 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 import footerLogo from "@/app/assets/images/footer-logo.webp";
+import { Button } from "@/atoms";
 import { Social } from "@/components";
-import { footerItemsData, routeUrlsData } from "@/data";
+import { footerItemsData } from "@/data";
+import { scrollToHomeTargetHandler } from "@/lib/utils";
 
-export const Footer = () => (
-    <footer className="bg-blue-50">
-        <div className="mx-auto container py-5 lg:py-10">
-            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-                <div className="flex flex-col gap-2 lg:gap-4">
-                    <Image
-                        alt="footer_logo"
-                        className="w-[150px] h-10"
-                        placeholder="blur"
-                        src={footerLogo}
-                    />
-                    <Social />
-                </div>
-                <div>
-                    <h3 className="text-base lg:text-xl font-semibold text-foreground">{footerItemsData.col1.title}</h3>
-                    <ul className="mt-3 space-y-2">
-                        {footerItemsData.col1.urls.map(({
-                            href,
-                            label,
-                        }) => (
-                            <li
-                                className="font-medium text-xs lg:text-sm"
-                                key={href}
-                            >
-                                <Link
-                                    aria-label={label}
-                                    className="hover:underline text-blue-600"
-                                    href={href}
+export const Footer = () => {
+    const router = useRouter();
+
+    return (
+        <footer className="bg-blue-50">
+            <div className="mx-auto container">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 py-5 lg:py-10">
+                    <div className="flex flex-col gap-2 lg:gap-4">
+                        <Image
+                            alt="footer_logo"
+                            className="w-[150px] h-10"
+                            placeholder="blur"
+                            src={footerLogo}
+                        />
+                        <Social />
+                    </div>
+                    <div>
+                        <h5>{footerItemsData.col1.title}</h5>
+                        <ul className="mt-2 lg:mt-4 flex flex-col gap-2">
+                            {footerItemsData.col1.urls.map(({
+                                href,
+                                label,
+                            }, index) => (
+                                <li
+                                    className="font-medium text-xs lg:text-sm"
+                                    key={index} // eslint-disable-line
                                 >
-                                    {label}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-                <div>
-                    <h3 className="text-base lg:text-xl font-semibold text-foreground">{footerItemsData.col2.title}</h3>
-                    <ul className="mt-3 space-y-2">
-                        {footerItemsData.col2.urls.map(({
-                            href,
-                            label,
-                        }) => (
-                            <li
-                                className="font-medium text-xs lg:text-sm"
-                                key={href}
-                            >
-                                <Link
-                                    aria-label={label}
-                                    className="hover:underline text-blue-600"
-                                    href={href}
+                                    <Link
+                                        aria-label={label}
+                                        className="hover:underline text-blue-600"
+                                        href={href}
+                                    >
+                                        {label}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>{footerItemsData.col2.title}</h5>
+                        <ul className="mt-2 lg:mt-4 flex flex-col gap-2">
+                            {footerItemsData.col2.urls.map(({
+                                label,
+                                targetId,
+                            }, index) => (
+                                <li key={index}> {/* eslint-disable-line */}
+                                    <Button
+                                        ariaLabel={label}
+                                        variant="link"
+                                        isMini
+                                        onClick={() => scrollToHomeTargetHandler(
+                                            targetId,
+                                            router,
+                                        )}
+                                    >
+                                        {label}
+                                    </Button>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>{footerItemsData.col3.title}</h5>
+                        <ul className="mt-2 lg:mt-4 flex flex-col gap-2">
+                            {footerItemsData.col3.urls.map(({
+                                isExternal,
+                                label,
+                                targetId,
+                            }, index) => (
+                                <li
+                                    className="font-medium text-xs lg:text-sm"
+                                    key={index} // eslint-disable-line
                                 >
-                                    {label}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
+                                    {isExternal && (
+                                        <Link
+                                            aria-label={label}
+                                            className="hover:underline text-blue-600"
+                                            href={targetId}
+                                            rel="noopener noreferrer"
+                                            target="_blank"
+                                        >
+                                            {label}
+                                        </Link>
+                                    )}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h3 className="text-base lg:text-xl font-semibold text-foreground">{footerItemsData.col3.title}</h3>
-                    <ul className="mt-3 space-y-2">
-                        {footerItemsData.col3.urls.map(({
-                            href,
-                            label,
-                        }) => (
-                            <li
-                                className="font-medium text-xs lg:text-sm"
-                                key={href}
-                            >
-                                <Link
-                                    aria-label={label}
-                                    className="hover:underline text-blue-600"
-                                    href={href}
-                                >
-                                    {label}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
+                <div className="grid place-items-center border-t border-gray-600 py-3 lg:py-6">
+                    <span className="text-xs lg:text-sm text-gray-600">
+                        ©
+                        {new Date().getFullYear()}
+                        {" "}
+                        Twindix. All rights reserved.
+                    </span>
                 </div>
             </div>
-            <div className="mt-5 lg:mt-10 flex flex-col-reverse items-center justify-between gap-4 border-t border-gray-600 pt-3 lg:pt-6 sm:flex-row">
-                <p className="text-xs lg:text-sm text-gray-600">
-                    ©
-                    {new Date().getFullYear()}
-                    {" "}
-                    Twindix. All rights reserved.
-                </p>
-                <div className="flex items-center gap-4 text-xs lg:text-sm">
-                    <Link
-                        aria-label="Privacy"
-                        className="text-gray-600 hover:text-blue-600"
-                        href={routeUrlsData.privacy}
-                    >
-                        Privacy
-                    </Link>
-                    <Link
-                        aria-label="Terms"
-                        className="text-gray-600 hover:text-blue-600"
-                        href={routeUrlsData.terms}
-                    >
-                        Terms
-                    </Link>
-                </div>
-            </div>
-        </div>
-    </footer>
-);
+        </footer>
+    );
+};

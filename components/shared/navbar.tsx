@@ -2,18 +2,20 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import logo from "@/app/assets/images/logo.webp";
 import { Button } from "@/atoms";
-import { navbarItemsData, routeUrlsData } from "@/data";
-import { generateValidClassNameHandler } from "@/lib/utils";
+import { navbarItemsData, portalLink, routeUrlsData } from "@/data";
+import { generateValidClassNameHandler, scrollToHomeTargetHandler } from "@/lib/utils";
 
 export const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     const [isFixed, setIsFixed] = useState(true);
+
+    const router = useRouter();
 
     const pathname = usePathname();
 
@@ -71,40 +73,65 @@ export const Navbar = () => {
                     </Link>
                     <nav className="hidden lg:flex items-center gap-8">
                         {navbarItemsData.map(({
-                            href,
+                            href = "/",
                             label,
-                        }) => (
+                            targetId,
+                        }, index) => (targetId ? (
+                            <Button
+                                ariaLabel={label}
+                                className="text-black! hover:no-underline hover:text-foreground!"
+                                variant="link"
+                                key={index} // eslint-disable-line
+                                isMini
+                                onClick={() => scrollToHomeTargetHandler(
+                                    targetId,
+                                    router,
+                                )}
+                            >
+                                {label}
+                            </Button>
+                        ) : (
                             <Link
                                 aria-label={label}
                                 href={href}
-                                key={href}
+                                key={index} // eslint-disable-line
                                 className={generateValidClassNameHandler(
-                                    "text-sm transition text-black hover:text-foreground xl:text-lg font-medium",
+                                    "text-sm text-black hover:text-foreground font-medium transition",
                                     isActive(href) && "text-blue-700 font-medium",
                                 )}
                             >
                                 {label}
                             </Link>
-                        ))}
+                        )))}
                     </nav>
                     <div className="hidden lg:flex items-center gap-3">
                         <Button
                             ariaLabel="Contact"
                             variant="outlined"
+                            isMini
+                            onClick={() => scrollToHomeTargetHandler("contact_us")}
                         >
-                            <Link href={routeUrlsData.contact}>Contact</Link>
+                            Contact
                         </Button>
-                        <Button
-                            ariaLabel="Login"
-                            variant="contained"
+                        <Link
+                            href={portalLink}
+                            rel="noopener noreferrer"
+                            target="_blank"
                         >
-                            <Link href={routeUrlsData.login}>Login</Link>
-                        </Button>
+                            <Button
+                                ariaLabel="Login"
+                                variant="contained"
+                                isMini
+                            >
+                                Login
+                            </Button>
+                        </Link>
                     </div>
                     <Button
                         ariaLabel="Burger Menu"
                         className="lg:hidden"
                         variant="outlined"
+                        isMini
                         onClick={() => setOpen((prevOpen) => !prevOpen)}
                     >
                         <svg
@@ -132,17 +159,32 @@ export const Navbar = () => {
                     </Button>
                 </div>
                 <div className={`lg:hidden transition-[max-height] duration-200 overflow-hidden ${open ? "max-h-fit top-2 shadow-2xl nav-glass px-4 rounded-2xl relative" : "max-h-0"} `}>
-                    <nav className="py-3 flex flex-col gap-2">
-                        {navbarItemsData.map(({
-                            href,
+                    <nav className="py-3 flex flex-col gap-4">
+                        {navbarItemsData.map(({ // eslint-disable-line
+                            href = "/",
                             label,
-                        }) => (
+                            targetId,
+                        }, index) => targetId ? (
+                            <Button
+                                ariaLabel={label}
+                                className="text-black! hover:no-underline"
+                                variant="link"
+                                key={index} // eslint-disable-line
+                                isMini
+                                onClick={() => scrollToHomeTargetHandler(
+                                    targetId,
+                                    router,
+                                )}
+                            >
+                                {label}
+                            </Button>
+                        ) : (
                             <Link
                                 aria-label={label}
                                 href={href}
-                                key={href}
+                                key={index} // eslint-disable-line
                                 className={generateValidClassNameHandler(
-                                    "text-xs transition text-black hover:text-foreground p-2 font-medium",
+                                    "text-xs text-black hover:text-foreground font-medium transition",
                                     isActive(href) && "text-blue-700 font-medium",
                                 )}
                                 onClick={() => setOpen(false)}
@@ -150,21 +192,31 @@ export const Navbar = () => {
                                 {label}
                             </Link>
                         ))}
-                        <div className="mt-2 flex items-center gap-3">
+                        <div className="mt-2 flex items-center gap-2">
                             <Button
                                 ariaLabel="Contact"
                                 className="flex-1"
                                 variant="outlined"
+                                isMini
+                                onClick={() => scrollToHomeTargetHandler("contact_us")}
                             >
-                                <Link href={routeUrlsData.contact}>Contact</Link>
+                                Contact
                             </Button>
-                            <Button
-                                ariaLabel="Login"
+                            <Link
                                 className="flex-1"
-                                variant="contained"
+                                href={portalLink}
+                                rel="noopener noreferrer"
+                                target="_blank"
                             >
-                                <Link href={routeUrlsData.login}>Login</Link>
-                            </Button>
+                                <Button
+                                    ariaLabel="Login"
+                                    className="w-full"
+                                    variant="contained"
+                                    isMini
+                                >
+                                    Login
+                                </Button>
+                            </Link>
                         </div>
                     </nav>
                 </div>

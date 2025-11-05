@@ -12,7 +12,7 @@ export default function HowAssessmentWorks() {
                 src={snackLine}
             />
             <HowAssessmentWorksHero />
-            <div className="container m-auto pt-[43px] lg:pt-[86px] pb-[70px] lg:pb-[140px]">
+            <div className="container m-auto relative">
                 <HowAssessmentWorksSteps />
             </div>
         </div>

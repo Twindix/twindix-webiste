@@ -3,7 +3,7 @@ import Image from "next/image";
 import { howAssessmentWorksStepsData } from "@/data";
 
 export const HowAssessmentWorksSteps = () => (
-    <section>
+    <section className="pb-[70px] lg:pb-[140px] pt-[90px] lg:pt-[180px]">
         <div className="flex flex-col gap-[60px] lg:gap-[120px]">
             {howAssessmentWorksStepsData.map(({
                 img,
@@ -23,8 +23,8 @@ export const HowAssessmentWorksSteps = () => (
                             {" "}
                             {index + 1}
                         </span>
-                        <h3 className="font-bold text-3xl lg:text-5xl text-gradient1">{title}</h3>
-                        <p className="mt-1.5 lg:mt-2.5 text-base lg:text-xl text-black/50">{text}</p>
+                        <h3 className="text-gradient1">{title}</h3>
+                        <p>{text}</p>
                     </div>
                     <div className={`col-span1 lg:col-span-6 flex ${index % 2 === 0 ? "lg:order-2 lg:justify-end" : "lg:order-1"}`}>
                         <Image
