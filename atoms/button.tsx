@@ -8,6 +8,7 @@ export const Button = ({
     ariaLabel,
     children,
     className,
+    disabled,
     isMini,
     onClick,
     type,
@@ -21,10 +22,12 @@ export const Button = ({
     onClick?: () => void,
     children: ReactNode,
     isMini?: boolean,
+    disabled?: boolean,
     variant: "contained" | "outlined" | "link",
 }) => (
     <button
         aria-label={ariaLabel || ""}
+        disabled={disabled}
         type={type || "button"}
         className={generateValidClassNameHandler(
             "rounded-full border px-2 lg:px-4 xl:px-8 text-xs lg:text-sm font-semibold cursor-pointer relative flex justify-center items-center w-fit transition",
@@ -32,6 +35,7 @@ export const Button = ({
             variant === "outlined" && "border-blue-700 text-blue-700 hover:bg-blue-50",
             variant === "link" && "hover:underline text-blue-600 border-0 font-medium px-0! h-fit!",
             isMini ? "h-[34px]" : "h-[52px] min-w-full lg:min-w-[400px]",
+            disabled && "cursor-not-allowed opacity-50",
             className,
         )}
         onClick={onClick}

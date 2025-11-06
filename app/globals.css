@@ -96,6 +96,7 @@ h2 {
     font-weight: 600;
     font-size: 30px;
     width: fit-content;
+    line-height: 1.12;
 }
 
 @media (min-width: 1024px) {
@@ -106,6 +107,7 @@ h3 {
     font-weight: 600;
     font-size: 20px;
     width: fit-content;
+    line-height: 1.12;
 }
 
 @media (min-width: 1024px) {

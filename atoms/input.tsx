@@ -1,11 +1,12 @@
 import React from "react";
 
 export const Input: React.FC<{
-    label: string;
-    name: string;
-    placeholder?: string;
-    required?: boolean;
-    type?: React.HTMLInputTypeAttribute;
+    label: string,
+    name: string,
+    placeholder?: string,
+    rows?: number,
+    required?: boolean,
+    type?: React.HTMLInputTypeAttribute,
     as?: "input" | "textarea";
 }> = ({
     as = "input",
@@ -13,6 +14,7 @@ export const Input: React.FC<{
     name,
     placeholder,
     required,
+    rows,
     type = "text",
 }) => (
     <label className="flex flex-col gap-2 text-sm lg:text-base text-black/80">
@@ -27,6 +29,7 @@ export const Input: React.FC<{
                 name={name}
                 placeholder={placeholder}
                 required={required}
+                rows={rows}
             />
         ) : (
             <input

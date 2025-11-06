@@ -9,6 +9,7 @@ import { understandingManagementData } from "./understanding-management";
 import { whyTwindixAssessmentsData } from "./why-twindix-assessments";
 
 const portalLink = "https://assessment.twindix.com";
+const portalBaseUrl = "https://api.twindix.com";
 
 export {
     expandedBenefitsData,
@@ -16,6 +17,7 @@ export {
     howAssessmentWorksStepsData,
     keyComponentsData,
     navbarItemsData,
+    portalBaseUrl,
     portalLink,
     researchDrivenConfidenceData,
     routeUrlsData,
