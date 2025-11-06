@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 import rightArrow from "@/app/assets/icons/right_arrow.svg";
 import assessmentsDocs3 from "@/app/assets/images/assessments_docs_3.webp";

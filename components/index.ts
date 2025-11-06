@@ -12,6 +12,7 @@ import { PrizeExpandedBenefits } from "./prize/expanded-benefits";
 import { PrizeHero } from "./prize/hero";
 import { PrizeResearchDrivenConfidence } from "./prize/research-driven-confidence";
 import { TeamDynamics } from "./prize/team-dynamics";
+import { RepresentativesAndFranchisesCard } from "./representatives-and-franchises/card";
 import { ContactUs } from "./shared/contact-us";
 import { Footer } from "./shared/footer";
 import { Hero } from "./shared/hero";
@@ -39,6 +40,7 @@ export {
     PrizeExpandedBenefits,
     PrizeHero,
     PrizeResearchDrivenConfidence,
+    RepresentativesAndFranchisesCard,
     Social,
     TeamDynamics,
     WhatsTwindixHero,
