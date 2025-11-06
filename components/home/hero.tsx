@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 import curvedLine from "@/app/assets/icons/curved_line.svg";
@@ -8,22 +11,61 @@ import { Hero } from "@/components";
 
 export const HomeHero = () => (
     <Hero hasGlassBg>
-        <div className="container grid place-items-center relative">
-            <h1 className="text-primary">TWINDIX</h1>
-            <p className="text-gradient2 font-bold! text-6xl! lg:text-8xl!">
-                Uncover the core
-                {" "}
-                <br className="hidden lg:block" />
-                {" "}
-                drivers
-                <span className="text-primary text-xl xl:text-3xl font-medium mt-2 lg:mt-4 block">of your leadership style—and see how you measure up against</span>
-                <span className="text-3xl xl:text-5xl text-gradient3 relative bottom-4 lg:bottom-8 xl:bottom-4">World class executives</span>
-            </p>
-            <Image
-                alt="curved_line"
-                src={curvedLine}
-            />
-            <div className="flex justify-between mt-6 mb-16 lg:m-0">
+        <div className="container relative">
+            <motion.div
+                className="grid place-items-center"
+                animate={{
+                    opacity: 1,
+                    y: 0,
+                }}
+                initial={{
+                    opacity: 0,
+                    y: -20,
+                }}
+                transition={{
+                    duration: 0.8,
+                    ease: "easeOut",
+                }}
+            >
+                <h1 className="text-primary">TWINDIX</h1>
+                <p className="text-gradient2 font-bold! text-6xl! lg:text-8xl!">
+                    Uncover the core
+                    {" "}
+                    <br className="hidden lg:block" />
+                    {" "}
+                    drivers
+                    <span className="text-primary text-xl xl:text-3xl font-medium mt-2 lg:mt-4 block">of your leadership style—and see how you measure up against</span>
+                    <span className="text-3xl xl:text-5xl text-gradient3 relative bottom-4 lg:bottom-8 xl:bottom-4">World class executives</span>
+                </p>
+            </motion.div>
+            <motion.div
+                animate={{
+                    opacity: 1,
+                    y: 0,
+                }}
+                initial={{
+                    opacity: 0,
+                    y: 20,
+                }}
+                transition={{
+                    duration: 0.8,
+                    ease: "easeOut",
+                }}
+            >
+                <Image
+                    alt="curved_line"
+                    src={curvedLine}
+                />
+            </motion.div>
+            <motion.div
+                animate={{ opacity: 1 }}
+                className="flex justify-between mt-6 mb-16 lg:m-0"
+                initial={{ opacity: 0 }}
+                transition={{
+                    duration: 0.5,
+                    ease: "easeOut",
+                }}
+            >
                 <Image
                     alt="assessments_docs"
                     className="lg:absolute left-0 top-[45%]"
@@ -38,11 +80,11 @@ export const HomeHero = () => (
                     src={assessmentsDocs2}
                     width={180}
                 />
-            </div>
+            </motion.div>
             <div>
                 <Image
                     alt="star"
-                    className="absolute right-0.5 top-0.5"
+                    className="absolute right-0.8 top-0.8"
                     src={star}
                 />
                 <Image
@@ -52,7 +94,7 @@ export const HomeHero = () => (
                 />
                 <Image
                     alt="star"
-                    className="absolute right-[30%] top-0.5"
+                    className="absolute right-[30%] top-0.8"
                     src={star}
                 />
                 <Image

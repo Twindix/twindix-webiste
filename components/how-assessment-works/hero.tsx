@@ -1,8 +1,26 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 import { Hero } from "@/components";
 
 export const HowAssessmentWorksHero = () => (
     <Hero>
-        <div className="container">
+        <motion.div
+            className="container"
+            animate={{
+                opacity: 1,
+                y: 0,
+            }}
+            initial={{
+                opacity: 0,
+                y: -20,
+            }}
+            transition={{
+                duration: 0.8,
+                ease: "easeOut",
+            }}
+        >
             <div className="grid place-items-center">
                 <h1 className="text-gradient3">How Assessment Works</h1>
                 <p>
@@ -14,6 +32,6 @@ export const HowAssessmentWorksHero = () => (
                     Guide to taking the assessment
                 </p>
             </div>
-        </div>
+        </motion.div>
     </Hero>
 );

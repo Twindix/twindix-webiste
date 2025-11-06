@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 
 import { Button, Card, Input } from "@/atoms";
@@ -79,70 +80,85 @@ export const ContactUs = () => {
     };
 
     return (
-        <Card className="grid gap-6 grid-cols-1 lg:grid-cols-12 justify-between items-center">
-            <div
-                className="col-span-1 lg:col-span-7 flex flex-col gap-4 lg:gap-8"
-                id="contact_us"
-            >
-                <div>
-                    <h2 className="text-gradient1">Contact Us</h2>
-                    <p>We are here to help you! Contact us through any of the following methods.</p>
-                </div>
-                <form
-                    className="flex flex-col gap-2 lg:gap-4 lg:w-3/4"
-                    noValidate
-                    onSubmit={submitFormHandler}
+        <motion.div
+            initial={{
+                opacity: 0,
+                y: 20,
+            }}
+            transition={{
+                duration: 0.8,
+                ease: "easeOut",
+            }}
+            whileInView={{
+                opacity: 1,
+                y: 0,
+            }}
+        >
+            <Card className="grid gap-6 grid-cols-1 lg:grid-cols-12 justify-between items-center">
+                <div
+                    className="col-span-1 lg:col-span-7 flex flex-col gap-4 lg:gap-8"
+                    id="contact_us"
                 >
-                    <Input
-                        label="Name"
-                        name="name"
-                        placeholder="Write your name here"
-                        required
-                    />
-                    <Input
-                        label="E-mail"
-                        name="email"
-                        placeholder="example@gmail.com"
-                        type="email"
-                        required
-                    />
-                    <Input
-                        as="textarea"
-                        label="Message"
-                        name="message"
-                        placeholder="Write your message here"
-                        rows={5}
-                        required
-                    />
-                    <Button
-                        aria-busy={isLoading}
-                        className="w-full"
-                        disabled={isLoading}
-                        type="submit"
-                        variant="contained"
+                    <div>
+                        <h2 className="text-gradient1">Contact Us</h2>
+                        <p>We are here to help you! Contact us through any of the following methods.</p>
+                    </div>
+                    <form
+                        className="flex flex-col gap-2 lg:gap-4 lg:w-3/4"
+                        noValidate
+                        onSubmit={submitFormHandler}
                     >
-                        {isLoading ? "Sending…" : "Submit"}
-                    </Button>
-                    {status !== "idle" && message && (
-                        <div
-                            role="status"
-                            className={generateValidClassNameHandler(
-                                "rounded-lg border p-2 text-sm",
-                                status === "success" ? "border-green-200 bg-green-50 text-green-800" : "border-red-200 bg-red-50 text-red-800",
-                            )}
+                        <Input
+                            label="Name"
+                            name="name"
+                            placeholder="Write your name here"
+                            required
+                        />
+                        <Input
+                            label="E-mail"
+                            name="email"
+                            placeholder="example@gmail.com"
+                            type="email"
+                            required
+                        />
+                        <Input
+                            as="textarea"
+                            label="Message"
+                            name="message"
+                            placeholder="Write your message here"
+                            rows={5}
+                            required
+                        />
+                        <Button
+                            aria-busy={isLoading}
+                            className="w-full"
+                            disabled={isLoading}
+                            type="submit"
+                            variant="contained"
                         >
-                            {message}
-                        </div>
-                    )}
-                </form>
-            </div>
-            <div className="col-span-1 lg:col-span-5 lg:m-auto flex flex-col gap-4 lg:gap-8">
-                <div>
-                    <h3 className="text-gradient1">Follow Us on Social Media</h3>
-                    <p>Stay updated with the latest insights and resources by connecting with us on social media.</p>
+                            {isLoading ? "Sending…" : "Submit"}
+                        </Button>
+                        {status !== "idle" && message && (
+                            <div
+                                role="status"
+                                className={generateValidClassNameHandler(
+                                    "rounded-lg border p-2 text-sm",
+                                    status === "success" ? "border-green-200 bg-green-50 text-green-800" : "border-red-200 bg-red-50 text-red-800",
+                                )}
+                            >
+                                {message}
+                            </div>
+                        )}
+                    </form>
                 </div>
-                <Social />
-            </div>
-        </Card>
+                <div className="col-span-1 lg:col-span-5 lg:m-auto flex flex-col gap-4 lg:gap-8">
+                    <div>
+                        <h3 className="text-gradient1">Follow Us on Social Media</h3>
+                        <p>Stay updated with the latest insights and resources by connecting with us on social media.</p>
+                    </div>
+                    <Social />
+                </div>
+            </Card>
+        </motion.div>
     );
 };

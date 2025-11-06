@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,7 +11,21 @@ import { portalUrl } from "@/data";
 export const WhatsTwindixOriginsAndInspiration = () => (
     <section className="pb-10 lg:pb-10 pt-10 lg:pt-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6">
-            <div className="col-span-1 lg:col-span-6 flex flex-col gap-4 lg:gap-8">
+            <motion.div
+                className="col-span-1 lg:col-span-6 flex flex-col gap-4 lg:gap-8"
+                animate={{
+                    opacity: 1,
+                    x: 0,
+                }}
+                initial={{
+                    opacity: 0,
+                    x: -20,
+                }}
+                transition={{
+                    duration: 0.8,
+                    ease: "easeOut",
+                }}
+            >
                 <div>
                     <h2 className="text-gradient1">Origins and Inspiration</h2>
                     <p>
@@ -58,8 +75,22 @@ export const WhatsTwindixOriginsAndInspiration = () => (
                         Get Started with Twindix
                     </Button>
                 </Link>
-            </div>
-            <div className="col-span1 lg:col-span-6 flex lg:justify-end">
+            </motion.div>
+            <motion.div
+                className="col-span1 lg:col-span-6 flex lg:justify-end"
+                animate={{
+                    opacity: 1,
+                    x: 0,
+                }}
+                initial={{
+                    opacity: 0,
+                    x: 20,
+                }}
+                transition={{
+                    duration: 0.8,
+                    ease: "easeOut",
+                }}
+            >
                 <Image
                     alt="undraw-ideation"
                     className="lg:h-[487px]"
@@ -69,7 +100,7 @@ export const WhatsTwindixOriginsAndInspiration = () => (
                     width={504}
                     priority
                 />
-            </div>
+            </motion.div>
         </div>
     </section>
 );

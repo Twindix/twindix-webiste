@@ -7,7 +7,7 @@ export const Card = ({
     children: ReactNode,
     className?: string,
 }) => (
-    <div className={`w-full bg-white rounded-3xl p-4 lg:p-8 ${className || ""}`}>
+    <div className={`w-full bg-white rounded-3xl p-3 lg:p-6 ${className || ""}`}>
         {children}
     </div>
 );

@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 import analytics from "@/app/assets/icons/analytics.svg";
@@ -7,51 +10,66 @@ import { Card } from "@/atoms";
 
 export const HomeTwindixDifference = () => (
     <section className="pb-5 lg:pb-10">
-        <Card className="grid gap-3 lg:gap-6 grid-cols-1 lg:grid-cols-12 items-center">
-            <div className="col-span-1 lg:col-span-7">
-                <h2 className="text-gradient1">
-                    What makes
-                    <br className="hidden lg:block" />
-                    {" "}
-                    Twindix Different?
-                </h2>
-                <p>Twindix isn’t just a survey—it’s built on insights from 1,500 studies and 230 business models. It maps your strengths, highlights growth areas, and delivers practical strategies to enhance leadership and empower your team.</p>
-            </div>
-            <div className="col-span-1 lg:col-span-5 flex justify-between gap-8 sm:gap-1 flex-col sm:flex-row">
-                <div className="flex flex-col items-center gap-1">
-                    <Image
-                        alt="cooperation"
-                        src={cooperation}
-                        priority
-                    />
-                    <div className="flex flex-col items-center">
-                        <span className="font-bold text-xl lg:text-3xl text-gradient1">230</span>
-                        <h6 className="text-gradient1">Business Models</h6>
+        <motion.div
+            animate={{
+                opacity: 1,
+                y: 0,
+            }}
+            initial={{
+                opacity: 0,
+                y: 20,
+            }}
+            transition={{
+                duration: 0.8,
+                ease: "easeOut",
+            }}
+        >
+            <Card className="grid gap-3 lg:gap-6 grid-cols-1 lg:grid-cols-12 items-center">
+                <div className="col-span-1 lg:col-span-7">
+                    <h2 className="text-gradient1">
+                        What makes
+                        <br className="hidden lg:block" />
+                        {" "}
+                        Twindix Different?
+                    </h2>
+                    <p>Twindix isn’t just a survey—it’s built on insights from 1,500 studies and 230 business models. It maps your strengths, highlights growth areas, and delivers practical strategies to enhance leadership and empower your team.</p>
+                </div>
+                <div className="col-span-1 lg:col-span-5 flex justify-between gap-8 sm:gap-1 flex-col sm:flex-row">
+                    <div className="flex flex-col items-center gap-1">
+                        <Image
+                            alt="cooperation"
+                            src={cooperation}
+                            priority
+                        />
+                        <div className="flex flex-col items-center">
+                            <span className="font-bold text-xl lg:text-3xl text-gradient1">230</span>
+                            <h6 className="text-gradient1">Business Models</h6>
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-center gap-1">
+                        <Image
+                            alt="analytics"
+                            src={analytics}
+                            priority
+                        />
+                        <div className="flex flex-col items-center">
+                            <span className="font-bold text-xl lg:text-3xl text-gradient1">1500</span>
+                            <h6 className="text-gradient1">Studies</h6>
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-center gap-1">
+                        <Image
+                            alt="search"
+                            src={search}
+                            priority
+                        />
+                        <div className="flex flex-col items-center">
+                            <span className="font-bold text-xl lg:text-3xl text-gradient1">110</span>
+                            <h6 className="text-gradient1">Of Year Search</h6>
+                        </div>
                     </div>
                 </div>
-                <div className="flex flex-col items-center gap-1">
-                    <Image
-                        alt="analytics"
-                        src={analytics}
-                        priority
-                    />
-                    <div className="flex flex-col items-center">
-                        <span className="font-bold text-xl lg:text-3xl text-gradient1">1500</span>
-                        <h6 className="text-gradient1">Studies</h6>
-                    </div>
-                </div>
-                <div className="flex flex-col items-center gap-1">
-                    <Image
-                        alt="search"
-                        src={search}
-                        priority
-                    />
-                    <div className="flex flex-col items-center">
-                        <span className="font-bold text-xl lg:text-3xl text-gradient1">110</span>
-                        <h6 className="text-gradient1">Of Year Search</h6>
-                    </div>
-                </div>
-            </div>
-        </Card>
+            </Card>
+        </motion.div>
     </section>
 );

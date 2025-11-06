@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 import { Button } from "@/atoms";
@@ -6,7 +9,21 @@ import { portalUrl } from "@/data";
 
 export const AboutHero = () => (
     <Hero>
-        <div className="container flex flex-col gap-4 lg:gap-8">
+        <motion.div
+            className="container flex flex-col items-center gap-4 lg:gap-8"
+            animate={{
+                opacity: 1,
+                y: 0,
+            }}
+            initial={{
+                opacity: 0,
+                y: -20,
+            }}
+            transition={{
+                duration: 0.8,
+                ease: "easeOut",
+            }}
+        >
             <div className="grid place-items-center">
                 <h1 className="text-gradient3">About Us</h1>
                 <p>
@@ -35,6 +52,6 @@ export const AboutHero = () => (
                     Get Started with Twindix
                 </Button>
             </Link>
-        </div>
+        </motion.div>
     </Hero>
 );

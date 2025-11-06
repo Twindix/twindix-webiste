@@ -11,12 +11,14 @@ export const whyTwindixAssessmentsData = [
         colSpan: 5,
         img: circlesWithCheck,
         imgAlt: "circles_with_check",
+        text: "With 8 years of research, Twindix delivers trusted leadership assessments backed by reliable data and continuous innovation.",
         title: "Credible",
     },
     {
         colSpan: 7,
         img: zoomAnalytics,
         imgAlt: "zoom_analytics",
+        text: "Twindix analyzes your leadership style to show its impact on culture, decisions, and organizational performance.",
         title: "Analysis that goes beyond the Surface",
     },
     {
@@ -24,18 +26,22 @@ export const whyTwindixAssessmentsData = [
         hasOpacity: true,
         img: diagram,
         imgAlt: "diagram",
+        opacity: 30,
+        text: "Twindix drives real change by revealing strengths and hidden opportunities, boosting innovation, efficiency, and organizational harmony.",
         title: "Real Impact that drives your to grow",
     },
     {
         colSpan: 5,
         img: handWithGem,
         imgAlt: "hand_with_gem",
+        text: "Twindix offers custom assessments tailored to your organization’s real-world challenges, not generic test solutions. They deliver practical, goal-driven recommendations aligned with your unique work environment.",
         title: "Designed to fit your Unique Reality",
     },
     {
         colSpan: 5,
         img: cursor,
         imgAlt: "cursor",
+        text: "Twindix delivers practical insights tailored to real business needs—empowering leaders with clear, actionable strategies for immediate impact.",
         title: "Actionable",
     },
     {
@@ -43,6 +49,8 @@ export const whyTwindixAssessmentsData = [
         hasOpacity: true,
         img: eye,
         imgAlt: "eye",
+        opacity: 20,
+        text: "Twindix simplifies complex team behaviors with smart algorithms, giving you clear insights for strategic decisions.",
         title: "Intuitive Clarity for Complex Visions",
     },
     {
@@ -50,6 +58,8 @@ export const whyTwindixAssessmentsData = [
         hasOpacity: true,
         img: rocket,
         imgAlt: "rocket",
+        opacity: 20,
+        text: "Twindix uses evolving, modern models to deliver insights that match today’s dynamic business world—future-ready and practical.",
         title: "Contemporary Innovation that precedes",
     },
 ];

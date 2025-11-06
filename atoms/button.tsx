@@ -32,7 +32,7 @@ export const Button = ({
         className={generateValidClassNameHandler(
             "rounded-full border px-2 lg:px-4 xl:px-8 text-xs lg:text-sm font-semibold cursor-pointer relative flex justify-center items-center w-fit transition",
             variant === "contained" && "border-blue-700 bg-blue-700 text-white",
-            variant === "outlined" && "border-blue-700 text-blue-700 hover:bg-blue-50",
+            variant === "outlined" && "border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white",
             variant === "link" && "hover:underline text-blue-600 border-0 font-medium px-0! h-fit!",
             isMini ? "h-[34px]" : "h-[52px] min-w-full lg:min-w-[400px]",
             disabled && "cursor-not-allowed opacity-50",
