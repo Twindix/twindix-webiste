@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 
 import { Button, Card, Input } from "@/atoms";
-import { portalBaseUrl } from "@/data";
 import { generateValidClassNameHandler } from "@/lib/utils";
 
 import { Social } from "./social";
@@ -44,7 +43,7 @@ export const ContactUs = () => {
             setMessage(null);
 
             const res = await fetch(
-                `${portalBaseUrl}/contact`,
+                "/api/contact",
                 {
                     body: JSON.stringify(payload),
                     headers: {
@@ -67,7 +66,7 @@ export const ContactUs = () => {
 
             setStatus("success");
 
-            setMessage(data?.message ?? "Thanks! Your message has been sent.");
+            setMessage("Thanks! Your message has been sent.");
 
             form.reset();
         } catch {
@@ -80,7 +79,7 @@ export const ContactUs = () => {
     };
 
     return (
-        <Card className="grid gap-8 lg:gap-6 grid-cols-1 lg:grid-cols-12 justify-between items-center">
+        <Card className="grid gap-6 grid-cols-1 lg:grid-cols-12 justify-between items-center">
             <div
                 className="col-span-1 lg:col-span-7 flex flex-col gap-4 lg:gap-8"
                 id="contact_us"
