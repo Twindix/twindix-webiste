@@ -194,3 +194,37 @@ p, li:not(footer li) {
     color: transparent!important;
     display: inline-block;
 }
+
+.title-with-white-box {
+    display: grid;
+    place-content: center;
+    height: 175px;
+    position: relative;
+}
+
+.title-with-white-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15%;
+    width: 240px;
+    background: #ffffff;
+    z-index: -1;
+}
+
+@media (min-width: 640px) {
+    .title-with-white-box::before { left: 25%; }
+}
+
+@media (min-width: 768px) {
+    .title-with-white-box::before { left: 30%; }
+}
+
+.title-with-white-box h2 {
+    position: relative;
+    z-index: 0;
+    isolation: isolate;
+    display: inline-block;
+    text-align: center;
+}

@@ -23,7 +23,7 @@ export const HowAssessmentWorksSteps = () => (
                             {" "}
                             {index + 1}
                         </span>
-                        <h2 className="text-gradient1">{title}</h2>
+                        <h3 className="text-gradient1">{title}</h3>
                         <p>{text}</p>
                     </div>
                     <div className={`col-span1 lg:col-span-6 flex ${index % 2 === 0 ? "lg:order-2 lg:justify-end" : "lg:order-1"}`}>
