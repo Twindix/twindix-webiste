@@ -8,8 +8,11 @@ import { routeUrlsData } from "./route-urls";
 import { understandingManagementData } from "./understanding-management";
 import { whyTwindixAssessmentsData } from "./why-twindix-assessments";
 
-const portalLink = "https://assessment.twindix.com";
+const portalUrl = "https://assessment.twindix.com";
+
 const portalBaseUrl = "https://api.twindix.com";
+
+const publicUrl = "https://twindix.com";
 
 export {
     expandedBenefitsData,
@@ -18,7 +21,8 @@ export {
     keyComponentsData,
     navbarItemsData,
     portalBaseUrl,
-    portalLink,
+    portalUrl,
+    publicUrl,
     researchDrivenConfidenceData,
     routeUrlsData,
     understandingManagementData,

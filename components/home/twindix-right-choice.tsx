@@ -12,7 +12,7 @@ import winner from "@/app/assets/icons/winner.svg";
 import winners from "@/app/assets/icons/winners.svg";
 import logo from "@/app/assets/images/logo.webp";
 import { Button, Card } from "@/atoms";
-import { portalLink } from "@/data";
+import { portalUrl } from "@/data";
 import { generateValidClassNameHandler } from "@/lib/utils";
 
 export const HomeTwindixRightChoice = () => (
@@ -26,7 +26,7 @@ export const HomeTwindixRightChoice = () => (
                 <div className="flex flex-col gap-2 lg:gap-4">
                     <h4>Are you ready to explore your potential?</h4>
                     <Link
-                        href={portalLink}
+                        href={portalUrl}
                         rel="noopener noreferrer"
                         target="_blank"
                     >

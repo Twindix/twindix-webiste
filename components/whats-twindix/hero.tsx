@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { Button } from "@/atoms";
 import { Hero } from "@/components";
-import { portalLink } from "@/data";
+import { portalUrl } from "@/data";
 
 export const WhatsTwindixHero = () => (
     <Hero>
@@ -18,7 +18,7 @@ export const WhatsTwindixHero = () => (
                 </p>
             </div>
             <Link
-                href={portalLink}
+                href={portalUrl}
                 rel="noopener noreferrer"
                 target="_blank"
             >

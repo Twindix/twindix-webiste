@@ -6,7 +6,7 @@ import rightArrow from "@/app/assets/icons/right_arrow.svg";
 import assessmentsDocs3 from "@/app/assets/images/assessments_docs_3.webp";
 import assessmentsDocs4 from "@/app/assets/images/assessments_docs_4.webp";
 import { Button, Card } from "@/atoms";
-import { portalLink, routeUrlsData } from "@/data";
+import { portalUrl, routeUrlsData } from "@/data";
 
 export const HomeAssessment = () => (
     <section
@@ -36,7 +36,7 @@ export const HomeAssessment = () => (
                     </Link>
                 </div>
                 <Link
-                    href={portalLink}
+                    href={portalUrl}
                     rel="noopener noreferrer"
                     target="_blank"
                 >
@@ -80,7 +80,7 @@ export const HomeAssessment = () => (
                     </Link>
                 </div>
                 <Link
-                    href={portalLink}
+                    href={portalUrl}
                     rel="noopener noreferrer"
                     target="_blank"
                 >

@@ -80,7 +80,7 @@ export const ContactUs = () => {
     };
 
     return (
-        <Card className="grid gap-3 lg:gap-6 grid-cols-1 lg:grid-cols-12 justify-between items-center">
+        <Card className="grid gap-8 lg:gap-6 grid-cols-1 lg:grid-cols-12 justify-between items-center">
             <div
                 className="col-span-1 lg:col-span-7 flex flex-col gap-4 lg:gap-8"
                 id="contact_us"
@@ -90,7 +90,7 @@ export const ContactUs = () => {
                     <p>We are here to help you! Contact us through any of the following methods.</p>
                 </div>
                 <form
-                    className="flex flex-col gap-4 lg:w-3/4"
+                    className="flex flex-col gap-2 lg:gap-4 lg:w-3/4"
                     noValidate
                     onSubmit={submitFormHandler}
                 >
@@ -137,7 +137,7 @@ export const ContactUs = () => {
                     )}
                 </form>
             </div>
-            <div className="col-span-1 lg:col-span-5 m-auto flex flex-col gap-4 lg:gap-8">
+            <div className="col-span-1 lg:col-span-5 lg:m-auto flex flex-col gap-4 lg:gap-8">
                 <div>
                     <h3 className="text-gradient1">Follow Us on Social Media</h3>
                     <p>Stay updated with the latest insights and resources by connecting with us on social media.</p>

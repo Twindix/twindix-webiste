@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { Button } from "@/atoms";
-import { portalLink, researchDrivenConfidenceData } from "@/data";
+import { portalUrl, researchDrivenConfidenceData } from "@/data";
 
 export const PrizeResearchDrivenConfidence = () => (
     <section className="py-5 lg:py-10">
@@ -31,7 +31,7 @@ export const PrizeResearchDrivenConfidence = () => (
         </div>
         <div className="w-full flex flex-col lg:flex-row justify-center lg:justify-end mt-4 lg:mt-8">
             <Link
-                href={portalLink}
+                href={portalUrl}
                 rel="noopener noreferrer"
                 target="_blank"
             >

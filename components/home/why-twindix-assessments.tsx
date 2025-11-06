@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Fragment } from "react/jsx-runtime";
 
 import { Button, Card } from "@/atoms";
-import { portalLink, whyTwindixAssessmentsData } from "@/data";
+import { portalUrl, whyTwindixAssessmentsData } from "@/data";
 import { generateValidClassNameHandler } from "@/lib/utils";
 
 export const HomeWhyTwindixAssessments = () => (
@@ -42,7 +42,7 @@ export const HomeWhyTwindixAssessments = () => (
                         <div className="col-span-1 lg:col-span-5 flex flex-col justify-center gap-2 lg:gap-4">
                             <h4>Ready to transform your leadership and unlock your organization’s full potential?</h4>
                             <Link
-                                href={portalLink}
+                                href={portalUrl}
                                 rel="noopener noreferrer"
                                 target="_blank"
                             >

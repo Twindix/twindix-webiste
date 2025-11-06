@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { Button } from "@/atoms";
-import { expandedBenefitsData, portalLink } from "@/data";
+import { expandedBenefitsData, portalUrl } from "@/data";
 
 export const PrizeExpandedBenefits = () => (
     <section className="pt-5 lg:pt-10 pb-10 lg:pb-20">
@@ -30,7 +30,7 @@ export const PrizeExpandedBenefits = () => (
                 potential?
             </h4>
             <Link
-                href={portalLink}
+                href={portalUrl}
                 rel="noopener noreferrer"
                 target="_blank"
             >

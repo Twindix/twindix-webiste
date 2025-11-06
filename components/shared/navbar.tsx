@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 import logo from "@/app/assets/images/logo.webp";
 import { Button } from "@/atoms";
-import { navbarItemsData, portalLink, routeUrlsData } from "@/data";
+import { navbarItemsData, portalUrl, routeUrlsData } from "@/data";
 import { generateValidClassNameHandler, scrollToHomeTargetHandler } from "@/lib/utils";
 
 export const Navbar = () => {
@@ -117,7 +117,7 @@ export const Navbar = () => {
                             Contact
                         </Button>
                         <Link
-                            href={portalLink}
+                            href={portalUrl}
                             rel="noopener noreferrer"
                             target="_blank"
                         >
@@ -210,7 +210,7 @@ export const Navbar = () => {
                             </Button>
                             <Link
                                 className="flex-1"
-                                href={portalLink}
+                                href={portalUrl}
                                 rel="noopener noreferrer"
                                 target="_blank"
                             >

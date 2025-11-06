@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import undrawIdeation from "@/app/assets/images/undraw_ideation.webp";
 import { Button } from "@/atoms";
-import { portalLink } from "@/data";
+import { portalUrl } from "@/data";
 
 export const WhatsTwindixOriginsAndInspiration = () => (
     <section className="pb-10 lg:pb-10 pt-10 lg:pt-20">
@@ -46,7 +46,7 @@ export const WhatsTwindixOriginsAndInspiration = () => (
                     </p>
                 </div>
                 <Link
-                    href={portalLink}
+                    href={portalUrl}
                     rel="noopener noreferrer"
                     target="_blank"
                 >
