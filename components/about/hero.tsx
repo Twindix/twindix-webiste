@@ -39,19 +39,22 @@ export const AboutHero = () => (
                     .
                 </p>
             </div>
-            <Link
-                href={portalUrl}
-                rel="noopener noreferrer"
-                target="_blank"
-            >
-                <Button
-                    ariaLabel="Get The Assessment"
-                    variant="outlined"
-                    withArrowsIcon
+            <div className="grid place-items-center w-full lg:w-fit">
+                <Link
+                    className="w-full lg:w-fit"
+                    href={portalUrl}
+                    rel="noopener noreferrer"
+                    target="_blank"
                 >
-                    Get Started with Twindix
-                </Button>
-            </Link>
+                    <Button
+                        ariaLabel="Get The Assessment"
+                        variant="outlined"
+                        withArrowsIcon
+                    >
+                        Get Started with Twindix
+                    </Button>
+                </Link>
+            </div>
         </motion.div>
     </Hero>
 );

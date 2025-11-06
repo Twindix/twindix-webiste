@@ -18,7 +18,7 @@ export const HomeWhyTwindixAssessments = () => (
                 Assessments
             </h2>
         </div>
-        <div className="grid gap-3 lg:gap-6 grid-cols-1 xl:grid-cols-12 items-stretch">
+        <div className="grid gap-3 lg:gap-6 grid-cols-1 lg:grid-cols-12 items-stretch">
             {whyTwindixAssessmentsData.map(({
                 colSpan,
                 hasOpacity,
@@ -30,7 +30,7 @@ export const HomeWhyTwindixAssessments = () => (
             }, index) => (
                 <Fragment key={index}> {/* eslint-disable-line */}
                     <motion.div
-                        className={`col-span-1 xl:col-span-${colSpan}`}
+                        className={`col-span-1 lg:col-span-${colSpan} h-full`}
                         initial={{
                             opacity: 0,
                             x: index % 2 === 0 ? -20 : 20,
@@ -44,13 +44,13 @@ export const HomeWhyTwindixAssessments = () => (
                             x: 0,
                         }}
                     >
-                        <Card className="group flex items-center justify-between overflow-hidden cursor-pointer hover:bg-blue-50">
+                        <Card className="group h-full flex lg:flex-col xl:flex-row lg:gap-4 xl:gap-0 items-center justify-between overflow-hidden cursor-pointer hover:bg-blue-50">
                             <div className="flex flex-col h-full justify-between">
                                 <span className="font-bold text-4xl lg:text-6xl text-blue-100">{index + 1}</span>
                                 <div>
                                     <h3 className="text-gradient1">{title}</h3>
                                     <p className="md:hidden">{text}</p>
-                                    <div className="hidden md:block overflow-hidden max-h-0 transition-[max-height] duration-300 ease-out group-hover:max-h-28">
+                                    <div className="hidden md:block overflow-hidden max-h-0 transition-[max-height] duration-300 ease-out group-hover:min-h-fit">
                                         <p className="translate-y-3 opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100 xl:text-[13px]!">
                                             {text}
                                         </p>
@@ -60,16 +60,17 @@ export const HomeWhyTwindixAssessments = () => (
                             <Image
                                 alt={imgAlt}
                                 src={img}
+                                style={{ opacity: hasOpacity ? opacity : 60 }}
                                 className={generateValidClassNameHandler(
                                     "w-[120px] h-40 md:w-[195px] md:h-[220px]",
-                                    hasOpacity ? `opacity-${opacity} group-hover:opacity-60` : "opacity-60 group-hover:opacity-100",
+                                    hasOpacity ? "group-hover:opacity-60!" : "group-hover:opacity-100!",
                                 )}
                             />
                         </Card>
                     </motion.div>
                     {index === 6 && (
                         <motion.div
-                            className="col-span-1 xl:col-span-5 flex flex-col justify-center gap-2 lg:gap-4"
+                            className="col-span-1 lg:col-span-5 flex flex-col justify-center gap-2 lg:gap-4"
                             initial={{
                                 opacity: 0,
                                 x: 20,

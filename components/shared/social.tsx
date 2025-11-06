@@ -6,7 +6,9 @@ export const Social = () => (
         <Link
             aria-label="LinkedIn"
             className="inline-flex items-center justify-center rounded-full border-5 border-foreground p-1 hover:bg-foreground hover:text-white transition"
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/twindix-official/posts/?feedView=all"
+            rel="noopener noreferrer"
+            target="_blank"
         >
             <svg
                 className="h-5 w-5"
@@ -19,7 +21,9 @@ export const Social = () => (
         <Link
             aria-label="X"
             className="inline-flex items-center justify-center rounded-full border-5 border-foreground p-1 hover:bg-foreground hover:text-white transition"
-            href="https://x.com"
+            href="https://x.com/TwindixOfficial"
+            rel="noopener noreferrer"
+            target="_blank"
         >
             <svg
                 className="h-5 w-5"
@@ -32,7 +36,9 @@ export const Social = () => (
         <Link
             aria-label="Instagram"
             className="inline-flex items-center justify-center rounded-full border-5 border-foreground p-1 hover:bg-foreground hover:text-white transition"
-            href="https://instagram.com"
+            href="https://www.instagram.com/twindixofficial/"
+            rel="noopener noreferrer"
+            target="_blank"
         >
             <svg
                 className="h-5 w-5"
@@ -45,7 +51,9 @@ export const Social = () => (
         <Link
             aria-label="Facebook"
             className="inline-flex items-center justify-center rounded-full border-5 border-foreground p-1 hover:bg-foreground hover:text-white transition"
-            href="https://facebook.com"
+            href="https://www.facebook.com/TwindixOfficial?locale=ar_AR"
+            rel="noopener noreferrer"
+            target="_blank"
         >
             <svg
                 className="h-5 w-5"

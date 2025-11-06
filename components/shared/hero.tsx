@@ -14,7 +14,7 @@ export const Hero = ({
     <section
         className={generateValidClassNameHandler(
             "relative hero-section",
-            hasGlassBg ? "hero-glass min-h-[600px] lg:min-h-[848px]" : "min-h-fit lg:min-h-fit",
+            hasGlassBg ? "hero-glass min-h-[700px] lg:min-h-[848px]" : "min-h-fit lg:min-h-fit",
             className,
         )}
     >

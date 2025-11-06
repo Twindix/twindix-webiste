@@ -54,12 +54,13 @@ export const HomeHero = () => (
             >
                 <Image
                     alt="curved_line"
+                    className="relative bottom-5"
                     src={curvedLine}
                 />
             </motion.div>
             <motion.div
                 animate={{ opacity: 1 }}
-                className="flex justify-between mt-6 mb-16 lg:m-0"
+                className="flex justify-between"
                 initial={{ opacity: 0 }}
                 transition={{
                     duration: 0.5,
@@ -68,38 +69,38 @@ export const HomeHero = () => (
             >
                 <Image
                     alt="assessments_docs"
-                    className="lg:absolute left-0 top-[45%]"
+                    className="lg:absolute left-0 top-[45%] lg:size-[180px]"
                     height={180}
-                    src={assessmentsDocs1}
+                    src={assessmentsDocs2}
                     width={180}
                 />
                 <Image
                     alt="assessments_docs"
-                    className="lg:absolute right-0 top-[45%]"
+                    className="lg:absolute right-0 top-[45%] lg:size-[180px]"
                     height={180}
-                    src={assessmentsDocs2}
+                    src={assessmentsDocs1}
                     width={180}
                 />
             </motion.div>
             <div>
                 <Image
                     alt="star"
-                    className="absolute right-0.8 top-0.8"
+                    className="absolute right-10 md:right-0 top-0"
                     src={star}
                 />
                 <Image
                     alt="star"
-                    className="absolute right-10 md:right-30 top-1/4"
+                    className="absolute right-10 md:right-[30%] top-[10%]"
                     src={star}
                 />
                 <Image
                     alt="star"
-                    className="absolute right-[30%] top-0.8"
+                    className="absolute right-15 top-[38%]"
                     src={star}
                 />
                 <Image
                     alt="star"
-                    className="absolute right-1/4 top-4/6"
+                    className="absolute right-1/4 top-[60%] md:top-4/6"
                     src={star}
                 />
                 <Image
