@@ -6,25 +6,36 @@ import Link from "next/link";
 import { Fragment } from "react/jsx-runtime";
 
 import { Button, Card } from "@/atoms";
-import { portalUrl, whyTwindixAssessmentsData } from "@/data";
-import { generateValidClassNameHandler } from "@/lib/utils";
+import { portalUrl, whyAssessmentsData } from "@/data";
 
 export const HomeWhyTwindixAssessments = () => (
     <section className="py-5 lg:py-10">
-        <div className="grid place-content-center mb-4 lg:mb-8">
+        <motion.div
+            className="grid place-content-center mb-4 lg:mb-8"
+            initial={{
+                opacity: 0,
+                y: -20,
+            }}
+            transition={{
+                duration: 0.8,
+                ease: "easeOut",
+            }}
+            whileInView={{
+                opacity: 1,
+                y: 0,
+            }}
+        >
             <h2 className="text-gradient1">
                 Why TWINDIX
                 <br />
                 Assessments
             </h2>
-        </div>
+        </motion.div>
         <div className="grid gap-3 lg:gap-6 grid-cols-1 lg:grid-cols-12 items-stretch">
-            {whyTwindixAssessmentsData.map(({
+            {whyAssessmentsData.map(({
                 colSpan,
-                hasOpacity,
                 img,
                 imgAlt,
-                opacity,
                 text,
                 title,
             }, index) => (
@@ -44,27 +55,21 @@ export const HomeWhyTwindixAssessments = () => (
                             x: 0,
                         }}
                     >
-                        <Card className="group h-full flex lg:flex-col xl:flex-row lg:gap-4 xl:gap-0 items-center justify-between overflow-hidden cursor-pointer hover:bg-blue-50">
+                        <Card className="group h-full xl:min-h-[400px] flex lg:flex-col xl:flex-row lg:gap-4 xl:gap-0 items-center justify-between overflow-hidden cursor-pointer hover:bg-blue-50">
                             <div className="flex flex-col h-full justify-between">
-                                <span className="font-bold text-4xl lg:text-6xl text-blue-100">{index + 1}</span>
+                                <span className="font-bold text-3xl lg:text-5xl text-blue-100 group-hover:text-blue-700">{index + 1}</span>
                                 <div>
                                     <h3 className="text-gradient1">{title}</h3>
                                     <p className="md:hidden">{text}</p>
                                     <div className="hidden md:block overflow-hidden max-h-0 transition-[max-height] duration-300 ease-out group-hover:min-h-fit">
-                                        <p className="translate-y-3 opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100 xl:text-[13px]!">
-                                            {text}
-                                        </p>
+                                        <p className="translate-y-3 opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100 xl:text-[13px]!">{text}</p>
                                     </div>
                                 </div>
                             </div>
                             <Image
                                 alt={imgAlt}
+                                className="w-30 h-40 md:w-[171px] md:h-[185px] opacity-50 group-hover:opacity-100 group-hover:scale-[1.2] transition ease-out duration-800"
                                 src={img}
-                                style={{ opacity: hasOpacity ? opacity : 60 }}
-                                className={generateValidClassNameHandler(
-                                    "w-[120px] h-40 md:w-[195px] md:h-[220px]",
-                                    hasOpacity ? "group-hover:opacity-60!" : "group-hover:opacity-100!",
-                                )}
                             />
                         </Card>
                     </motion.div>
@@ -84,7 +89,7 @@ export const HomeWhyTwindixAssessments = () => (
                                 x: 0,
                             }}
                         >
-                            <h4>Ready to transform your leadership and unlock your organization’s full potential?</h4>
+                            <h4>Ready to transform your leadership and unlock your organization&apos;s full potential?</h4>
                             <Link
                                 href={portalUrl}
                                 rel="noopener noreferrer"

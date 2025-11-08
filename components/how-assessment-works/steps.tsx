@@ -3,12 +3,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-import { howAssessmentWorksStepsData } from "@/data";
+import { RichText } from "@/components";
+import { stepsData } from "@/data";
 
 export const HowAssessmentWorksSteps = () => (
     <section className="pb-10 lg:pb-20 pt-[90px] lg:pt-[180px]">
-        <div className="flex flex-col gap-[60px] lg:gap-[120px]">
-            {howAssessmentWorksStepsData.map(({
+        <div className="flex flex-col gap-15 lg:gap-30">
+            {stepsData.map(({
                 img,
                 imgAlt,
                 imgHeight,
@@ -41,7 +42,7 @@ export const HowAssessmentWorksSteps = () => (
                             {index + 1}
                         </span>
                         <h3 className="text-gradient1">{title}</h3>
-                        <p>{text}</p>
+                        <p><RichText text={text} /></p>
                     </motion.div>
                     <motion.div
                         className={`col-span1 lg:col-span-6 flex ${index % 2 === 0 ? "lg:order-2 lg:justify-end" : "lg:order-1"}`}

@@ -52,6 +52,7 @@ export const PrizeExpandedBenefits = () => (
         </div>
         <div className="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-3 lg:gap-6 mt-4 lg:mt-8">
             <motion.h4
+                className="text-gradient3"
                 initial={{
                     opacity: 0,
                     x: -20,

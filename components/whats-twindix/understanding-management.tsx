@@ -3,12 +3,13 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+import { RichText } from "@/components";
 import { understandingManagementData } from "@/data";
 
 export const WhatsTwindixUnderstandingManagement = () => (
-    <section className="pb-10 lg:pb-20 pt-5 lg:pt-10">
+    <section className="py-5 lg:py-10">
         <motion.div
-            className="title-with-white-box mb-4 lg:mb-8 before:left-[1%]! before:sm:left-[15%]! before:md:left-[20%]! before:xl:left-[25%]!"
+            className="mb-[30px] lg:mb-15"
             initial={{
                 opacity: 0,
                 y: -20,
@@ -22,14 +23,17 @@ export const WhatsTwindixUnderstandingManagement = () => (
                 y: 0,
             }}
         >
-            <h2 className="text-gradient1">
-                How TWINDIX Aids in
-                {" "}
-                <br />
-                Understanding Management
-            </h2>
+            <div className="title-with-white-box before:left-[1%]! before:sm:left-[15%]! before:md:left-[20%]! before:xl:left-[25%]!">
+                <h2 className="text-gradient1">
+                    How TWINDIX Aids in
+                    {" "}
+                    <br />
+                    Understanding Management
+                </h2>
+            </div>
+            <p className="bg-white text-black! text-center! py-2 px-3 lg:px-6">The TWINDIX assessment provides leaders with a unique understanding of their management style by measuring three core elements: Skills, Perspective, and Behavior. Each of these components plays a vital role in how you lead and interact with your team.</p>
         </motion.div>
-        <div className="flex flex-col gap-[60px] lg:gap-[120px]">
+        <div className="flex flex-col gap-15 lg:gap-30">
             {understandingManagementData.map(({
                 img,
                 imgAlt,
@@ -58,7 +62,7 @@ export const WhatsTwindixUnderstandingManagement = () => (
                         }}
                     >
                         <h3 className="text-gradient1">{title}</h3>
-                        <p>{text}</p>
+                        <p><RichText text={text} /></p>
                     </motion.div>
                     <motion.div
                         className={`col-span1 lg:col-span-6 flex ${index % 2 === 0 ? "lg:order-2 lg:justify-end" : "lg:order-1"}`}

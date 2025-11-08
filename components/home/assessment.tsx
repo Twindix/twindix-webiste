@@ -15,9 +15,23 @@ export const HomeAssessment = () => (
         className="pt-5 lg:pt-10 pb-10 lg:pb-20"
         id="assessment"
     >
-        <div className="grid place-content-center mb-4 lg:mb-8">
-            <h2 className="text-gradient1">Assessment</h2>
-        </div>
+        <motion.div
+            className="grid place-content-center mb-4 lg:mb-8"
+            initial={{
+                opacity: 0,
+                y: -20,
+            }}
+            transition={{
+                duration: 0.8,
+                ease: "easeOut",
+            }}
+            whileInView={{
+                opacity: 1,
+                y: 0,
+            }}
+        >
+            <h2 className="text-gradient1">Assessment </h2>
+        </motion.div>
         <motion.div
             initial={{
                 opacity: 0,

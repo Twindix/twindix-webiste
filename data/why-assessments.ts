@@ -6,7 +6,7 @@ import handWithGem from "@/app/assets/icons/hand_with_gem.svg";
 import rocket from "@/app/assets/icons/rocket.svg";
 import zoomAnalytics from "@/app/assets/icons/zoom_analytics.svg";
 
-export const whyTwindixAssessmentsData = [
+export const whyAssessmentsData = [
     {
         colSpan: 5,
         img: circlesWithCheck,
@@ -23,10 +23,8 @@ export const whyTwindixAssessmentsData = [
     },
     {
         colSpan: 7,
-        hasOpacity: true,
         img: diagram,
         imgAlt: "diagram",
-        opacity: 0.3,
         text: "Twindix drives real change by revealing strengths and hidden opportunities, boosting innovation, efficiency, and organizational harmony.",
         title: "Real Impact that drives your to grow",
     },
@@ -46,20 +44,16 @@ export const whyTwindixAssessmentsData = [
     },
     {
         colSpan: 7,
-        hasOpacity: true,
         img: eye,
         imgAlt: "eye",
-        opacity: 0.2,
         text: "Twindix simplifies complex team behaviors with smart algorithms, giving you clear insights for strategic decisions.",
         title: "Intuitive Clarity for Complex Visions",
     },
     {
         colSpan: 7,
-        hasOpacity: true,
         img: rocket,
         imgAlt: "rocket",
-        opacity: 0.2,
-        text: "Twindix uses evolving, modern models to deliver insights that match today’s dynamic business world—future-ready and practical.",
+        text: "Twindix uses evolving, modern models to deliver insights that match today's dynamic business world—future-ready and practical.",
         title: "Contemporary Innovation that precedes",
     },
 ];

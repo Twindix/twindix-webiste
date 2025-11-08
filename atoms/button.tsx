@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ReactNode } from "react";
 
 import multipleArrows from "@/app/assets/icons/multiple_arrows.svg";
+import multipleArrowsWhite from "@/app/assets/icons/multiple_arrows_white.svg";
 import { generateValidClassNameHandler } from "@/lib/utils";
 
 export const Button = ({
@@ -30,7 +31,7 @@ export const Button = ({
         disabled={disabled}
         type={type || "button"}
         className={generateValidClassNameHandler(
-            "rounded-full border px-2 lg:px-4 xl:px-8 text-xs lg:text-sm font-semibold cursor-pointer relative flex justify-center items-center w-fit transition",
+            "group rounded-full border px-2 lg:px-4 xl:px-8 text-xs lg:text-sm font-semibold cursor-pointer relative flex justify-center items-center w-fit transition duration-800",
             variant === "contained" && "border-blue-700 bg-blue-700 text-white",
             variant === "outlined" && "border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white",
             variant === "link" && "hover:underline text-blue-600 border-0 font-medium px-0! h-fit!",
@@ -42,11 +43,18 @@ export const Button = ({
     >
         {children}
         {withArrowsIcon && (
-            <Image
-                alt="multiple_arrows"
-                className="h4 absolute right-4"
-                src={multipleArrows}
-            />
+            <span className="absolute right-4 transition duration-800 flex items-center">
+                <Image
+                    alt="multiple_arrows"
+                    className="h-4 w-auto group-hover:opacity-0 transition duration-400"
+                    src={multipleArrows}
+                />
+                <Image
+                    alt="multiple_arrows_white"
+                    className="h-4 w-auto opacity-0 group-hover:opacity-100 transition duration-400"
+                    src={multipleArrowsWhite}
+                />
+            </span>
         )}
     </button>
 );

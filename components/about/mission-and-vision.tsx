@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-import undrawIdeation from "@/app/assets/images/undraw_ideation.webp";
+import undrawVisionaryTechnology from "@/app/assets/images/undraw_visionary_technology.webp";
 import { Button } from "@/atoms";
 import { portalUrl } from "@/data";
 
@@ -69,7 +69,7 @@ export const AboutMissionAndVision = () => (
                     className="lg:h-[487px]"
                     height={487}
                     placeholder="blur"
-                    src={undrawIdeation}
+                    src={undrawVisionaryTechnology}
                     width={504}
                     priority
                 />

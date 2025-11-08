@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-import business from "@/app/assets/images/business.webp";
+import stock from "@/app/assets/images/stock.webp";
 import { Hero } from "@/components";
 
 export const PrizeHero = () => (
@@ -38,8 +38,8 @@ export const PrizeHero = () => (
             </div>
         </motion.div>
         <Image
-            alt="business"
-            src={business}
+            alt="stock"
+            src={stock}
             priority
         />
     </Hero>

@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-import undrawIdeation from "@/app/assets/images/undraw_ideation.webp";
+import professor from "@/app/assets/images/professor.webp";
 import { Button } from "@/atoms";
 import { portalUrl } from "@/data";
 
 export const WhatsTwindixOriginsAndInspiration = () => (
     <section className="pb-10 lg:pb-10 pt-10 lg:pt-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6 items-center">
             <motion.div
                 className="col-span-1 lg:col-span-6 flex flex-col gap-4 lg:gap-8"
                 animate={{
@@ -93,11 +93,10 @@ export const WhatsTwindixOriginsAndInspiration = () => (
             >
                 <Image
                     alt="undraw-ideation"
-                    className="lg:h-[487px]"
-                    height={487}
+                    height={526}
                     placeholder="blur"
-                    src={undrawIdeation}
-                    width={504}
+                    src={professor}
+                    width={416}
                     priority
                 />
             </motion.div>

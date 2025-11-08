@@ -9,7 +9,7 @@ import rbouaLogo from "@/app/assets/images/rboua_logo.webp";
 import { Card } from "@/atoms";
 
 export const RepresentativesAndFranchisesCard = () => (
-    <section className="py-20 lg:py-40">
+    <section className="pt-30 pb-20 lg:py-40">
         <div className="grid place-items-center">
             <h2 className="text-gradient1 text-center">
                 Representatives

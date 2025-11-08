@@ -8,7 +8,7 @@ import { keyComponentsData } from "@/data";
 export const AboutKeyComponents = () => (
     <section className="pb-10 lg:pb-20 pt-5 lg:pt-10">
         <motion.div
-            className="title-with-white-box mb-4 lg:mb-8"
+            className="title-with-white-box mb-[30px] lg:mb-15"
             initial={{
                 opacity: 0,
                 y: -20,
@@ -29,7 +29,7 @@ export const AboutKeyComponents = () => (
                 our Vision
             </h2>
         </motion.div>
-        <div className="flex flex-col gap-[60px] lg:gap-[120px]">
+        <div className="flex flex-col gap-15 lg:gap-30">
             {keyComponentsData.map(({
                 img,
                 imgAlt,

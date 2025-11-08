@@ -17,8 +17,10 @@ import { ContactUs } from "./shared/contact-us";
 import { Footer } from "./shared/footer";
 import { Hero } from "./shared/hero";
 import { Navbar } from "./shared/navbar";
+import { RichText } from "./shared/rich-text";
 import { Social } from "./shared/social";
 import { WhatsTwindixHero } from "./whats-twindix/hero";
+import { WhatsTwindixIndicators } from "./whats-twindix/indicators";
 import { WhatsTwindixOriginsAndInspiration } from "./whats-twindix/origins-and-inspiration";
 import { WhatsTwindixUnderstandingManagement } from "./whats-twindix/understanding-management";
 
@@ -41,9 +43,11 @@ export {
     PrizeHero,
     PrizeResearchDrivenConfidence,
     RepresentativesAndFranchisesCard,
+    RichText,
     Social,
     TeamDynamics,
     WhatsTwindixHero,
+    WhatsTwindixIndicators,
     WhatsTwindixOriginsAndInspiration,
     WhatsTwindixUnderstandingManagement,
 };

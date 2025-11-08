@@ -1,4 +1,9 @@
-import { WhatsTwindixHero, WhatsTwindixOriginsAndInspiration, WhatsTwindixUnderstandingManagement } from "@/components";
+import {
+    WhatsTwindixHero,
+    WhatsTwindixIndicators,
+    WhatsTwindixOriginsAndInspiration,
+    WhatsTwindixUnderstandingManagement,
+} from "@/components";
 
 export default function WhatsTwindix() {
     return (
@@ -7,6 +12,7 @@ export default function WhatsTwindix() {
             <div className="container m-auto relative">
                 <WhatsTwindixOriginsAndInspiration />
                 <WhatsTwindixUnderstandingManagement />
+                <WhatsTwindixIndicators />
             </div>
         </div>
 

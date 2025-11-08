@@ -5,7 +5,7 @@ import readChart from "@/app/assets/images/read_chart.webp";
 import undrawToDoList from "@/app/assets/images/undraw_to-do-list.webp";
 import undrawVisualData from "@/app/assets/images/undraw_visual-data.webp";
 
-export const howAssessmentWorksStepsData = [
+export const stepsData = [
     {
         img: undrawToDoList,
         imgAlt: "undraw_to_do_list",
@@ -35,7 +35,7 @@ export const howAssessmentWorksStepsData = [
         imgAlt: "read_chart",
         imgHeight: 423,
         imgWidth: 532,
-        text: "The report includes visual charts and comprehensive explanations, making it easy to understand your leadership profile. Each indicator is broken down to show how it affects your decision-making, communication, and management approach. TWINDIX offers actionable insights on how to improve in each area and leverage your strengths for better leadership.",
+        text: "The report includes visual charts and comprehensive explanations, making it easy to understand your leadership profile.[[br]][[br]] Each indicator is broken down to show how it affects your decision-making, communication, and management approach.[[br]][[br]] TWINDIX offers actionable insights on how to improve in each area and leverage your strengths for better leadership.",
         title: "Interpret Your Results",
     },
     {
@@ -43,7 +43,7 @@ export const howAssessmentWorksStepsData = [
         imgAlt: "charts_in_desktop",
         imgHeight: 371,
         imgWidth: 481,
-        text: "The report includes visual charts and comprehensive explanations, making it easy to understand your leadership profile. Each indicator is broken down to show how it affects your decision-making, communication, and management approach. TWINDIX offers actionable insights on how to improve in each area and leverage your strengths for better leadership.",
+        text: "TWINDIX isn’t just about analysis—it provides actionable strategies tailored to your specific profile. These strategies help you optimize your leadership style, improve communication with your team, and enhance decision-making. By implementing these insights, you can create a more efficient and aligned organization.",
         title: "Apply the Insights",
     },
     {
