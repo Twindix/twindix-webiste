@@ -81,7 +81,6 @@ export const metadata: Metadata = {
         creator: "@twindix",
         site: "@twindix",
     },
-    verification: { google: "GOOGLE_SITE_VERIFICATION_TOKEN" },
 };
 
 export const viewport: Viewport = { themeColor: "#00519F" };

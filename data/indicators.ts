@@ -23,7 +23,7 @@ export const indicatorsData = [
                 title: "Strengths",
             },
             {
-                text: "They thrive on structure and order, creating detailed road maps that guide projects to success. Every task has a timeline, every resource accounted for.",
+                text: "They thrive on structure and order, creating detailed roadmaps that guide projects to success. Every task has a timeline, every resource accounted for.",
                 title: "Planning Style",
             },
         ],

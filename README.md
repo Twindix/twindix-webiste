@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Twindix — Leadership Intelligence Platform
 
-## Getting Started
+Twindix helps organizations **evaluate leadership intelligence and unlock smarter decisions**. We go beyond standalone assessments: using **AI-powered behavioral analytics**, Twindix reveals how people think, lead, and perform—then provides a clear, actionable roadmap for meaningful development.
 
-First, run the development server:
+This repository contains the Twindix web app built with **Next.js (App Router)** and optimized for fast, accessible delivery and rich SEO.
 
+---
+
+## ✨ What you’ll find inside
+
+- **AI-powered assessments** for executives, candidates, and teams  
+- **Behavioral analytics** that turn signals into development roadmaps  
+- **Modern web stack**: Next.js, TypeScript, App Router, `next/font` with **Roboto Flex**, and first-class SEO  
+- **Production-ready SEO**: Open Graph, Twitter cards, canonical URLs, robots settings, and a themed PWA feel via `themeColor`
+
+---
+
+## 🧠 Brand & SEO defaults (from code metadata)
+
+We ship sensible, business-aligned metadata so your links look great everywhere:
+
+- **Site name:** `Twindix`  
+- **Description:** “We evaluate leadership intelligence and unlock smarter decisions.”  
+- **Open Graph:**  
+  - Image: `/og/og-default.jpg` (1200×630, alt “Twindix – Leadership Intelligence”)  
+  - Type: `website`, URL: `${publicUrl}/`  
+- **Twitter:** `summary_large_image`, `@twindix`  
+- **Robots / Googlebot:** indexing and large previews enabled  
+- **Theme color:** `#00519F`  
+- **Icons:** favicon + apple touch icon  
+- **Fonts:** `next/font` automatically loads **Roboto Flex** with `display=swap` and variable axis `opsz` for crisp text
+
+> **Tip:** Ensure `public/og/og-default.jpg` exists and update `publicUrl`
+
+---
+
+## 🚀 Quick start (with npm)
+
+1) **Clone & install**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <your-repo-url>
+cd <your-repo-folder>
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2) **Run the app (dev)**
+```bash
+npm run dev
+```
+Open http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3) **Lint & type-check (optional but recommended)**
+```bash
+npm run lint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+5) **Build for production**
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Key files & folders
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app/` — App Router pages, layouts, and route handlers  
+- `app/layout.tsx` — Root layout with SEO, fonts, `<Navbar/>`, and `<Footer/>`  
+- `app/page.tsx` — Home page entry (hot-reloads in dev)  
+- `app/globals.css` — Global styles (imported in layout)  
+- `components/` — Reusable UI (e.g., `Navbar`, `Footer`)  
+- `@/data` — Centralized constants like `publicUrl`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧭 Development notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Hot reload:** edit `app/page.tsx` (or any route in `app/`) and see changes instantly.  
+- **Fonts:** We use `next/font` to load **Roboto Flex** with variable axes for optimal rendering and performance.  
+- **Accessibility:** Stick to semantic HTML and ARIA where needed; our defaults aim for strong Lighthouse scores.  
+- **SEO hygiene:**  
+  - Keep `metadataBase` in sync with your live domain (`publicUrl`)  
+  - Ensure Open Graph image(s) exist in `/public/og/`  
+  - Confirm `robots` and `googleBot` settings align with your deployment environment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🌐 Deployment
+
+Twindix runs well on any platform that supports Next.js:
+
+- **Vercel** (recommended for zero-config Next.js)  
+- **Netlify** (Next.js adapter)  
+- **Self-hosted Node**: `npm run build && npm start`
+
+> If you’re using a CDN or reverse proxy, be sure to forward the correct host so canonical URLs and OG tags resolve properly.
+
+---
+
+## 🔧 Useful scripts
+
+```bash
+npm run dev      # start dev server
+npm run build    # production build
+npm start        # run built app
+npm run lint     # lint code
+```
+
+---
+
+## 📄 License
+
+Copyright © Twindix.
+All rights reserved unless stated otherwise in this repository.
+
+---
+
+### Original Next.js instructions (for reference)
+
+Learn more:
+- Next.js Docs: https://nextjs.org/docs  
+- Interactive tutorial: https://nextjs.org/learn  
+- GitHub: https://github.com/vercel/next.js
