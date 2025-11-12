@@ -53,6 +53,10 @@ html, body { height: 100%; }
     box-shadow: 0 12px 28px color-mix(in srgb, var(--color-gray-900) 7%, transparent), inset 0 1px 0 color-mix(in srgb, var(--color-gray-50) 80%, transparent), inset 34px 0 58px color-mix(in srgb, var(--color-gray-50) 65%, transparent), inset 0 -2px 16px color-mix(in srgb, var(--color-gray-50) 55%, transparent);
 }
 
+.nav-glass.scrolled {
+    background: linear-gradient(180deg, color-mix(in srgb, var(--color-gray-900) 28%, transparent) 0%, color-mix(in srgb, white 55%, transparent) 70%, color-mix(in srgb, white 0%, transparent) 100%);
+}
+
 @utility hero-glass {
     position: relative;
     background:

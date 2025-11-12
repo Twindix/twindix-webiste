@@ -13,7 +13,7 @@ import { generateValidClassNameHandler, scrollToHomeTargetHandler } from "@/lib/
 export const Navbar = () => {
     const [open, setOpen] = useState(false);
 
-    const [isFixed, setIsFixed] = useState(true);
+    const [isOnTop, setIsOnTop] = useState(true);
 
     const router = useRouter();
 
@@ -24,7 +24,7 @@ export const Navbar = () => {
     useEffect(
         () => {
             const onScroll = () => {
-                setIsFixed(window.scrollY <= 200);
+                setIsOnTop(window.scrollY <= 200);
             };
 
             onScroll();
@@ -51,13 +51,14 @@ export const Navbar = () => {
     );
 
     return (
-        <header className={generateValidClassNameHandler(
-            "z-50",
-            isFixed ? "fixed top-3 left-0 right-0" : "relative",
-        )}
-        >
+        <header className="z-50 fixed top-3 left-0 right-0">
             <div className="mx-auto container">
-                <div className="nav-glass h-14 lg:h-20 px-3 sm:px-4 flex items-center justify-between gap-4">
+                <div
+                    className={generateValidClassNameHandler(
+                        "h-14 lg:h-20 px-3 sm:px-4 flex items-center justify-between gap-4 nav-glass",
+                        !isOnTop ? "bg-transparent border-white border-2 scrolled" : "",
+                    )}
+                >
                     <Link
                         aria-label="Logo"
                         className="shrink-0"
