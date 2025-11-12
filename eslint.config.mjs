@@ -1,41 +1,19 @@
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { FlatCompat } from "@eslint/eslintrc";
 import js from "@eslint/js";
 import { defineConfig, globalIgnores } from "eslint/config";
 import nextVitals from "eslint-config-next/core-web-vitals";
 import nextTs from "eslint-config-next/typescript";
 import destructuringNewline from "eslint-plugin-destructuring-newline";
+import perfectionist from "eslint-plugin-perfectionist";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import sortDestructureKeys from "eslint-plugin-sort-destructure-keys";
 import sortKeysFix from "eslint-plugin-sort-keys-fix";
-import tsSortKeys from "eslint-plugin-typescript-sort-keys";
 import globals from "globals";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-const compat = new FlatCompat({ baseDirectory: __dirname });
-
-// Load Airbnb then strip duplicated plugins that Next already registers
-const airbnbSlim = compat["extends"]("airbnb").map((cfg) => {
-    if (!cfg || !cfg.plugins) return cfg;
-
-    const newCfg = { ...cfg };
-
-    const newPlugins = { ...cfg.plugins };
-
-    delete newPlugins["import"];
-    delete newPlugins.react;
-    delete newPlugins["react-hooks"];
-    delete newPlugins["jsx-a11y"];
-
-    if (Object.keys(newPlugins).length > 0) newCfg.plugins = newPlugins;
-    else delete newCfg.plugins;
-
-    return newCfg;
-});
 
 export default defineConfig([
     ...nextVitals,
@@ -51,7 +29,6 @@ export default defineConfig([
         "dist/**",
     ]),
     js.configs.recommended,
-    ...airbnbSlim,
     {
         languageOptions: {
             ecmaVersion: 2020,
@@ -67,10 +44,10 @@ export default defineConfig([
         name: "twindix-website:custom",
         plugins: {
             "destructuring-newline": destructuringNewline,
+            perfectionist,
             "simple-import-sort": simpleImportSort,
             "sort-destructure-keys": sortDestructureKeys,
             "sort-keys-fix": sortKeysFix,
-            "typescript-sort-keys": tsSortKeys,
         },
         rules: {
             "array-callback-return": "off",
@@ -106,7 +83,6 @@ export default defineConfig([
             "import/no-named-as-default-member": 0,
             "import/no-unresolved": 0,
             "import/order": "off",
-            "import/prefer-default-export": 0,
             indent: ["error", 4],
             "jsx-a11y/anchor-is-valid": "off",
             "jsx-a11y/click-events-have-key-events": "off",
@@ -132,7 +108,7 @@ export default defineConfig([
             "no-cond-assign": "error",
             "no-else-return": "error",
             "no-eq-null": "error",
-            "no-extra-parens": "error",
+            "no-extra-parens": "off",
             "no-extra-semi": "error",
             "no-fallthrough": "error",
             "no-floating-decimal": "error",
@@ -157,6 +133,8 @@ export default defineConfig([
                 allowAllPropertiesOnSameLine: false,
                 allowMultiplePropertiesPerLine: false,
             }],
+            "perfectionist/sort-objects": ["warn", { order: "asc",
+                type: "natural" }],
             quotes: ["error", "double"],
             radix: 0,
             "react/button-has-type": 0,
@@ -192,7 +170,6 @@ export default defineConfig([
             "valid-typeof": "error",
             "vars-on-top": "error",
         },
-
         settings: {
             "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
             "import/parsers": { "@typescript-eslint/parser": [".ts", ".tsx"] },

@@ -16,7 +16,7 @@ export const RichText = ({ text }: { text: string }) => {
 
     let currentMatch: RegExpExecArray | null;
 
-    while ((currentMatch = pattern.exec(text)) !== null) { // eslint-disable-line
+    while ((currentMatch = pattern.exec(text)) !== null) {
         if (currentMatch.index > lastIndex) {
             output.push(text.slice(
                 lastIndex,

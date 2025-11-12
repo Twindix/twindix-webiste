@@ -38,7 +38,7 @@ export const PrizeResearchDrivenConfidence = () => (
                 type,
             }, index) => (
                 <motion.div
-                    key={index} // eslint-disable-line
+                    key={index}
                     initial={{
                         opacity: 0,
                         x: index % 2 === 0 ? -200 : 200,
@@ -56,7 +56,7 @@ export const PrizeResearchDrivenConfidence = () => (
                     <h3 className="text-gradient1">{title}</h3>
                     {type === "list" ? (
                         <ul className="list-disc list-inside">
-                            {items?.map((li, i) => <li key={i}>{li}</li>)} {/* eslint-disable-line */}
+                            {items?.map((li, i) => <li key={i}>{li}</li>)}
                         </ul>
                     ) : <p>{text}</p>}
                 </motion.div>

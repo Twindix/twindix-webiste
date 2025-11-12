@@ -35,7 +35,7 @@ export const Footer = () => {
                             }, index) => (
                                 <li
                                     className="font-medium text-xs lg:text-sm"
-                                    key={index} // eslint-disable-line
+                                    key={index}
                                 >
                                     <Link
                                         aria-label={label}
@@ -55,7 +55,7 @@ export const Footer = () => {
                                 label,
                                 targetId,
                             }, index) => (
-                                <li key={index}> {/* eslint-disable-line */}
+                                <li key={index}>
                                     <Button
                                         ariaLabel={label}
                                         variant="link"
@@ -81,7 +81,7 @@ export const Footer = () => {
                             }, index) => (
                                 <li
                                     className="font-medium text-xs lg:text-sm"
-                                    key={index} // eslint-disable-line
+                                    key={index}
                                 >
                                     {isExternal && (
                                         <Link

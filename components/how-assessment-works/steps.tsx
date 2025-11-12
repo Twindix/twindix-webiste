@@ -19,7 +19,7 @@ export const HowAssessmentWorksSteps = () => (
             }, index) => (
                 <div
                     className="grid grid-cols-1 lg:grid-cols-12 gap-3 lg:gap-6"
-                    key={index} // eslint-disable-line
+                    key={index}
                 >
                     <motion.div
                         className={`col-span-1 lg:col-span-6 flex flex-col ${index % 2 === 0 ? "lg:order-1" : "lg:order-2"}`}

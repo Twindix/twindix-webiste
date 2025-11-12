@@ -46,7 +46,7 @@ export const WhatsTwindixIndicators = () => (
             }, index) => (
                 <div
                     className="grid grid-cols-1 lg:grid-cols-12 gap-3 lg:gap-6"
-                    key={index} // eslint-disable-line
+                    key={index}
                 >
                     <motion.div
                         className={`col-span-1 lg:col-span-6 flex flex-col gap-3 lg:gap-6 ${index % 2 === 0 ? "lg:order-2" : "lg:order-1"}`}
@@ -70,7 +70,7 @@ export const WhatsTwindixIndicators = () => (
                         }, itemIndex) => (
                             <div
                                 className="flex flex-col"
-                                key={itemIndex} // eslint-disable-line
+                                key={itemIndex}
                             >
                                 <h3 className="text-gradient1">{title}</h3>
                                 <p><RichText text={text} /></p>

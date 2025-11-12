@@ -94,7 +94,7 @@ export const Navbar = () => {
                             <Link
                                 aria-label={label}
                                 href={href}
-                                key={index} // eslint-disable-line
+                                key={index}  
                                 className={generateValidClassNameHandler(
                                     "text-sm text-black hover:text-foreground font-medium transition",
                                     isActive(href) && "text-blue-700 font-medium",
@@ -163,7 +163,7 @@ export const Navbar = () => {
                 </div>
                 <div className={`lg:hidden transition-[max-height] duration-200 overflow-hidden ${open ? "max-h-fit top-2 shadow-2xl nav-glass px-4 rounded-2xl relative" : "max-h-0"} `}>
                     <nav className="py-3 flex flex-col gap-4">
-                        {navbarItemsData.map(({ // eslint-disable-line
+                        {navbarItemsData.map(({  
                             href = "/",
                             label,
                             targetId,
@@ -171,8 +171,8 @@ export const Navbar = () => {
                             <Button
                                 ariaLabel={label}
                                 className="text-black! hover:no-underline"
+                                key={index}
                                 variant="link"
-                                key={index} // eslint-disable-line
                                 isMini
                                 onClick={() => scrollToHomeTargetHandler(
                                     targetId,
@@ -185,7 +185,7 @@ export const Navbar = () => {
                             <Link
                                 aria-label={label}
                                 href={href}
-                                key={index} // eslint-disable-line
+                                key={index}
                                 className={generateValidClassNameHandler(
                                     "text-xs text-black hover:text-foreground font-medium transition",
                                     isActive(href) && "text-blue-700 font-medium",

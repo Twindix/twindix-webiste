@@ -32,7 +32,7 @@ export const PrizeExpandedBenefits = () => (
                 title,
             }, index) => (
                 <motion.div
-                    key={index} // eslint-disable-line
+                    key={index}
                     initial={{
                         opacity: 0,
                         x: index % 2 === 0 ? -200 : 200,

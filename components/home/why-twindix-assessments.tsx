@@ -40,7 +40,7 @@ export const HomeWhyTwindixAssessments = () => (
                 text,
                 title,
             }, index) => (
-                <Fragment key={index}> {/* eslint-disable-line */}
+                <Fragment key={index}>
                     <motion.div
                         className={`col-span-1 lg:col-span-${colSpan} h-full`}
                         initial={{
