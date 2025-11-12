@@ -14,10 +14,11 @@ export const HomeWhyTwindixAssessments = () => (
             className="grid place-content-center mb-4 lg:mb-8"
             initial={{
                 opacity: 0,
-                y: -20,
+                y: -200,
             }}
             transition={{
-                duration: 0.8,
+                delay: 0.2,
+                duration: 1,
                 ease: "easeOut",
             }}
             whileInView={{
@@ -44,10 +45,11 @@ export const HomeWhyTwindixAssessments = () => (
                         className={`col-span-1 lg:col-span-${colSpan} h-full`}
                         initial={{
                             opacity: 0,
-                            x: index % 2 === 0 ? -20 : 20,
+                            x: index % 2 === 0 ? -200 : 200,
                         }}
                         transition={{
-                            duration: 0.8,
+                            delay: index * 0.06,
+                            duration: 1,
                             ease: "easeOut",
                         }}
                         whileInView={{
@@ -78,10 +80,11 @@ export const HomeWhyTwindixAssessments = () => (
                             className="col-span-1 lg:col-span-5 flex flex-col justify-center gap-2 lg:gap-4"
                             initial={{
                                 opacity: 0,
-                                x: 20,
+                                x: 200,
                             }}
                             transition={{
-                                duration: 0.8,
+                                delay: 7 * 0.06,
+                                duration: 1,
                                 ease: "easeOut",
                             }}
                             whileInView={{

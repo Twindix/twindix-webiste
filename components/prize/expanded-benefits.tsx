@@ -12,10 +12,11 @@ export const PrizeExpandedBenefits = () => (
             className="title-with-white-box mb-4 lg:mb-8"
             initial={{
                 opacity: 0,
-                y: -20,
+                y: -200,
             }}
             transition={{
-                duration: 0.8,
+                delay: 0.2,
+                duration: 1,
                 ease: "easeOut",
             }}
             whileInView={{
@@ -34,10 +35,11 @@ export const PrizeExpandedBenefits = () => (
                     key={index} // eslint-disable-line
                     initial={{
                         opacity: 0,
-                        x: index % 2 === 0 ? -20 : 20,
+                        x: index % 2 === 0 ? -200 : 200,
                     }}
                     transition={{
-                        duration: 0.8,
+                        delay: index * 0.06,
+                        duration: 1,
                         ease: "easeOut",
                     }}
                     whileInView={{
@@ -55,10 +57,11 @@ export const PrizeExpandedBenefits = () => (
                 className="text-gradient3"
                 initial={{
                     opacity: 0,
-                    x: -20,
+                    x: -200,
                 }}
                 transition={{
-                    duration: 0.8,
+                    delay: 6 * 0.06,
+                    duration: 1,
                     ease: "easeOut",
                 }}
                 whileInView={{
@@ -77,10 +80,11 @@ export const PrizeExpandedBenefits = () => (
             <motion.div
                 initial={{
                     opacity: 0,
-                    x: 20,
+                    x: 200,
                 }}
                 transition={{
-                    duration: 0.8,
+                    delay: 6 * 0.06,
+                    duration: 1,
                     ease: "easeOut",
                 }}
                 whileInView={{

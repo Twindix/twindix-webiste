@@ -12,10 +12,11 @@ export const PrizeResearchDrivenConfidence = () => (
             className="title-with-white-box mb-4 lg:mb-8"
             initial={{
                 opacity: 0,
-                y: -20,
+                y: -200,
             }}
             transition={{
-                duration: 0.8,
+                delay: 0.2,
+                duration: 1,
                 ease: "easeOut",
             }}
             whileInView={{
@@ -40,10 +41,11 @@ export const PrizeResearchDrivenConfidence = () => (
                     key={index} // eslint-disable-line
                     initial={{
                         opacity: 0,
-                        x: index % 2 === 0 ? -20 : 20,
+                        x: index % 2 === 0 ? -200 : 200,
                     }}
                     transition={{
-                        duration: 0.8,
+                        delay: index * 0.06,
+                        duration: 1,
                         ease: "easeOut",
                     }}
                     whileInView={{
@@ -64,10 +66,11 @@ export const PrizeResearchDrivenConfidence = () => (
             className="w-full flex flex-col lg:flex-row justify-center lg:justify-end mt-4 lg:mt-8"
             initial={{
                 opacity: 0,
-                x: 20,
+                x: 200,
             }}
             transition={{
-                duration: 0.8,
+                delay: 5 * 0.06,
+                duration: 1,
                 ease: "easeOut",
             }}
             whileInView={{

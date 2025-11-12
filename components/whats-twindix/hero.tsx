@@ -17,10 +17,11 @@ export const WhatsTwindixHero = () => (
             }}
             initial={{
                 opacity: 0,
-                y: -20,
+                y: -200,
             }}
             transition={{
-                duration: 0.8,
+                delay: 0.2,
+                duration: 1,
                 ease: "easeOut",
             }}
         >

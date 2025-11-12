@@ -25,15 +25,24 @@ export const HowAssessmentWorksSteps = () => (
                         className={`col-span-1 lg:col-span-6 flex flex-col ${index % 2 === 0 ? "lg:order-1" : "lg:order-2"}`}
                         initial={{
                             opacity: 0,
-                            x: index % 2 === 0 ? -20 : 20,
+                            x: index % 2 === 0 ? -200 : 200,
                         }}
+                        {...(index === 0 && {
+                            animate: {
+                                opacity: 1,
+                                x: 0,
+                            },
+                        })}
+                        {...(index !== 0 && {
+                            whileInView: {
+                                opacity: 1,
+                                x: 0,
+                            },
+                        })}
                         transition={{
-                            duration: 0.8,
+                            delay: index * 0.06,
+                            duration: 1,
                             ease: "easeOut",
-                        }}
-                        whileInView={{
-                            opacity: 1,
-                            x: 0,
                         }}
                     >
                         <span className="text-foreground font-semibold text-sm lg:text-lg">
@@ -48,16 +57,25 @@ export const HowAssessmentWorksSteps = () => (
                         className={`col-span1 lg:col-span-6 flex ${index % 2 === 0 ? "lg:order-2 lg:justify-end" : "lg:order-1"}`}
                         initial={{
                             opacity: 0,
-                            x: index % 2 === 0 ? 20 : -20,
+                            x: index % 2 === 0 ? 200 : -200,
                         }}
                         transition={{
-                            duration: 0.8,
+                            delay: index * 0.06,
+                            duration: 1,
                             ease: "easeOut",
                         }}
-                        whileInView={{
-                            opacity: 1,
-                            x: 0,
-                        }}
+                        {...(index === 0 && {
+                            animate: {
+                                opacity: 1,
+                                x: 0,
+                            },
+                        })}
+                        {...(index !== 0 && {
+                            whileInView: {
+                                opacity: 1,
+                                x: 0,
+                            },
+                        })}
                     >
                         <Image
                             alt={imgAlt}

@@ -19,10 +19,11 @@ export const AboutMissionAndVision = () => (
                 }}
                 initial={{
                     opacity: 0,
-                    x: -20,
+                    x: -200,
                 }}
                 transition={{
-                    duration: 0.8,
+                    delay: 0.2,
+                    duration: 1,
                     ease: "easeOut",
                 }}
             >
@@ -57,10 +58,11 @@ export const AboutMissionAndVision = () => (
                 }}
                 initial={{
                     opacity: 0,
-                    x: 20,
+                    x: 200,
                 }}
                 transition={{
-                    duration: 0.8,
+                    delay: 0.2,
+                    duration: 1,
                     ease: "easeOut",
                 }}
             >

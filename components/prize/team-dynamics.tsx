@@ -5,17 +5,18 @@ import { motion } from "framer-motion";
 export const TeamDynamics = () => (
     <section className="pt-2 lg:pt-4 pb-5 lg:pb-10">
         <motion.div
-            initial={{
-                opacity: 0,
-                y: -20,
-            }}
-            transition={{
-                duration: 0.8,
-                ease: "easeOut",
-            }}
-            whileInView={{
+            animate={{
                 opacity: 1,
                 y: 0,
+            }}
+            initial={{
+                opacity: 0,
+                y: -200,
+            }}
+            transition={{
+                delay: 0.2,
+                duration: 1,
+                ease: "easeOut",
             }}
         >
             <h2 className="text-gradient1">

@@ -19,10 +19,11 @@ export const HomeAssessment = () => (
             className="grid place-content-center mb-4 lg:mb-8"
             initial={{
                 opacity: 0,
-                y: -20,
+                y: -200,
             }}
             transition={{
-                duration: 0.8,
+                delay: 0.2,
+                duration: 1,
                 ease: "easeOut",
             }}
             whileInView={{
@@ -35,10 +36,11 @@ export const HomeAssessment = () => (
         <motion.div
             initial={{
                 opacity: 0,
-                x: -20,
+                x: -200,
             }}
             transition={{
-                duration: 0.8,
+                delay: 0.2,
+                duration: 1,
                 ease: "easeOut",
             }}
             viewport={{
@@ -99,10 +101,11 @@ export const HomeAssessment = () => (
         <motion.div
             initial={{
                 opacity: 0,
-                x: 20,
+                x: 200,
             }}
             transition={{
-                duration: 0.8,
+                delay: 0.2,
+                duration: 1,
                 ease: "easeOut",
             }}
             viewport={{
