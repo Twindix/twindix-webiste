@@ -55,7 +55,7 @@ export const HomeWhyTwindixAssessments = () => (
                             x: 0,
                         }}
                     >
-                        <Card className="group h-full xl:min-h-[400px] flex lg:flex-col xl:flex-row lg:gap-4 xl:gap-0 items-center justify-between overflow-hidden cursor-pointer hover:bg-blue-50">
+                        <Card className="group h-full xl:min-h-[400px] flex lg:flex-col xl:flex-row lg:gap-4 xl:gap-0 items-center xl:items-start justify-between overflow-hidden cursor-pointer hover:bg-blue-100">
                             <div className="flex flex-col h-full justify-between">
                                 <span className="font-bold text-3xl lg:text-5xl text-blue-100 group-hover:text-blue-700">{index + 1}</span>
                                 <div>
@@ -68,7 +68,7 @@ export const HomeWhyTwindixAssessments = () => (
                             </div>
                             <Image
                                 alt={imgAlt}
-                                className="w-30 h-40 md:w-[171px] md:h-[185px] opacity-50 group-hover:opacity-100 group-hover:scale-[1.2] transition ease-out duration-800"
+                                className="size-30 md:size-50 xl:size-60 opacity-30 group-hover:opacity-70 group-hover:scale-[1.15] transition ease-out duration-800"
                                 src={img}
                             />
                         </Card>
