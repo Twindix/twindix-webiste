@@ -69,17 +69,17 @@ export const HomeHero = () => (
             >
                 <Image
                     alt="assessments_docs"
-                    className="lg:absolute left-0 top-[45%] lg:size-[180px]"
-                    height={180}
+                    className="lg:absolute left-0 top-[40%] w-45 h-35 sm:h-40 lg:h-auto sm:w-55 object-contain lg:object-fill"
+                    height={220}
                     src={assessmentsDocs2}
-                    width={180}
+                    width={220}
                 />
                 <Image
                     alt="assessments_docs"
-                    className="lg:absolute right-0 top-[45%] lg:size-[180px]"
-                    height={180}
+                    className="lg:absolute right-0 top-[48%] w-45 sm:w-55 object-contain lg:object-fill"
+                    height={220}
                     src={assessmentsDocs1}
-                    width={180}
+                    width={220}
                 />
             </motion.div>
             <div>
