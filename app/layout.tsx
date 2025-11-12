@@ -92,7 +92,7 @@ export default function RootLayout({ children } : Readonly<{ children: ReactNode
             lang="en"
         >
             <body
-                className={`min-h-screen flex flex-col bg-background text-foreground ${robotoFont.className} antialiased`}
+                className={`min-h-screen overflow-x-hidden flex flex-col bg-background text-foreground ${robotoFont.className} antialiased`}
                 suppressHydrationWarning
             >
                 <Navbar />

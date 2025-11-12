@@ -1,21 +1,78 @@
-const { createServer } = require('http');
+const { createServer } = require("http"); // eslint-disable-line
 
-const { parse } = require('url');
+const { parse } = require("url"); // eslint-disable-line
 
-const next = require('next');
+const next = require("next"); // eslint-disable-line
 
-const dev = process.env.NODE_ENV !== 'production';
+const dev = process.env.NODE_ENV !== "production";
 
-const port = process.env.PORT || 3000;
+const hostname = "localhost";
 
-const app = next({ dev });
+const port = 3000;
+
+const app = next({
+    dev,
+    hostname,
+    port,
+});
 
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
-    createServer((req, res) => {
-        const parsedUrl = parse(req.url, true);
+    createServer(async (req, res) => {
+        try {
+            const parsedUrl = parse(
+                req.url,
+                true,
+            );
 
-        return handle(req, res, parsedUrl);
-    }).listen(port, () => console.log(`Ready on :${port}`));
+            const {
+                pathname,
+                query,
+            } = parsedUrl;
+
+            if (pathname === "/a") {
+                await app.render(
+                    req,
+                    res,
+                    "/a",
+                    query,
+                );
+            } else if (pathname === "/b") {
+                await app.render(
+                    req,
+                    res,
+                    "/b",
+                    query,
+                );
+            } else {
+                await handle(
+                    req,
+                    res,
+                    parsedUrl,
+                );
+            }
+        } catch (err) {
+            console.error(
+                "Error occurred handling",
+                req.url,
+                err,
+            );
+            res.statusCode = 500;
+
+            res.end("Internal Server Error");
+        }
+    }).once(
+        "error",
+        (err) => {
+            console.error(err);
+
+            process.exit(1);
+        },
+    ).listen(
+        port,
+        () => {
+            console.log(`Ready on http://${hostname}:${port}`);
+        },
+    );
 });
