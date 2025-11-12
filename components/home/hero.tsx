@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-import curvedLine from "@/app/assets/icons/curved_line.svg";
 import star from "@/app/assets/icons/star.svg";
 import assessmentsDocs1 from "@/app/assets/images/assessments_docs_1.webp";
 import assessmentsDocs2 from "@/app/assets/images/assessments_docs_2.webp";
+import curvedLine from "@/app/assets/images/curved_line.webp";
 import { Hero } from "@/components";
 
 export const HomeHero = () => (
