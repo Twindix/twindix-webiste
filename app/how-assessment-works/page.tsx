@@ -8,12 +8,12 @@ export default function HowAssessmentWorks() {
     return (
         <div className="relative">
             <Image
-                alt="curved_line"
+                alt="snack_line"
                 className="absolute top-25 left-1/10 sm:left-1/4 inset-0 -z-10 pointer-events-none object-cover h-full lg:hidden"
                 src={snackLineMobile}
             />
             <Image
-                alt="curved_line"
+                alt="snack_line"
                 className="absolute top-30 left-1/9 inset-0 -z-10 pointer-events-none hidden lg:block"
                 src={snackLine}
             />

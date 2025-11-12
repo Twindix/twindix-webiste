@@ -80,7 +80,6 @@ export const AboutKeyComponents = () => (
                             className="max-w-full m-auto lg:m-0"
                             height={imgHeight}
                             placeholder="blur"
-                            priority={index === 0}
                             src={img}
                             width={imgWidth}
                         />

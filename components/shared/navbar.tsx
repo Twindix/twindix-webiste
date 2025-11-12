@@ -67,7 +67,6 @@ export const Navbar = () => {
                         <Image
                             alt="logo"
                             className="w-[134px] h-12 lg:h-[74px]"
-                            placeholder="blur"
                             src={logo}
                             priority
                         />

@@ -3,7 +3,7 @@ import { AboutKeyComponents } from "./about/key-components";
 import { AboutMissionAndVision } from "./about/mission-and-vision";
 import { HomeAssessment } from "./home/assessment";
 import { HomeHero } from "./home/hero";
-import { HomeTwindixDifference } from "./home/twindix-difference";
+import { HomeTwindixDifferent } from "./home/twindix-different";
 import { HomeTwindixRightChoice } from "./home/twindix-right-choice";
 import { HomeWhyTwindixAssessments } from "./home/why-twindix-assessments";
 import { HowAssessmentWorksHero } from "./how-assessment-works/hero";
@@ -33,7 +33,7 @@ export {
     Hero,
     HomeAssessment,
     HomeHero,
-    HomeTwindixDifference,
+    HomeTwindixDifferent,
     HomeTwindixRightChoice,
     HomeWhyTwindixAssessments,
     HowAssessmentWorksHero,

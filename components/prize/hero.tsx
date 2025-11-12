@@ -39,6 +39,7 @@ export const PrizeHero = () => (
         </motion.div>
         <Image
             alt="stock"
+            placeholder="blur"
             src={stock}
             priority
         />

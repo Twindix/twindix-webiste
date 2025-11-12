@@ -19,7 +19,7 @@ export const Footer = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 py-5 lg:py-10">
                     <div className="flex flex-col gap-2 lg:gap-4">
                         <Image
-                            alt="footer_logo"
+                            alt="logo"
                             className="w-[150px] h-10"
                             placeholder="blur"
                             src={footerLogo}

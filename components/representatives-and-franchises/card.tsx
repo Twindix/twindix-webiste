@@ -20,11 +20,12 @@ export const RepresentativesAndFranchisesCard = () => (
         <Card className="grid gap-3 lg:gap-6 grid-cols-1 lg:grid-cols-12 justify-between items-center mt-4 lg:mt-8 w-fit! mx-auto">
             <div className="col-span-1 lg:col-span-5">
                 <Image
-                    alt="assessments_docs"
+                    alt="rboua_logo"
                     height={210}
                     placeholder="blur"
                     src={rbouaLogo}
                     width={404}
+                    priority
                 />
             </div>
             <div className="col-span-1 lg:col-span-7">
@@ -46,6 +47,7 @@ export const RepresentativesAndFranchisesCard = () => (
                             height={20}
                             src={phone}
                             width={20}
+                            priority
                         />
                         <a
                             className="text-black/70 text-sm lg:text-lg hover:underline"
@@ -60,6 +62,7 @@ export const RepresentativesAndFranchisesCard = () => (
                             height={20}
                             src={mobile}
                             width={20}
+                            priority
                         />
                         <a
                             className="text-black/70 text-sm lg:text-lg hover:underline"
@@ -74,6 +77,7 @@ export const RepresentativesAndFranchisesCard = () => (
                             height={20}
                             src={message}
                             width={20}
+                            priority
                         />
                         <a
                             className="text-black/70 text-sm lg:text-lg hover:underline"
@@ -88,6 +92,7 @@ export const RepresentativesAndFranchisesCard = () => (
                             height={20}
                             src={globe}
                             width={20}
+                            priority
                         />
                         <a
                             className="text-black/70 text-sm lg:text-lg hover:underline"

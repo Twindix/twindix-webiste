@@ -5,8 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import rightArrow from "@/app/assets/icons/right_arrow.svg";
-import assessmentsDocs3 from "@/app/assets/images/assessments_docs_3.webp";
-import assessmentsDocs4 from "@/app/assets/images/assessments_docs_4.webp";
+import assessmentDocs3 from "@/app/assets/images/assessment_docs_3.webp";
+import assessmentDocs4 from "@/app/assets/images/assessment_docs_4.webp";
 import { Button, Card } from "@/atoms";
 import { portalUrl, routeUrlsData } from "@/data";
 
@@ -87,11 +87,11 @@ export const HomeAssessment = () => (
                 </div>
                 <div className="col-span-1 lg:col-span-5 flex lg:justify-end">
                     <Image
-                        alt="assessments_docs"
+                        alt="assessment_docs"
                         className="m-auto lg:m-0"
                         height={306}
                         placeholder="blur"
-                        src={assessmentsDocs3}
+                        src={assessmentDocs3}
                     />
                 </div>
             </Card>
@@ -151,11 +151,11 @@ export const HomeAssessment = () => (
                 </div>
                 <div className="col-span-1 lg:col-span-5 flex lg:justify-end">
                     <Image
-                        alt="assessments_docs"
+                        alt="assessment_docs"
                         className="m-auto lg:m-0"
                         height={278}
                         placeholder="blur"
-                        src={assessmentsDocs4}
+                        src={assessmentDocs4}
                     />
                 </div>
             </Card>

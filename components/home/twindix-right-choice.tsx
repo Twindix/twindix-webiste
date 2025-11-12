@@ -122,7 +122,7 @@ export const HomeTwindixRightChoice = () => (
                             power,
                         ].map((src, index) => (
                             <div
-                            key={index} // eslint-disable-line
+                                key={index} // eslint-disable-line
                                 className={generateValidClassNameHandler(
                                     "absolute top-1/2 left-1/2 xl:left-2/3 z-10 origin-center grid place-items-center transform-[translate(-50%,-50%)_rotate(var(--a))_translate(var(--r))_rotate(calc(-1*var(--a)))]",
                                     index === 3 ? "w-16 h-16" : "w-12 h-12",

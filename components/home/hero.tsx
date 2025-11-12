@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 import star from "@/app/assets/icons/star.svg";
-import assessmentsDocs1 from "@/app/assets/images/assessments_docs_1.webp";
-import assessmentsDocs2 from "@/app/assets/images/assessments_docs_2.webp";
+import assessmentDocs1 from "@/app/assets/images/assessment_docs_1.webp";
+import assessmentDocs2 from "@/app/assets/images/assessment_docs_2.webp";
 import curvedLine from "@/app/assets/images/curved_line.webp";
 import { Hero } from "@/components";
 
@@ -68,18 +68,22 @@ export const HomeHero = () => (
                 }}
             >
                 <Image
-                    alt="assessments_docs"
+                    alt="assessment_docs"
                     className="lg:absolute left-0 top-[40%] w-45 h-35 sm:h-40 lg:h-auto sm:w-55 object-contain lg:object-fill"
                     height={220}
-                    src={assessmentsDocs2}
+                    placeholder="blur"
+                    src={assessmentDocs1}
                     width={220}
+                    priority
                 />
                 <Image
-                    alt="assessments_docs"
+                    alt="assessment_docs"
                     className="lg:absolute right-0 top-[48%] w-45 sm:w-55 object-contain lg:object-fill"
                     height={220}
-                    src={assessmentsDocs1}
+                    placeholder="blur"
+                    src={assessmentDocs2}
                     width={220}
+                    priority
                 />
             </motion.div>
             <div>

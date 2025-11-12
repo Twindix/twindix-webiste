@@ -8,7 +8,7 @@ import cooperation from "@/app/assets/icons/cooperation.svg";
 import search from "@/app/assets/icons/search.svg";
 import { Card } from "@/atoms";
 
-export const HomeTwindixDifference = () => (
+export const HomeTwindixDifferent = () => (
     <section className="pb-5 lg:pb-10">
         <motion.div
             animate={{
@@ -30,7 +30,7 @@ export const HomeTwindixDifference = () => (
                         What makes
                         <br className="hidden lg:block" />
                         {" "}
-                        Twindix Different?
+                        <span className="font-bold">TWINDIX Different?</span>
                     </h2>
                     <p>Twindix isn’t just a survey—it’s built on insights from 1,500 studies and 230 business models. It maps your strengths, highlights growth areas, and delivers practical strategies to enhance leadership and empower your team.</p>
                 </div>
