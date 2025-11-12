@@ -4,6 +4,13 @@ Twindix helps organizations **evaluate leadership intelligence and unlock smarte
 
 This repository contains the Twindix web app built with **Next.js (App Router)** and optimized for fast, accessible delivery and rich SEO.
 
+## 🛠 Runtime
+
+- **Node.js:** 20.19.4 (LTS)  
+- **Package manager:** npm 10.9.2
+
+> This project targets Node 20 LTS. If you use `nvm`, run `nvm use` after cloning.
+
 ---
 
 ## ✨ What you’ll find inside
@@ -29,8 +36,6 @@ We ship sensible, business-aligned metadata so your links look great everywhere:
 - **Theme color:** `#00519F`  
 - **Icons:** favicon + apple touch icon  
 - **Fonts:** `next/font` automatically loads **Roboto Flex** with `display=swap` and variable axis `opsz` for crisp text
-
-> **Tip:** Ensure `public/og/og-default.jpg` exists and update `publicUrl`
 
 ---
 
@@ -92,8 +97,6 @@ Twindix runs well on any platform that supports Next.js:
 - **Vercel** (recommended for zero-config Next.js)  
 - **Netlify** (Next.js adapter)  
 - **Self-hosted Node**: `npm run build && npm start`
-
-> If you’re using a CDN or reverse proxy, be sure to forward the correct host so canonical URLs and OG tags resolve properly.
 
 ---
 
