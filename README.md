@@ -7,7 +7,7 @@ This repository contains the Twindix web app built with **Next.js (App Router)**
 ## 🛠 Runtime
 
 - **Node.js:** 20.19.4 (LTS)  
-- **Package manager:** npm 10.9.2
+- **Package manager:** npm 10.8.2
 
 > This project targets Node 20 LTS. If you use `nvm`, run `nvm use` after cloning.
 

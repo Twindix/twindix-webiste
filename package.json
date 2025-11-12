@@ -2,7 +2,7 @@
     "name": "twindix-website",
     "version": "0.1.0",
     "engines": { "node": ">=20.19.4" },
-    "packageManager": "npm@10.9.2",
+    "packageManager": "npm@10.8.2",
     "private": true,
     "scripts": {
         "dev": "next dev",
