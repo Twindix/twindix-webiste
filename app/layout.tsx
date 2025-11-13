@@ -83,20 +83,25 @@ export const metadata: Metadata = {
     },
 };
 
-export const viewport: Viewport = { themeColor: "#00519F" };
+export const viewport: Viewport = {
+    initialScale: 1,
+    themeColor: "#00519F",
+    viewportFit: "cover",
+    width: "device-width",
+};
 
 export default function RootLayout({ children } : Readonly<{ children: ReactNode }>) {
     return (
         <html
-            className={`${robotoFont.variable} font-sans`}
+            className={`${robotoFont.className} font-sans`}
             lang="en"
         >
             <body
-                className={`min-h-screen overflow-x-hidden flex flex-col bg-background text-foreground ${robotoFont.className} antialiased`}
+                className={`min-h-screen bg-background text-foreground ${robotoFont.className} antialiased`}
                 suppressHydrationWarning
             >
                 <Navbar />
-                <main className="flex-1">{children}</main>
+                <main className="overflow-hidden">{children}</main>
                 <Footer />
             </body>
         </html>

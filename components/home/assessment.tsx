@@ -83,7 +83,7 @@ export const HomeAssessment = () => (
                             withArrowsIcon
                         >
                             Get The Assessment
-                            <span className="font-bold ml-2">119$</span>
+                            <span className="font-bold ml-2">499$</span>
                         </Button>
                     </Link>
                 </div>
@@ -148,7 +148,7 @@ export const HomeAssessment = () => (
                             withArrowsIcon
                         >
                             Get The Assessment
-                            <span className="font-bold ml-2">119$</span>
+                            <span className="font-bold ml-2">49$</span>
                         </Button>
                     </Link>
                 </div>

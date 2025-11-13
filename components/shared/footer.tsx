@@ -21,7 +21,6 @@ export const Footer = () => {
                         <Image
                             alt="logo"
                             className="w-[150px] h-10"
-                            placeholder="blur"
                             src={footerLogo}
                         />
                         <Social />
