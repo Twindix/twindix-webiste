@@ -99,6 +99,11 @@ html, body { height: 100%; }
     }
 }
 
+@media (min-width: 1536px) {
+    .hero-section { min-height: 900px; }
+}
+
+
 @utility card-gradient {
     background:
         radial-gradient(ellipse 60% 140% at 0% 0%, color-mix(in srgb, var(--color-blue-600) 26%, transparent) 0%, color-mix(in srgb, var(--color-blue-300) 34%, transparent) 35%, color-mix(in srgb, white 94%, var(--color-blue-50) 6%) 65%, transparent 85%),
