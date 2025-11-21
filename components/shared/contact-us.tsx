@@ -101,7 +101,7 @@ export const ContactUs = () => {
                     id="contact_us"
                 >
                     <div>
-                        <h2 className="text-gradient1">Contact Us</h2>
+                        <h2 className="text-gradient">Contact Us</h2>
                         <p>We are here to help you! Contact us through any of the following methods.</p>
                     </div>
                     <form
@@ -154,7 +154,7 @@ export const ContactUs = () => {
                 </div>
                 <div className="col-span-1 lg:col-span-5 lg:m-auto flex flex-col gap-4 lg:gap-8">
                     <div>
-                        <h3 className="text-gradient1">Follow Us on Social Media</h3>
+                        <h3 className="text-gradient">Follow Us on Social Media</h3>
                         <p>Stay updated with the latest insights and resources by connecting with us on social media.</p>
                     </div>
                     <Social />

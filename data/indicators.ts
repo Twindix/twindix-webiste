@@ -1,45 +1,46 @@
-import undrawAllTheData from "@/app/assets/images/undraw_all_the_data.webp";
-import undrawChoice from "@/app/assets/images/undraw_choice.webp";
-import undrawDataProcessing from "@/app/assets/images/undraw_data_processing.webp";
-import undrawDigitalCalendar from "@/app/assets/images/undraw_digital_calendar.webp";
-import undrawForReview from "@/app/assets/images/undraw_for_review.webp";
-import undrawPriorities from "@/app/assets/images/undraw_priorities.webp";
-import undrawResponsiveness from "@/app/assets/images/undraw_responsiveness.webp";
-import undrawSplitTesting from "@/app/assets/images/undraw_split_testing.webp";
+import allTheData from "@/app/assets/images/all_the_data.webp";
+import choice from "@/app/assets/images/choice.webp";
+import dataProcessing from "@/app/assets/images/data_processing.webp";
+import digitalCalendar from "@/app/assets/images/digital_calendar.webp";
+import forReview from "@/app/assets/images/for_review.webp";
+import priorities from "@/app/assets/images/priorities.webp";
+import responsiveness from "@/app/assets/images/responsiveness.webp";
+import splitTesting from "@/app/assets/images/split_testing.webp";
 
 export const indicatorsData = [
     {
-        img: undrawDigitalCalendar,
-        imgAlt: "undraw_digital_calendar",
+        img: digitalCalendar,
+        imgAlt: "digital_calendar",
         imgHeight: 390,
         imgWidth: 503,
         items: [
             {
-                text: "Planners are strategic thinkers, known for their ability to break down long-term goals into manageable tasks. They focus on meticulous planning and preparation, ensuring that every step is considered before execution.",
+                text: "Planners are strategic thinkers, known for their ability to break down long-term goals into manageable tasks. They focus on meticulous planning and preparation, ensuring that every step is considered before execution",
                 title: "Characteristics",
-            },
-            {
-                text: "Strong foresight and organization.",
-                title: "Strengths",
             },
             {
                 text: "They thrive on structure and order, creating detailed roadmaps that guide projects to success. Every task has a timeline, every resource accounted for.",
                 title: "Planning Style",
             },
+            {
+                text: "Strong foresight and organization.",
+                title: "Strengths",
+            },
         ],
+        title: "Planner",
     },
     {
-        img: undrawResponsiveness,
-        imgAlt: "undraw_responsiveness",
+        img: responsiveness,
+        imgAlt: "responsiveness",
         imgHeight: 478,
         imgWidth: 529,
         items: [
             {
-                text: "Highly adaptable, Responsiveness excel in fast-paced environments where quick decisions are critical. They remain calm under pressure, pivoting as new information becomes available.",
+                text: "Highly adaptable. Excel in fast-paced environments where quick decisions are required. Thrive in situations with new information.",
                 title: "Characteristics",
             },
             {
-                text: "Responsiveness excel at making decisions on the fly, balancing speed with judgment. They are quick thinkers who thrive on their ability to react to unpredictable situations.",
+                text: "Make decisions on the fly, balancing speed with judgment. Quick thinkers who thrive under pressure and adjust to unpredictable changes.",
                 title: "Decision-Making",
             },
             {
@@ -47,10 +48,11 @@ export const indicatorsData = [
                 title: "Strengths",
             },
         ],
+        title: "Responsive",
     },
     {
-        img: undrawForReview,
-        imgAlt: "undraw_for_review",
+        img: forReview,
+        imgAlt: "for_review",
         imgHeight: 494,
         imgWidth: 536,
         items: [
@@ -67,10 +69,11 @@ export const indicatorsData = [
                 title: "Strengths",
             },
         ],
+        title: "Auditor",
     },
     {
-        img: undrawDataProcessing,
-        imgAlt: "undraw_data_processing",
+        img: dataProcessing,
+        imgAlt: "data_processing",
         imgHeight: 477,
         imgWidth: 589,
         items: [
@@ -87,10 +90,11 @@ export const indicatorsData = [
                 title: "Strengths",
             },
         ],
+        title: "Draining",
     },
     {
-        img: undrawSplitTesting,
-        imgAlt: "undraw_split_testing",
+        img: splitTesting,
+        imgAlt: "split_testing",
         imgHeight: 504,
         imgWidth: 552,
         items: [
@@ -107,10 +111,11 @@ export const indicatorsData = [
                 title: "Strengths",
             },
         ],
+        title: "Scientific",
     },
     {
-        img: undrawChoice,
-        imgAlt: "undraw_choice",
+        img: choice,
+        imgAlt: "choice",
         imgHeight: 464,
         imgWidth: 513,
         items: [
@@ -131,10 +136,11 @@ export const indicatorsData = [
                 title: "Example",
             },
         ],
+        title: "Intuitive",
     },
     {
-        img: undrawPriorities,
-        imgAlt: "undraw_priorities",
+        img: priorities,
+        imgAlt: "priorities",
         imgHeight: 463,
         imgWidth: 517,
         items: [
@@ -151,15 +157,16 @@ export const indicatorsData = [
                 title: "Strengths",
             },
         ],
+        title: "Focus",
     },
     {
-        img: undrawAllTheData,
-        imgAlt: "undraw_all_the_data",
+        img: allTheData,
+        imgAlt: "all_the_data",
         imgHeight: 451,
         imgWidth: 570,
         items: [
             {
-                text: "Comprehensive leaders are big-picture thinkers, adept at seeing how all parts of an organization or project fit together. They excel in long-term strategic planning and are able to connect day-to-day tasks with broader goals.",
+                text: "Scientific leaders rely on data, analysis, and logical reasoning. They are methodical, ensuring every decision is backed by evidence. They excel in roles that require research, analysis, and data-driven decision-making.",
                 title: "Characteristics",
             },
             {
@@ -171,5 +178,6 @@ export const indicatorsData = [
                 title: "Strengths",
             },
         ],
+        title: "Comprehensive",
     },
 ];

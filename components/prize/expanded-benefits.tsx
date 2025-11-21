@@ -24,7 +24,7 @@ export const PrizeExpandedBenefits = () => (
                 y: 0,
             }}
         >
-            <h2 className="text-gradient1">Expanded Benefits</h2>
+            <h2 className="text-gradient">Expanded Benefits</h2>
         </motion.div>
         <div className="flex flex-col gap-3 lg:gap-6">
             {expandedBenefitsData.map(({
@@ -47,14 +47,14 @@ export const PrizeExpandedBenefits = () => (
                         x: 0,
                     }}
                 >
-                    <h3 className="text-gradient1">{title}</h3>
+                    <h3 className="text-gradient">{title}</h3>
                     <p>{text}</p>
                 </motion.div>
             ))}
         </div>
         <div className="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-3 lg:gap-6 mt-4 lg:mt-8">
             <motion.h4
-                className="text-gradient3"
+                className="text-gradient"
                 initial={{
                     opacity: 0,
                     x: -200,

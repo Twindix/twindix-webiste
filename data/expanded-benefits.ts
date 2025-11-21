@@ -8,15 +8,15 @@ export const expandedBenefitsData = [
         title: "See the Bigger Picture: Maximize Productivity with Clarity",
     },
     {
-        text: "Imagine having a roadmap for how your team approaches challenges. With TWINDIX, you can better understand their responses and anticipate the moves that align with their strengths. This insight empowers you to make decisions that are perfectly in sync with the team’s natural flow, reducing uncertainty. As a leader, you’ll navigate complex situations with greater confidence, knowing that your decisions are backed by an understanding of your team’s innate behaviors.",
+        text: "Imagine having a roadmap for how your team approaches challenges. With Twindix, you can better understand their responses and anticipate the moves that align with their strengths. This insight empowers you to make decisions that are perfectly in sync with the team’s natural flow, reducing uncertainty. As a leader, you’ll navigate complex situations with greater confidence, knowing that your decisions are backed by an understanding of your team’s innate behaviors.",
         title: "Make Confident Decisions: Anticipate and Align with Your Team",
     },
     {
-        text: "Why wait for problems to arise when you can prevent them? By identifying which behaviors might slow progress or cause friction, you can intervene before they become serious issues. TWINDIX helps you recognize the early signs of challenges and address them with tailored strategies. This proactive approach keeps your team moving forward, allowing you to maintain momentum and focus on what truly matters—growth and success.",
+        text: "Why wait for problems to arise when you can prevent them? By identifying which behaviors might slow progress or cause friction, you can intervene before they become serious issues. Twindix helps you recognize the early signs of challenges and address them with tailored strategies. This proactive approach keeps your team moving forward, allowing you to maintain momentum and focus on what truly matters—growth and success.",
         title: "Solve Issues Before They Start: Be Proactive, Not Reactive",
     },
     {
-        text: "A thriving workplace culture is one where everyone feels understood and valued. With TWINDIX, you can create an environment that aligns with your team’s core values, drives, and strengths. When people feel seen and their roles play to their natural skills, they’re more motivated and engaged. This means a happier, more productive team that’s eager to contribute to the company’s mission—resulting in a culture that nurtures both personal and professional growth.",
+        text: "A thriving workplace culture is one where everyone feels understood and valued. With Twindix, you can create an environment that aligns with your team’s core values, drives, and strengths. When people feel seen and their roles play to their natural skills, they’re more motivated and engaged. This means a happier, more productive team that’s eager to contribute to the company’s mission—resulting in a culture that nurtures both personal and professional growth.",
         title: "Shape a Culture of Growth: Build an Environment that Resonates",
     },
     {

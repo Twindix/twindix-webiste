@@ -23,7 +23,7 @@ export const HowAssessmentWorksHero = () => (
             }}
         >
             <div className="grid place-items-center">
-                <h1 className="text-gradient3">How Assessment Works</h1>
+                <h1 className="text-gradient">How Assessment Works</h1>
                 <p>
                     Step
                     <span className="text-blue-500 text-lg lg:text-2xl"> by </span>

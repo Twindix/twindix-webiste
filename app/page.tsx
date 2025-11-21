@@ -5,6 +5,7 @@ import {
     HomeTwindixDifferent,
     HomeTwindixRightChoice,
     HomeWhyTwindixAssessments,
+    HomeYearsOfSearch,
 } from "@/components";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <div>
             <HomeHero />
             <div className="container m-auto relative bottom-10 lg:bottom-20 z-10">
+                <HomeYearsOfSearch />
                 <HomeTwindixDifferent />
                 <HomeWhyTwindixAssessments />
                 <HomeTwindixRightChoice />

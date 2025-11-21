@@ -25,14 +25,14 @@ export const WhatsTwindixUnderstandingManagement = () => (
             }}
         >
             <div className="title-with-white-box before:left-[1%]! before:sm:left-[15%]! before:md:left-[20%]! before:xl:left-[25%]!">
-                <h2 className="text-gradient1">
-                    How TWINDIX Aids in
+                <h2 className="text-gradient">
+                    How Twindix Aids in
                     {" "}
                     <br />
                     Understanding Management
                 </h2>
             </div>
-            <p className="bg-white text-black! text-center! py-2 px-3 lg:px-6">The TWINDIX assessment provides leaders with a unique understanding of their management style by measuring three core elements: Skills, Perspective, and Behavior. Each of these components plays a vital role in how you lead and interact with your team.</p>
+            <p className="bg-white text-black! text-center! py-2 px-3 lg:px-6">The Twindix assessment provides leaders with a unique understanding of their management style by measuring three core elements: Skills, Perspective, and Behavior. Each of these components plays a vital role in how you lead and interact with your team.</p>
         </motion.div>
         <div className="flex flex-col gap-15 lg:gap-30">
             {understandingManagementData.map(({
@@ -63,7 +63,7 @@ export const WhatsTwindixUnderstandingManagement = () => (
                             x: 0,
                         }}
                     >
-                        <h3 className="text-gradient1">{title}</h3>
+                        <h3 className="text-gradient">{title}</h3>
                         <p><RichText text={text} /></p>
                     </motion.div>
                     <motion.div

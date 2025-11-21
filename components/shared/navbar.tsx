@@ -56,7 +56,7 @@ export const Navbar = () => {
                 <div
                     className={generateValidClassNameHandler(
                         "h-14 lg:h-20 px-3 sm:px-4 flex items-center justify-between gap-4 nav-glass",
-                        !isOnTop ? "bg-transparent border-white border-2 scrolled" : "",
+                        !isOnTop ? "border-white border-2 scrolled" : "",
                     )}
                 >
                     <Link

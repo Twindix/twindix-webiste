@@ -27,14 +27,14 @@ export const WhatsTwindixIndicators = () => (
             }}
         >
             <div className="title-with-white-box before:left-[1%]! before:sm:left-[15%]! before:md:left-[20%]! before:xl:left-[25%]!">
-                <h2 className="text-gradient1">
-                    A Deep Dive into TWINDIX
+                <h2 className="text-gradient">
+                    A Deep Dive into Twindix
                     {" "}
                     <br />
                     Indicators
                 </h2>
             </div>
-            <p className="bg-white text-black! text-center! py-2 px-3 lg:px-6">TWINDIX reveals the core qualities that shape effective leadership by examining eight key indicators. From the strategic foresight of a Planner to the adaptability of a Responsive leader, each indicator offers a unique perspective on leadership dynamics. The Auditor’s attention to detail, the Draining indicator’s ability to eliminate inefficiencies, and the Scientific leader’s reliance on data are crucial for operational success. Meanwhile, the Intuitive leader’s creativity, the Focused leader’s discipline, and the Comprehensive leader’s big-picture thinking drive long-term vision and organizational alignment.</p>
+            <p className="bg-white text-black! text-center! py-2 px-3 lg:px-6">Twindix reveals the core qualities that shape effective leadership by examining eight key indicators. From the strategic foresight of a Planner to the adaptability of a Responsive leader, each indicator offers a unique perspective on leadership dynamics. The Auditor’s attention to detail, the Draining indicator’s ability to eliminate inefficiencies, and the Scientific leader’s reliance on data are crucial for operational success. Meanwhile, the Intuitive leader’s creativity, the Focused leader’s discipline, and the Comprehensive leader’s big-picture thinking drive long-term vision and organizational alignment.</p>
         </motion.div>
         <div className="flex flex-col gap-15 lg:gap-30">
             {indicatorsData.map(({
@@ -43,6 +43,7 @@ export const WhatsTwindixIndicators = () => (
                 imgHeight,
                 imgWidth,
                 items,
+                title,
             }, index) => (
                 <div
                     className="grid grid-cols-1 lg:grid-cols-12 gap-3 lg:gap-6"
@@ -64,6 +65,7 @@ export const WhatsTwindixIndicators = () => (
                             x: 0,
                         }}
                     >
+                        <h3 className="text-gradient">{title}</h3>
                         {items.map(({
                             text,
                             title,
@@ -72,7 +74,7 @@ export const WhatsTwindixIndicators = () => (
                                 className="flex flex-col"
                                 key={itemIndex}
                             >
-                                <h3 className="text-gradient1">{title}</h3>
+                                <h5 className="text-blue-500!">{title}</h5>
                                 <p><RichText text={text} /></p>
                             </div>
                         ))}
@@ -107,7 +109,7 @@ export const WhatsTwindixIndicators = () => (
         </div>
         <div className="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-3 lg:gap-6 mt-[30px] lg:mt-15">
             <motion.h4
-                className="text-gradient3"
+                className="text-gradient"
                 initial={{
                     opacity: 0,
                     x: -200,

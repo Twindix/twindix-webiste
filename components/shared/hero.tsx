@@ -14,11 +14,11 @@ export const Hero = ({
     <section
         className={generateValidClassNameHandler(
             "relative hero-section",
-            hasGlassBg ? "hero-glass min-h-[650px] lg:min-h-[848px]" : "min-h-fit lg:min-h-fit",
+            hasGlassBg ? "hero-glass min-h-[700px] lg:min-h-[800px]" : "min-h-fit lg:min-h-fit",
             className,
         )}
     >
-        <div className=" flex flex-col items-center justify-center pt-25 lg:pt-40">
+        <div className="flex flex-col items-center justify-center pt-25 lg:pt-40">
             {children}
         </div>
     </section>

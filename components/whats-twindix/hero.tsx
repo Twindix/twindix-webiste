@@ -26,9 +26,9 @@ export const WhatsTwindixHero = () => (
             }}
         >
             <div className="grid place-items-center">
-                <h1 className="text-gradient3">What&apos;s Twindix ?</h1>
+                <h1 className="text-gradient">What&apos;s Twindix ?</h1>
                 <p>
-                    TWINDIX builds on
+                    Twindix builds on
                     {" "}
                     <span className="text-blue-500">Hugo Münsterberg’s</span>
                     {" "}

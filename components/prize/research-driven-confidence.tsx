@@ -24,7 +24,7 @@ export const PrizeResearchDrivenConfidence = () => (
                 y: 0,
             }}
         >
-            <h2 className="text-gradient1">
+            <h2 className="text-gradient">
                 Research
                 <br />
                 Driven Confidence
@@ -53,7 +53,7 @@ export const PrizeResearchDrivenConfidence = () => (
                         x: 0,
                     }}
                 >
-                    <h3 className="text-gradient1">{title}</h3>
+                    <h3 className="text-gradient">{title}</h3>
                     {type === "list" ? (
                         <ul className="list-disc list-inside">
                             {items?.map((li, i) => <li key={i}>{li}</li>)}

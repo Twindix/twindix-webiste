@@ -50,7 +50,7 @@ export const HowAssessmentWorksSteps = () => (
                             {" "}
                             {index + 1}
                         </span>
-                        <h3 className="text-gradient1">{title}</h3>
+                        <h3 className="text-gradient">{title}</h3>
                         <p><RichText text={text} /></p>
                     </motion.div>
                     <motion.div

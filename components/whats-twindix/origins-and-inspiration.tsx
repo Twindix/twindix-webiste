@@ -28,9 +28,9 @@ export const WhatsTwindixOriginsAndInspiration = () => (
                 }}
             >
                 <div>
-                    <h2 className="text-gradient1">Origins and Inspiration</h2>
+                    <h2 className="text-gradient">Origins and Inspiration</h2>
                     <p>
-                        <span className="text-blue-500">TWINDIX</span>
+                        <span className="text-blue-500">Twindix</span>
                         {" "}
                         is deeply inspired by the pioneering work of
                         {" "}
@@ -44,7 +44,7 @@ export const WhatsTwindixOriginsAndInspiration = () => (
                         <br className="hidden lg:block" />
                         Building on this legacy,
                         {" "}
-                        <span className="text-blue-500">TWINDIX</span>
+                        <span className="text-blue-500">Twindix</span>
                         {" "}
                         integrates Münsterberg’s principles with decades of management science research, drawing from
                         {" "}
@@ -57,10 +57,10 @@ export const WhatsTwindixOriginsAndInspiration = () => (
                         {" "}
                         <span className="text-blue-500">powerful combination</span>
                         {" "}
-                        offers leaders a comprehensive tool to understand both their own strengths and those of their teams. With TWINDIX, leaders gain clarity into team dynamics, make more informed decisions, and drive organizational success by focusing on behavior-driven strategies.
+                        offers leaders a comprehensive tool to understand both their own strengths and those of their teams. With Twindix, leaders gain clarity into team dynamics, make more informed decisions, and drive organizational success by focusing on behavior-driven strategies.
                         <br className="hidden lg:block" />
                         <br className="hidden lg:block" />
-                        This blend of psychology and management theory ensures that TWINDIX is not just another assessment—it’s a transformational tool designed to bring clarity, confidence, and precision to leadership.
+                        This blend of psychology and management theory ensures that Twindix is not just another assessment—it’s a transformational tool designed to bring clarity, confidence, and precision to leadership.
                     </p>
                 </div>
                 <Link
@@ -94,7 +94,7 @@ export const WhatsTwindixOriginsAndInspiration = () => (
                 }}
             >
                 <Image
-                    alt="undraw-ideation"
+                    alt="ideation"
                     height={526}
                     placeholder="blur"
                     src={professor}

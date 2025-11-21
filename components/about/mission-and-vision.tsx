@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
-import undrawVisionaryTechnology from "@/app/assets/images/undraw_visionary_technology.webp";
+import virtualReality from "@/app/assets/images/virtual_reality.webp";
 import { Button } from "@/atoms";
 import { portalUrl } from "@/data";
 
@@ -28,12 +28,12 @@ export const AboutMissionAndVision = () => (
                 }}
             >
                 <div>
-                    <h2 className="text-gradient1">Mission & Vision Transforming Leadership</h2>
+                    <h2 className="text-gradient">Mission & Vision Transforming Leadership</h2>
                     <p>
-                        At TWINDIX, our mission is clear: to empower leaders by providing them with the tools and insights needed to unlock their full potential. We believe that leadership is more than just managing people, it&apos;s about understanding the intricate behaviors and dynamics that drive success within an organization. Our vision is to foster growth and create transformative leadership by delivering actionable insights that allow businesses to move beyond the surface and into deeper, more strategic decision-making.
+                        At Twindix, our mission is clear: to empower leaders by providing them with the tools and insights needed to unlock their full potential. We believe that leadership is more than just managing people, it&apos;s about understanding the intricate behaviors and dynamics that drive success within an organization. Our vision is to foster growth and create transformative leadership by delivering actionable insights that allow businesses to move beyond the surface and into deeper, more strategic decision-making.
                         <br className="hidden lg:block" />
                         <br className="hidden lg:block" />
-                        At the core of TWINDIX is the belief that clarity leads to growth. Through our innovative assessments, we help leaders gain the clarity they need to make informed decisions, improve team dynamics, and unlock hidden potential. Our commitment is to help organizations not only identify their strengths but also fill the gaps and overcome obstacles, enabling them to thrive in today&apos;s competitive landscape.
+                        At the core of Twindix is the belief that clarity leads to growth. Through our innovative assessments, we help leaders gain the clarity they need to make informed decisions, improve team dynamics, and unlock hidden potential. Our commitment is to help organizations not only identify their strengths but also fill the gaps and overcome obstacles, enabling them to thrive in today&apos;s competitive landscape.
                     </p>
                 </div>
                 <Link
@@ -67,12 +67,11 @@ export const AboutMissionAndVision = () => (
                 }}
             >
                 <Image
-                    alt="undraw-ideation"
-                    className="lg:h-[487px]"
-                    height={487}
+                    alt="virtual_reality"
+                    height={488}
                     placeholder="blur"
-                    src={undrawVisionaryTechnology}
-                    width={504}
+                    src={virtualReality}
+                    width={513}
                     priority
                 />
             </motion.div>

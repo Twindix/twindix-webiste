@@ -25,7 +25,7 @@ export const PrizeHero = () => (
             }}
         >
             <div className="grid place-items-center">
-                <h1 className="text-gradient3">The Prize</h1>
+                <h1 className="text-gradient">The Prize</h1>
                 <p>
                     <span className="text-blue-500">Benefits</span>
                     {" "}

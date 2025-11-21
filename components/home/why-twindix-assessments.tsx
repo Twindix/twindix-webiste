@@ -26,8 +26,8 @@ export const HomeWhyTwindixAssessments = () => (
                 y: 0,
             }}
         >
-            <h2 className="text-gradient1">
-                Why TWINDIX
+            <h2 className="text-gradient">
+                Why Twindix
                 <br />
                 Assessments
             </h2>
@@ -61,7 +61,7 @@ export const HomeWhyTwindixAssessments = () => (
                             <div className="flex flex-col h-full justify-between">
                                 <span className="font-bold text-3xl lg:text-5xl text-blue-100 group-hover:text-blue-700">{index + 1}</span>
                                 <div>
-                                    <h3 className="text-gradient1">{title}</h3>
+                                    <h3 className="text-gradient">{title}</h3>
                                     <p className="md:hidden">{text}</p>
                                     <div className="hidden md:block overflow-hidden max-h-0 transition-[max-height] duration-300 ease-out group-hover:min-h-fit">
                                         <p className="translate-y-3 opacity-0 transition-all duration-300 ease-out group-hover:translate-y-0 group-hover:opacity-100 xl:text-[13px]!">{text}</p>

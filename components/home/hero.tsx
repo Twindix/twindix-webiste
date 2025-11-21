@@ -2,25 +2,27 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 import star from "@/app/assets/icons/star.svg";
 import assessmentDocs1 from "@/app/assets/images/assessment_docs_1.webp";
 import assessmentDocs2 from "@/app/assets/images/assessment_docs_2.webp";
-import curvedLine from "@/app/assets/images/curved_line.webp";
+import { Button } from "@/atoms";
 import { Hero } from "@/components";
+import { portalUrl } from "@/data";
 
 export const HomeHero = () => (
     <Hero hasGlassBg>
-        <div className="container relative">
+        <div className="container relative grid grid-cols-1 lg:grid-cols-12 gap-3 lg:gap-6">
             <motion.div
-                className="grid place-items-center"
+                className="flex flex-col gap-4 lg:gap-8 justify-center col-span-1 lg:col-span-9"
                 animate={{
                     opacity: 1,
-                    y: 0,
+                    x: 0,
                 }}
                 initial={{
                     opacity: 0,
-                    y: -200,
+                    x: -200,
                 }}
                 transition={{
                     delay: 0.2,
@@ -28,42 +30,35 @@ export const HomeHero = () => (
                     ease: "easeOut",
                 }}
             >
-                <h1 className="text-primary">TWINDIX</h1>
-                <p className="text-gradient2 font-bold! text-6xl! lg:text-8xl!">
-                    Uncover the core
-                    {" "}
-                    <br className="hidden lg:block" />
-                    {" "}
-                    drivers
-                    <span className="text-primary text-xl xl:text-3xl font-medium mt-2 lg:mt-4 block">of your leadership style—and see how you measure up against</span>
-                    <span className="text-3xl xl:text-5xl text-gradient3 relative bottom-4 lg:bottom-8 xl:bottom-4">World class executives</span>
-                </p>
+                <div>
+                    <h1 className="text-gradient text-left!">Find Fit <span className="text-4xl md:text-3xl lg:text-5xl font-medium">&</span> <br className="md:hidden"/>Build Your Team</h1>
+                    <h2 className="text-gradient">Right People  ..  Right Place</h2>
+                    <p className="text-foreground! max-w-[790px] text-lg! lg:text-2xl! text-left!">Whether you&apos;re choosing a career or choosing the right people, Twindix helps you understand abilities, match them to the right roles, and move forward with certainty and purpose.</p>
+                </div>
+                <Link
+                    href={portalUrl}
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    <Button
+                        ariaLabel="Get The Assessment"
+                        variant="contained"
+                        withArrowsIcon
+                    >
+                        Get The Assessment
+                    </Button>
+                </Link>
             </motion.div>
             <motion.div
+                className="flex lg:block gap-2 justify-between col-span-1 lg:col-span-3"
                 animate={{
                     opacity: 1,
-                    y: 0,
+                    x: 0,
                 }}
                 initial={{
                     opacity: 0,
-                    y: 200,
+                    x: 200,
                 }}
-                transition={{
-                    delay: 0.2,
-                    duration: 1,
-                    ease: "easeOut",
-                }}
-            >
-                <Image
-                    alt="curved_line"
-                    className="relative bottom-5"
-                    src={curvedLine}
-                />
-            </motion.div>
-            <motion.div
-                animate={{ opacity: 1 }}
-                className="flex justify-between"
-                initial={{ opacity: 0 }}
                 transition={{
                     duration: 0.5,
                     ease: "easeOut",
@@ -71,62 +66,62 @@ export const HomeHero = () => (
             >
                 <Image
                     alt="assessment_docs"
-                    className="lg:absolute left-0 top-[40%] w-45 h-35 sm:h-40 lg:h-auto sm:w-55 object-contain lg:object-fill"
-                    height={220}
+                    className="w-[45%] lg:w-auto"
+                    height={340}
                     placeholder="blur"
                     src={assessmentDocs1}
-                    width={220}
+                    width={365}
                     priority
                 />
                 <Image
                     alt="assessment_docs"
-                    className="lg:absolute right-0 top-[48%] w-45 sm:w-55 object-contain lg:object-fill"
-                    height={220}
+                    className="w-[45%] lg:w-auto"
+                    height={340}
                     placeholder="blur"
                     src={assessmentDocs2}
-                    width={220}
+                    width={365}
                     priority
                 />
             </motion.div>
             <div>
                 <Image
                     alt="star"
-                    className="absolute right-10 md:right-0 top-0"
+                    className="absolute right-10 md:right-15 -top-5"
                     src={star}
                 />
                 <Image
                     alt="star"
-                    className="absolute right-10 md:right-[30%] top-[10%]"
+                    className="absolute right-10 md:right-[35%] top-[10%]"
                     src={star}
                 />
                 <Image
                     alt="star"
-                    className="absolute right-15 top-[38%]"
+                    className="absolute right-[40%] top-[15%] md:top-[40%]"
                     src={star}
                 />
                 <Image
                     alt="star"
-                    className="absolute right-1/4 top-[60%] md:top-4/6"
+                    className="absolute right-[20%] lg:right-[35%] top-0 lg:top-4/6"
                     src={star}
                 />
                 <Image
                     alt="star"
-                    className="absolute left-2/6 -top-10"
+                    className="absolute left-[30%] -top-10"
                     src={star}
                 />
                 <Image
                     alt="star"
-                    className="absolute left-1/5 top-1/50"
+                    className="absolute left-5 lg:left-[16%] top-[12%]"
                     src={star}
                 />
                 <Image
                     alt="star"
-                    className="absolute left-1/11 sm:left-3/12 top-2/5"
+                    className="absolute left-[30%] top-10 lg:top-1/2"
                     src={star}
                 />
                 <Image
                     alt="star"
-                    className="absolute right-[48%] top-1/4"
+                    className="absolute left-5 md:right-[95%] lg:right-[90%] -top-5 lg:top-1/4"
                     src={star}
                 />
             </div>

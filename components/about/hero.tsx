@@ -26,9 +26,9 @@ export const AboutHero = () => (
             }}
         >
             <div className="grid place-items-center">
-                <h1 className="text-gradient3">About Us</h1>
+                <h1 className="text-gradient">About Us</h1>
                 <p>
-                    <span className="text-blue-500">TWINDIX Empowers</span>
+                    <span className="text-blue-500">Twindix Empowers</span>
                     {" "}
                     leaders through
                     {" "}
