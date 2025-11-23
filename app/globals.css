@@ -100,7 +100,7 @@ html, body { height: 100%; }
 }
 
 @media (min-width: 1536px) {
-    .hero-section { min-height: 900px; }
+    .hero-section.hero-glass { min-height: 900px; }
 }
 
 
